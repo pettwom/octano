@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicios.anh.gob.bo:8443" elementFormDefault="qualified" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSCore/ServicioHydroSesion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+  <xs:element name="Autenticar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strClave" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="AutenticarResult" nillable="true" type="q1:O_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarActDir">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="autenticacion" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarActDirResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="AutenticarActDirResult" nillable="true" type="q2:O_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExisteUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExisteUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ExisteUsuarioResult" nillable="true" type="q3:O_RESULTADO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegistrarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="RegistrarUsuarioResult" nillable="true" type="q4:O_RESULTADO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivarUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ActivarUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ActivarUsuarioResult" nillable="true" type="q5:O_RESULTADO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerUsuarioResult" nillable="true" type="q6:O_DETALLE_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerModulosUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerModulosUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerModulosUsuarioResult" nillable="true" type="q7:ArrayOfO_MODULOS_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObternerPerfilesUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdModulo" type="xs:decimal" />
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObternerPerfilesUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObternerPerfilesUsuarioResult" nillable="true" type="q8:ArrayOfO_PERFILES_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerMenusUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdModulo" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdPerfil" type="xs:decimal" />
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerMenusUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerMenusUsuarioResult" nillable="true" type="q9:ArrayOfO_MENUS_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerMenusPerfil">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdPerfil" type="xs:decimal" />
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerMenusPerfilResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerMenusPerfilResult" nillable="true" type="q10:ArrayOfO_MENUS_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarClave">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdFiltro" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strClaveAnterior" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strClaveNueva" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CambiarClaveResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="CambiarClaveResult" nillable="true" type="q11:O_RESULTADO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarV2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strClave" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decActualizarClave" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdModulo" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutenticarV2Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="AutenticarV2Result" nillable="true" type="q12:O_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="strMensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

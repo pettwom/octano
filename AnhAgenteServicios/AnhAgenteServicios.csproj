@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30A308E0-00C4-47E2-87FE-8CA277220672}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnhAgenteServicios</RootNamespace>
+    <AssemblyName>AnhAgenteServicios</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EntidadesServicios\Administrador\O_MENU_CTY.cs" />
+    <Compile Include="EntidadesServicios\Administrador\O_PERFIL_CTY.cs" />
+    <Compile Include="EntidadesServicios\Administrador\O_PERFIL_MENUS_CTY.cs" />
+    <Compile Include="EntidadesServicios\Administrador\O_USUARIOS_CTY.cs" />
+    <Compile Include="EntidadesServicios\Administrador\O_USUARIO_MENU_CTY.cs" />
+    <Compile Include="EntidadesServicios\Administrador\O_USUARIO_PERFIL_CTY.cs" />
+    <Compile Include="EntidadesServicios\Sirh\O_ARCHIVO_DIGITAL_CTY.cs" />
+    <Compile Include="EntidadesServicios\Sirh\O_BUSCA_FUNCIONARIO_CTY.cs" />
+    <Compile Include="EntidadesServicios\Sirh\O_DATOS_FUNCIONARIO_CTY.cs" />
+    <Compile Include="EntidadesServicios\Sirh\O_FUNCIONARIOS_ACF_CTY.cs" />
+    <Compile Include="EntidadesServicios\Sirh\O_ORGANIGRAMA_CTY.cs" />
+    <Compile Include="LocalizadorProxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\ServicioConsultasHydro\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioHydroListados\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioHydroSesion\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioParametricas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiciosRest1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.E_VEHICULO_DATO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_CORRELATIVO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_DATO_USUARIO_ANH_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_DETALLE_VEHICULO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_EMISION_PERIODO_CERT_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_ENTIDAD_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_FOTO_PERSONA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_OBTIENE_ACTIVIDAD_GIS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_OBTIENE_ENTIDADES_ACT_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_OBTIENE_MATRIZ_PROYECTOS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_OBT_DOCUMENTO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_OBT_USUARIO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_PERSONA_BUSQUEDA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_PERSONA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_PORCENTAJE_ACT_DEPTO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\AnhAgenteServicios.ServicioConsultasHydro.O_REPORTE_ACTIVIDAD_NAC_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\ServicioHydroConsultas2.wsdl" />
+    <None Include="Service References\ServicioConsultasHydro\ServicioHydroConsultas21.wsdl" />
+    <None Include="Service References\ServicioConsultasHydro\ServicioHydroConsultas3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\ServicioHydroConsultas31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioConsultasHydro\ServicioHydroConsultas32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_ACTIVIDAD_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_DETALLE_ENTIDAD_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_DETALLE_PERSONA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_DETALLE_REPRESENTANTE_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_DOCUMENTOS_ENTIDAD_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_DOCUMENTOS_REPRESENTANTE_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_ENTIDADES_BPM_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_ENTIDAD_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_LISTADO_ENTIDADES_GIS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_LISTADO_UBICACION_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_LISTA_BAJA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_LISTA_GENERAL_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_LISTA_TRANS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_OBJETO_DIGITAL_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_ORG_DETALLE_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_PRODUCTOS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_REGISTRO_MAQ_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_REPORTE_REGISTRO_BAJA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_REPORTE_TRANSFERENCIA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_REPRESENTANTE_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_REP_PERSONA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\AnhAgenteServicios.ServicioHydroListados.O_RESULTADO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroListados\HydroListadosEndPoint1.wsdl" />
+    <None Include="Service References\ServicioHydroListados\ServicioHydroListados1.wsdl" />
+    <None Include="Service References\ServicioHydroListados\ServicioHydroListados3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioHydroListados\ServicioHydroListados31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioHydroListados\ServicioHydroListados32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\AnhAgenteServicios.ServicioHydroSesion.O_DETALLE_USUARIO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\AnhAgenteServicios.ServicioHydroSesion.O_MENUS_USUARIO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\AnhAgenteServicios.ServicioHydroSesion.O_MODULOS_USUARIO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\AnhAgenteServicios.ServicioHydroSesion.O_PERFILES_USUARIO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\AnhAgenteServicios.ServicioHydroSesion.O_RESULTADO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\AnhAgenteServicios.ServicioHydroSesion.O_USUARIO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\ServicioHydroSesion.wsdl" />
+    <None Include="Service References\ServicioHydroSesion\ServicioHydroSesion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\ServicioHydroSesion1.wsdl" />
+    <None Include="Service References\ServicioHydroSesion\ServicioHydroSesion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioHydroSesion\ServicioHydroSesion2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_DATOS_FECHAS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_ORGANIGRAMAS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_PARAMETRICA_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_PARAMETRICA_DOCUMENTOS_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_UBICACIONES_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_UBICACION_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\AnhAgenteServicios.ServicioParametricas.O_UBICACION_GEO_CTY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioParametricas\ServicioParametricas.wsdl" />
+    <None Include="Service References\ServicioParametricas\ServicioParametricas.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioParametricas\ServicioParametricas1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioParametricas\ServicioParametricas2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioParametricas\ServicioParametricasEndPoint.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServicioConsultasHydro\" />
+    <WCFMetadataStorage Include="Service References\ServicioHydroListados\" />
+    <WCFMetadataStorage Include="Service References\ServicioHydroSesion\" />
+    <WCFMetadataStorage Include="Service References\ServicioParametricas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroSesion\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroSesion\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroSesion\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroListados\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroListados\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroListados\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConsultasHydro\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConsultasHydro\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConsultasHydro\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroListados\ServicioHydroListados1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioConsultasHydro\ServicioHydroConsultas1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioParametricas\ServicioParametricas.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioParametricas\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioParametricas\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioParametricas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioHydroSesion\ServicioHydroSesion.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

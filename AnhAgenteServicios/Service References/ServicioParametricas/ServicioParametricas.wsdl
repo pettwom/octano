@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://servicios.anh.gob.bo/WSParametricas/ServicioParametricas.svc" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://servicios.anh.gob.bo:8443" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://servicios.anh.gob.bo/WSParametricas/ServicioParametricas.svc" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="HydroParametricasEndPoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://servicios.anh.gob.bo:8443" location="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc?wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="HydroParametricasEndPoint" type="i0:IServicioParametricas">
+    <wsp:PolicyReference URI="#HydroParametricasEndPoint_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listadoAmbitosOperacion">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoAmbitosOperacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoAseguradoras">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoAseguradoras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoBancos">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoBancos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoCargos">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCargos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasActividad">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasActividad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasLicCond">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasLicCond" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasTramite">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoCatInstaladoras">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCatInstaladoras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoClasesVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoClasesVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoColegiosContadores">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoColegiosContadores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoColoresVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoColoresVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoDepartamentos">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoDepartamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoDirecciones">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoDirecciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosCiviles">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosCiviles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosInforme">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosInforme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosKardex">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosKardex" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosProceso">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosProceso" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoGeneros">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoGeneros" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoGestiones">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoGestiones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoHidrocarburos">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoHidrocarburos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoInspectores">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoInspectores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoLocalidades">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoLocalidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasCilindro">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasCilindro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasKit">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasKit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoMunicipios">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMunicipios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoPaises">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPaises" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoPlantas">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPlantas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoPreciosDidrocarburo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPreciosDidrocarburo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoPrioridades">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPrioridades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoProvincias">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoProvincias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoRegionesGeograficas">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoRegionesGeograficas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoRequisitosGPS">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoRequisitosGPS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoServiciosVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoServiciosVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposActividad">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposActividad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposCertificado">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCertificado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposCobertura">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCobertura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposCopia">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCopia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposDocumento">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocumento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposDocInscr">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocInscr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposDocVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposEntidad">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposEntidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposEnvio">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposFuncion">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposFuncion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposIdentificacion">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposIdentificacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposImagen">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposImagen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposInforme">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposInforme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposLicencia">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposLicencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposParentesco">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposParentesco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposPoliza">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposPoliza" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposPropietario">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposPropietario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposRepresentante">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposRepresentante" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposSangre">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSangre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposSociedad">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSociedad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposSucursal">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSucursal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposTanque">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTanque" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposTramite">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTramite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposTransporte">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTransporte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposVehiculo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposVehiculo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoUnidad">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoUnidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoUnidades">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoUnidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadClasificacionCargo">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadClasificacionCargo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadCondicionesLaborales">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadCondicionesLaborales" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoOrganigrama">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoOrganigrama" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoClasesMaquinaria">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoClasesMaquinaria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasMaquinaria">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasMaquinaria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListadoActividadesEconomicas">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListadoActividadesEconomicas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListadoCategoriaFotoPersona">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListadoCategoriaFotoPersona" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDescripcionGeografica">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneDescripcionGeografica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaUbicacionGeografica">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListaUbicacionGeografica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneUbicacionGeografica">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneUbicacionGeografica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneFechaLimite">
+      <soap:operation soapAction="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneFechaLimite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

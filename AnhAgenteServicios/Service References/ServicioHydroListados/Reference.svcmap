@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="becfc899-394e-48a6-a2c8-4d34b86c5e3f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://vsrvuid004.anh.gob.bo:7443/WSCoRe/ServicioHydroListados.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioHydroListados1.wsdl" MetadataType="Wsdl" ID="22941c65-5cb2-4f43-aedd-32817400953f" SourceId="1" SourceUrl="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="ServicioHydroListados1.disco" MetadataType="Disco" ID="fb71baff-e71e-428a-ba34-2b8b5f73727c" SourceId="1" SourceUrl="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?disco" />
+    <MetadataFile FileName="ServicioHydroListados3.xsd" MetadataType="Schema" ID="b2b90d18-92c6-454f-9038-47c67b6365e5" SourceId="1" SourceUrl="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioHydroListados31.xsd" MetadataType="Schema" ID="1c9be63c-53d1-4f86-ae5a-d6bf75236c20" SourceId="1" SourceUrl="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?xsd=xsd2" />
+    <MetadataFile FileName="HydroListadosEndPoint1.wsdl" MetadataType="Wsdl" ID="7e5eb46b-ad0c-4f37-a816-b0b3a45f2305" SourceId="1" SourceUrl="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?wsdl" />
+    <MetadataFile FileName="ServicioHydroListados32.xsd" MetadataType="Schema" ID="f369b195-0d70-4203-b29e-35449e19c773" SourceId="1" SourceUrl="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

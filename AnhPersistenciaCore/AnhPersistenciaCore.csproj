@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E120B05-23A5-4B69-8BBA-97CBA6034077}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnhPersistenciaCore</RootNamespace>
+    <AssemblyName>AnhPersistenciaCore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Librerias.Anh.Us, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Librerias.Anh.Us.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\AnhPresentacionDTEP\Dll\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetLight">
+      <HintPath>..\..\..\Users\jhparra\Videos\SpreadsheetLight3.5\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aplicacion\Consulta\CPersistenciaConsulta.cs" />
+    <Compile Include="Aplicacion\Gestion\CPersistenciaGestion.cs" />
+    <Compile Include="Aplicacion\Listados\CPersistenciaListados.cs" />
+    <Compile Include="Aplicacion\Reportes\CPersistenciaReportes.cs" />
+    <Compile Include="Core\ASTM_PRUEBA_CALIDAD.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\LISTA_PRUEBAS_CALIDAD.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\LISTA_TABLAS_CALIDAD.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\LISTA_TANQUE_ENTIDAD.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ModeloOctano.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloOctano.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ModeloOctano.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\ModeloOctano.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModeloOctano.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_CATALOGO_CALIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_CERTIFICADOS_ALERTAS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_CERTIFICADO_ALERTAS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_CONSULTA_ENTIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_ESTADO_TIPO_PRUEBA_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_FECHA_ULTIMO_REPORTE_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTADO_MARCA_LUB_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTADO_MONEDA_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_AMPLIACIONES_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_ARBOL_ENTIDADES_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_CAMPO_ENTIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_DEPENDIENTES_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_DOCUMENTOS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_ENTIDAD_PROP_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_NOMBRE_PRODUCTO_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_PARAMETRICA_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_PRODE_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_PROPIETARIOS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_TANQUE_ENTIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_LISTA_TIPO_MEDIO_TRANS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_METODOS_ASTM_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_PRODUCTOS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_PRODUCTO_ESPEC_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_PROD_CAL_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_PROD_ESPEC_PACL_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_PRUEBA_UNIDAD_CALIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REF_CATALOGO_PRODUCTOS_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REF_MEDIO_TRANSPORTE_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REF_REG_REPORTE_PLANO_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REG_IN_REPORTE_PLANO_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_ALERTA_CERT_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_CALIDAD.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_CALIDAD_PIVOTE_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_CALIDAD_PRINCIPAL.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_CALIDAD_REG_ADM.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_REG_CALIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_REPORTE_VOL_DTEP.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_RESULTADO_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_RESULTADO_INF_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_RESULTADO_NUMBER_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_TABLA_ESPEC_FORMULARIO_CITY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_TABLA_ESPEC_FORMULARIO_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_TIPOS_ACTIVIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_TIPOS_REGISTRO_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_TIPOS_REPORTE_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_UM_CANT_CAL_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_UNIDADES_MEDIDA_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_UNIDADES_MEDIDA_GRAL_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_VALIDA_CALIDAD_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Core\O_VOL_TIPOS_OPERACION_CTY.cs">
+      <DependentUpon>ModeloOctano.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Constantes.cs" />
+    <Compile Include="Entidades\EResultado.cs" />
+    <Compile Include="Entidades\E_CAMPO_VALOR.cs" />
+    <Compile Include="Entidades\E_CATALOGO_CALIDAD.cs" />
+    <Compile Include="Entidades\E_REPORTE_CALIDAD.cs" />
+    <Compile Include="Entidades\E_TABLA_ESPECIFICA.cs" />
+    <Compile Include="Entidades\ObjetoCalidad.cs" />
+    <Compile Include="Entidades\ObjetoLote.cs" />
+    <Compile Include="Entidades\Parametros\CParametrosHydro.cs" />
+    <Compile Include="Entidades\Parametros\VolumenesCalidad\CParametrosCalidad.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.Razor.dll.config" />
+    <None Include="DLL\ServiceStack.3.9.10\ServiceStack.3.9.10.nupkg" />
+    <None Include="DLL\ServiceStack.Common.3.9.71\ServiceStack.Common.3.9.71.nupkg" />
+    <None Include="DLL\ServiceStack.Host.AspNet.3.9.71\content\web.config.transform" />
+    <None Include="DLL\ServiceStack.Host.AspNet.3.9.71\ServiceStack.Host.AspNet.3.9.71.nupkg" />
+    <None Include="DLL\ServiceStack.Logging.Log4Net.3.9.71\ServiceStack.Logging.Log4Net.3.9.71.nupkg" />
+    <None Include="DLL\ServiceStack.OrmLite.SqlServer.3.9.71\ServiceStack.OrmLite.SqlServer.3.9.71.nupkg" />
+    <None Include="DLL\ServiceStack.Redis.3.9.71\ServiceStack.Redis.3.9.71.nupkg" />
+    <None Include="DLL\ServiceStack.Text.3.9.71\ServiceStack.Text.3.9.71.nupkg" />
+    <EntityDeploy Include="Core\ModeloOctano.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModeloOctano.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Core\ModeloOctano.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloOctano.edmx</DependentUpon>
+      <LastGenOutput>ModeloOctano.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Core\ModeloOctano.edmx.diagram">
+      <DependentUpon>ModeloOctano.edmx</DependentUpon>
+    </None>
+    <None Include="Core\ModeloOctano.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModeloOctano.edmx</DependentUpon>
+      <LastGenOutput>ModeloOctano.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Librerias.Anh.Us.dll" />
+    <Content Include="DLL\Newtonsoft.Json.dll" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net35\ServiceStack.dll" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net35\ServiceStack.pdb" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net35\ServiceStack.ServiceInterface.dll" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net35\ServiceStack.ServiceInterface.pdb" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net35\ServiceStack.xml" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.dll" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.pdb" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.Razor.dll" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.Razor.pdb" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.ServiceInterface.dll" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.ServiceInterface.pdb" />
+    <Content Include="DLL\ServiceStack.3.9.10\lib\net40\ServiceStack.xml" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Common.dll" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Common.XML" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Interfaces.dll" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\net35\ServiceStack.Interfaces.xml" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\sl4\README.txt" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\sl5\README.txt" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\sl5\ServiceStack.Common.dll" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\sl5\ServiceStack.Common.xml" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\sl5\ServiceStack.Interfaces.dll" />
+    <Content Include="DLL\ServiceStack.Common.3.9.71\lib\sl5\ServiceStack.Interfaces.xml" />
+    <Content Include="DLL\ServiceStack.Host.AspNet.3.9.71\content\Content\js\ss-validation.js" />
+    <Content Include="DLL\ServiceStack.Host.AspNet.3.9.71\content\default.htm" />
+    <Content Include="DLL\ServiceStack.Host.AspNet.3.9.71\content\jqunback-1.51.min.js" />
+    <Content Include="DLL\ServiceStack.Host.AspNet.3.9.71\content\README.txt" />
+    <Content Include="DLL\ServiceStack.Logging.Log4Net.3.9.71\lib\net35\ServiceStack.Logging.Log4Net.dll" />
+    <Content Include="DLL\ServiceStack.OrmLite.SqlServer.3.9.71\lib\net35\ServiceStack.OrmLite.dll" />
+    <Content Include="DLL\ServiceStack.OrmLite.SqlServer.3.9.71\lib\net35\ServiceStack.OrmLite.SqlServer.dll" />
+    <Content Include="DLL\ServiceStack.Redis.3.9.71\lib\net35\ServiceStack.Redis.dll" />
+    <Content Include="DLL\ServiceStack.Redis.3.9.71\lib\net35\ServiceStack.Redis.XML" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.dll" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.XML" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\sl4-windowsphone71\ServiceStack.Text.WP.dll" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\sl4-windowsphone71\ServiceStack.Text.WP.XML" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\sl4\ServiceStack.Text.dll" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\sl4\ServiceStack.Text.xml" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\sl5\ServiceStack.Text.dll" />
+    <Content Include="DLL\ServiceStack.Text.3.9.71\lib\sl5\ServiceStack.Text.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VolumenesCalidadMasterLogin.master.cs" Inherits="AnhPresentacionDTEP.Sitio.VolumenesCalidad.VolumenesCalidadMasterLogin" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>ANH - OCTANO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/UI/img/VolumenesCalidad/octano128.ico"/>
+    <script type="text/javascript">
+        eval(function (p, a, c, k, e, r) { e = function (c) { return c.toString(a) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] } ]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p } ('9 k(a){p.j.i.o().n(e);8(a===l){3.2("4").1.0="7";3.2("6").1.0="7";c d}f{8(m(g)==\'9\'){8(g(a)==h){3.2("4").1.0="7";3.2("6").1.0="7";c d}f{3.2("4").1.0="5";3.2("6").1.0="5";c h}}}}9 e(a,b){3.2("4").1.0="5";3.2("6").1.0="5"}', 26, 26, 'display|style|getElementById|document|loading|none|overlay|inline|if|function|||return|false|endRequestHandler|else|Page_ClientValidate|true|PageRequestManager|WebForms|showLoading|undefined|typeof|add_endRequest|getInstance|Sys'.split('|'), 0, {}));
+    </script>
+    
+    <script src="../../UI/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="../../UI/js/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../../UI/js/VolumenesCalidad/calidad.validacion.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../../UI/css/Hydro.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/VolumenesCalidad/VolumenesCalidad.css"/>
+    <link href="../../UI/css/VolumenesCalidad/MenuHydroOctano.css" rel="stylesheet" type="text/css" />
+    
+    <style type="text/css">
+        input[type="text"] {
+            text-transform: none !important;
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="Hydro_Form">
+    <div id="pagina">
+    <div id="pvcEncabezado">
+
+        <div class="pvc_encabezado_1">&nbsp;</div>
+        <div class="pvc_encabezado_2">
+	        <div class="pvc_encabezado_bloq_left" align="left"><img src="../../UI/img/VolumenesCalidad/Hydro_logo.png" border="0" /></div>
+	        <div class="pvc_encabezado_bloq_right"><img src="../../UI/img/VolumenesCalidad/Hydro_titulo_small_octano_calidad2.png" border="0" /></div>
+        </div>
+        <div class="pvc_encabezado_3">&nbsp;</div>
+
+    </div>
+    <div id="pvcContenido">    
+        
+        
+        <div class="pvc_contenido_container">
+            <div class="pvc_contenido_1">&nbsp;</div>
+            <div class="pvc_contenido_2">
+	            <div id="pvcCuerpo">
+	                <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </div>    
+            </div>
+            <div class="pvc_contenido_3">&nbsp;</div>
+        </div>
+        
+        
+    </div>
+    <div id="pvcPie">
+        <div class="pvc_pie_1">&nbsp;</div>
+        <div class="pvc_pie_2">
+	        <div class="pvc_pie_bloq_center">
+    	        Agencia Nacional de Hidrocarburos | Av. 20 de Octubre Nro. 2685 | NIT: 120919027 | La Paz, Bolivia
+                Linea Gratuita: 800-10-6006 | Tel: (591)-2-2434000 | Fax: (591)-2-2434007 | Email: contacto @ anh.gob.bo<br/>
+                Desarrollo y mantenimiento: Dirección de Tecnologías de Información y Comunicación<br/>
+                AGENCIA NACIONAL DE HIDROCARBUROS © 2015<br/>
+            </div>
+        </div>
+        <div class="pvc_pie_3">&nbsp;</div>
+    </div>
+    </div>
+    </form>
+
+    <div id="overlay" runat="server">
+        &nbsp;</div>
+    <asp:Image ID="loading" runat="server" ImageUrl="~/UI/img/VolumenesCalidad/cargando.gif" Width="44px"
+        Height="44px"/>
+</body>
+</html>

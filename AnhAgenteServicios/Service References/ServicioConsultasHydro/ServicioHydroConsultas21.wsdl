@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://servicios.anh.gob.bo:8443" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://servicios.anh.gob.bo/WSCore/ServicioHydroConsultas.svc" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioHydroConsultas" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://servicios.anh.gob.bo/WSCore/ServicioHydroConsultas.svc" location="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroConsultas.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://servicios.anh.gob.bo:8443/Imports">
+      <xsd:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroConsultas.svc?xsd=xsd0" namespace="http://servicios.anh.gob.bo:8443" />
+      <xsd:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroConsultas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroConsultas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerPersonaPorCI_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPersonaPorCI" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerPersonaPorCI_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPersonaPorCIResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerEntidadPorDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEntidadPorDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerEntidadPorDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEntidadPorDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_GenerarCorrelativo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCorrelativo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_GenerarCorrelativo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerarCorrelativoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_BuscarVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_BuscarVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_BuscarFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_BuscarFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerEntidadPorNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEntidadPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerEntidadPorNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEntidadPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerBusquedaPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerBusquedaPersona" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerBusquedaPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerBusquedaPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerFotoPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFotoPersona" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerFotoPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerFotoPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerDatosUsuarioAnh_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosUsuarioAnh" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerDatosUsuarioAnh_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosUsuarioAnhResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtieneIdDocumentoEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneIdDocumentoEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtieneIdDocumentoEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneIdDocumentoEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtieneUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtieneUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteActividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteActividad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteActividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerEntidadesActividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEntidadesActividad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtenerEntidadesActividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerEntidadesActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteEmisionPeriodo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteEmisionPeriodo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteEmisionPeriodo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteEmisionPeriodoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReportePorcentajeActDepto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReportePorcentajeActDepto" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReportePorcentajeActDepto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReportePorcentajeActDeptoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteMatrizProyectos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteMatrizProyectos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ReporteMatrizProyectos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteMatrizProyectosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtieneActividadGis_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneActividadGis" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroConsultas_ObtieneActividadGis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneActividadGisResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioHydroConsultas">
+    <wsdl:operation name="ObtenerPersonaPorCI">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerPersonaPorCI" message="tns:IServicioHydroConsultas_ObtenerPersonaPorCI_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerPersonaPorCIResponse" message="tns:IServicioHydroConsultas_ObtenerPersonaPorCI_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEntidadPorDocumento">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerEntidadPorDocumento" message="tns:IServicioHydroConsultas_ObtenerEntidadPorDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerEntidadPorDocumentoResponse" message="tns:IServicioHydroConsultas_ObtenerEntidadPorDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerarCorrelativo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/GenerarCorrelativo" message="tns:IServicioHydroConsultas_GenerarCorrelativo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/GenerarCorrelativoResponse" message="tns:IServicioHydroConsultas_GenerarCorrelativo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/BuscarVehiculo" message="tns:IServicioHydroConsultas_BuscarVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/BuscarVehiculoResponse" message="tns:IServicioHydroConsultas_BuscarVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFuncionario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/BuscarFuncionario" message="tns:IServicioHydroConsultas_BuscarFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/BuscarFuncionarioResponse" message="tns:IServicioHydroConsultas_BuscarFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteVehiculo" message="tns:IServicioHydroConsultas_ReporteVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteVehiculoResponse" message="tns:IServicioHydroConsultas_ReporteVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEntidadPorNombre">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerEntidadPorNombre" message="tns:IServicioHydroConsultas_ObtenerEntidadPorNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerEntidadPorNombreResponse" message="tns:IServicioHydroConsultas_ObtenerEntidadPorNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerBusquedaPersona">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerBusquedaPersona" message="tns:IServicioHydroConsultas_ObtenerBusquedaPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerBusquedaPersonaResponse" message="tns:IServicioHydroConsultas_ObtenerBusquedaPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerFotoPersona">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerFotoPersona" message="tns:IServicioHydroConsultas_ObtenerFotoPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerFotoPersonaResponse" message="tns:IServicioHydroConsultas_ObtenerFotoPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDatosUsuarioAnh">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerDatosUsuarioAnh" message="tns:IServicioHydroConsultas_ObtenerDatosUsuarioAnh_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerDatosUsuarioAnhResponse" message="tns:IServicioHydroConsultas_ObtenerDatosUsuarioAnh_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneIdDocumentoEntidad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtieneIdDocumentoEntidad" message="tns:IServicioHydroConsultas_ObtieneIdDocumentoEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtieneIdDocumentoEntidadResponse" message="tns:IServicioHydroConsultas_ObtieneIdDocumentoEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtieneUsuario" message="tns:IServicioHydroConsultas_ObtieneUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtieneUsuarioResponse" message="tns:IServicioHydroConsultas_ObtieneUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteActividad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteActividad" message="tns:IServicioHydroConsultas_ReporteActividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteActividadResponse" message="tns:IServicioHydroConsultas_ReporteActividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerEntidadesActividad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerEntidadesActividad" message="tns:IServicioHydroConsultas_ObtenerEntidadesActividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtenerEntidadesActividadResponse" message="tns:IServicioHydroConsultas_ObtenerEntidadesActividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteEmisionPeriodo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteEmisionPeriodo" message="tns:IServicioHydroConsultas_ReporteEmisionPeriodo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteEmisionPeriodoResponse" message="tns:IServicioHydroConsultas_ReporteEmisionPeriodo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReportePorcentajeActDepto">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReportePorcentajeActDepto" message="tns:IServicioHydroConsultas_ReportePorcentajeActDepto_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReportePorcentajeActDeptoResponse" message="tns:IServicioHydroConsultas_ReportePorcentajeActDepto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteMatrizProyectos">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteMatrizProyectos" message="tns:IServicioHydroConsultas_ReporteMatrizProyectos_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ReporteMatrizProyectosResponse" message="tns:IServicioHydroConsultas_ReporteMatrizProyectos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneActividadGis">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtieneActividadGis" message="tns:IServicioHydroConsultas_ObtieneActividadGis_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroConsultas/ObtieneActividadGisResponse" message="tns:IServicioHydroConsultas_ObtieneActividadGis_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="ServicioHydroConsultas">
+    <wsdl:port name="HydroCoreConsultasEndPoint" binding="i0:HydroCoreConsultasEndPoint">
+      <soap:address location="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroConsultas.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

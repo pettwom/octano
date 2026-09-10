@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://servicios.anh.gob.bo:8443" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://servicios.anh.gob.bo/WSCore/ServicioHydroListados.svc" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HydroListadosEndPoint" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://servicios.anh.gob.bo/WSCore/ServicioHydroListados.svc" location="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://servicios.anh.gob.bo:8443/Imports">
+      <xsd:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?xsd=xsd0" namespace="http://servicios.anh.gob.bo:8443" />
+      <xsd:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidades_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidades" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesPorNombre_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesPorNombre" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesPorNombre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesPorNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetalleEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetalleEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DocumentosEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:DocumentosEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DocumentosEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DocumentosEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRepresentantes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRepresentantes" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRepresentantes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRepresentantesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRepPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRepPersona" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRepPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRepPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetalleRepresentante_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleRepresentante" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetalleRepresentante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleRepresentanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoActividades_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoActividades" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoActividades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoActividadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DocumentosRepresentante_InputMessage">
+    <wsdl:part name="parameters" element="tns:DocumentosRepresentante" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DocumentosRepresentante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DocumentosRepresentanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetallePersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetallePersona" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetallePersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetallePersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ObtenerDocumentoDigital_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDocumentoDigital" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ObtenerDocumentoDigital_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerDocumentoDigitalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesMaq_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesMaq" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesMaq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesMaqResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRepPersonaMaq_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRepPersonaMaq" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRepPersonaMaq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRepPersonaMaqResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DocumentosEntidadMaq_InputMessage">
+    <wsdl:part name="parameters" element="tns:DocumentosEntidadMaq" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DocumentosEntidadMaq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DocumentosEntidadMaqResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetalleRepresentanteMaq_InputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleRepresentanteMaq" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_DetalleRepresentanteMaq_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DetalleRepresentanteMaqResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRegistroMaquinaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRegistroMaquinaria" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRegistroMaquinaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRegistroMaquinariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoOrganigramaDetalle_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoOrganigramaDetalle" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoOrganigramaDetalle_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoOrganigramaDetalleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ModificarInformacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarInformacion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ModificarInformacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarInformacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListarUbicacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListarUbicacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ObtenerUbicacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUbicacion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ObtenerUbicacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUbicacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRegistroBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRegistroBaja" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoRegistroBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoRegistroBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoTransferencias_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoTransferencias" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoTransferencias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoTransferenciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoGeneral_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoGeneral" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoGeneral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoGeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ReporteRegistroBaja_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteRegistroBaja" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ReporteRegistroBaja_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteRegistroBajaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ReporteTransferencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteTransferencia" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ReporteTransferencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReporteTransferenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesGis_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesGis" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesGis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesGisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesBpm_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesBpm" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoEntidadesBpm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoEntidadesBpmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoProducto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoProducto" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroListados_ListadoProducto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoProductoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioHydroListados">
+    <wsdl:operation name="ListadoEntidades">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidades" message="tns:IServicioHydroListados_ListadoEntidades_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesResponse" message="tns:IServicioHydroListados_ListadoEntidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoEntidadesPorNombre">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesPorNombre" message="tns:IServicioHydroListados_ListadoEntidadesPorNombre_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesPorNombreResponse" message="tns:IServicioHydroListados_ListadoEntidadesPorNombre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleEntidad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetalleEntidad" message="tns:IServicioHydroListados_DetalleEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetalleEntidadResponse" message="tns:IServicioHydroListados_DetalleEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DocumentosEntidad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DocumentosEntidad" message="tns:IServicioHydroListados_DocumentosEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DocumentosEntidadResponse" message="tns:IServicioHydroListados_DocumentosEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoRepresentantes">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRepresentantes" message="tns:IServicioHydroListados_ListadoRepresentantes_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRepresentantesResponse" message="tns:IServicioHydroListados_ListadoRepresentantes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoRepPersona">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRepPersona" message="tns:IServicioHydroListados_ListadoRepPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRepPersonaResponse" message="tns:IServicioHydroListados_ListadoRepPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleRepresentante">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetalleRepresentante" message="tns:IServicioHydroListados_DetalleRepresentante_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetalleRepresentanteResponse" message="tns:IServicioHydroListados_DetalleRepresentante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoActividades">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoActividades" message="tns:IServicioHydroListados_ListadoActividades_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoActividadesResponse" message="tns:IServicioHydroListados_ListadoActividades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DocumentosRepresentante">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DocumentosRepresentante" message="tns:IServicioHydroListados_DocumentosRepresentante_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DocumentosRepresentanteResponse" message="tns:IServicioHydroListados_DocumentosRepresentante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetallePersona">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetallePersona" message="tns:IServicioHydroListados_DetallePersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetallePersonaResponse" message="tns:IServicioHydroListados_DetallePersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerDocumentoDigital">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ObtenerDocumentoDigital" message="tns:IServicioHydroListados_ObtenerDocumentoDigital_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ObtenerDocumentoDigitalResponse" message="tns:IServicioHydroListados_ObtenerDocumentoDigital_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoEntidadesMaq">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesMaq" message="tns:IServicioHydroListados_ListadoEntidadesMaq_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesMaqResponse" message="tns:IServicioHydroListados_ListadoEntidadesMaq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoRepPersonaMaq">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRepPersonaMaq" message="tns:IServicioHydroListados_ListadoRepPersonaMaq_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRepPersonaMaqResponse" message="tns:IServicioHydroListados_ListadoRepPersonaMaq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DocumentosEntidadMaq">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DocumentosEntidadMaq" message="tns:IServicioHydroListados_DocumentosEntidadMaq_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DocumentosEntidadMaqResponse" message="tns:IServicioHydroListados_DocumentosEntidadMaq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DetalleRepresentanteMaq">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetalleRepresentanteMaq" message="tns:IServicioHydroListados_DetalleRepresentanteMaq_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/DetalleRepresentanteMaqResponse" message="tns:IServicioHydroListados_DetalleRepresentanteMaq_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoRegistroMaquinaria">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRegistroMaquinaria" message="tns:IServicioHydroListados_ListadoRegistroMaquinaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRegistroMaquinariaResponse" message="tns:IServicioHydroListados_ListadoRegistroMaquinaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoOrganigramaDetalle">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoOrganigramaDetalle" message="tns:IServicioHydroListados_ListadoOrganigramaDetalle_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoOrganigramaDetalleResponse" message="tns:IServicioHydroListados_ListadoOrganigramaDetalle_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarInformacion">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ModificarInformacion" message="tns:IServicioHydroListados_ModificarInformacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ModificarInformacionResponse" message="tns:IServicioHydroListados_ModificarInformacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarUbicacion">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListarUbicacion" message="tns:IServicioHydroListados_ListarUbicacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListarUbicacionResponse" message="tns:IServicioHydroListados_ListarUbicacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUbicacion">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ObtenerUbicacion" message="tns:IServicioHydroListados_ObtenerUbicacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ObtenerUbicacionResponse" message="tns:IServicioHydroListados_ObtenerUbicacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoRegistroBaja">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRegistroBaja" message="tns:IServicioHydroListados_ListadoRegistroBaja_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoRegistroBajaResponse" message="tns:IServicioHydroListados_ListadoRegistroBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoTransferencias">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoTransferencias" message="tns:IServicioHydroListados_ListadoTransferencias_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoTransferenciasResponse" message="tns:IServicioHydroListados_ListadoTransferencias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoGeneral">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoGeneral" message="tns:IServicioHydroListados_ListadoGeneral_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoGeneralResponse" message="tns:IServicioHydroListados_ListadoGeneral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteRegistroBaja">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ReporteRegistroBaja" message="tns:IServicioHydroListados_ReporteRegistroBaja_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ReporteRegistroBajaResponse" message="tns:IServicioHydroListados_ReporteRegistroBaja_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReporteTransferencia">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ReporteTransferencia" message="tns:IServicioHydroListados_ReporteTransferencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ReporteTransferenciaResponse" message="tns:IServicioHydroListados_ReporteTransferencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoEntidadesGis">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesGis" message="tns:IServicioHydroListados_ListadoEntidadesGis_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesGisResponse" message="tns:IServicioHydroListados_ListadoEntidadesGis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoEntidadesBpm">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesBpm" message="tns:IServicioHydroListados_ListadoEntidadesBpm_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoEntidadesBpmResponse" message="tns:IServicioHydroListados_ListadoEntidadesBpm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoProducto">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoProducto" message="tns:IServicioHydroListados_ListadoProducto_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroListados/ListadoProductoResponse" message="tns:IServicioHydroListados_ListadoProducto_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="HydroListadosEndPoint">
+    <wsdl:port name="HydroCoreListadosEndPoint" binding="i0:HydroCoreListadosEndPoint">
+      <soap:address location="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroListados.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

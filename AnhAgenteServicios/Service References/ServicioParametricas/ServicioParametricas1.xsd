@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicios.anh.gob.bo:8443" elementFormDefault="qualified" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+  <xs:element name="listadoAmbitosOperacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoAmbitosOperacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoAmbitosOperacionResult" nillable="true" type="q1:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoAseguradoras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoAseguradorasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoAseguradorasResult" nillable="true" type="q2:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoBancos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoBancosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoBancosResult" nillable="true" type="q3:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCargos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCargosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoCargosResult" nillable="true" type="q4:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasActividad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasActividadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoCategoriasActividadResult" nillable="true" type="q5:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasLicCond">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasLicCondResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoCategoriasLicCondResult" nillable="true" type="q6:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasTramite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasTramiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoCategoriasTramiteResult" nillable="true" type="q7:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCategoriasVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoCategoriasVehiculoResult" nillable="true" type="q8:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCatInstaladoras">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoCatInstaladorasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoCatInstaladorasResult" nillable="true" type="q9:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoClasesVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoClasesVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoClasesVehiculoResult" nillable="true" type="q10:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoColegiosContadores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoColegiosContadoresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoColegiosContadoresResult" nillable="true" type="q11:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoColoresVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoColoresVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoColoresVehiculoResult" nillable="true" type="q12:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoDepartamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoDepartamentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoDepartamentosResult" nillable="true" type="q13:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoDirecciones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoDireccionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoDireccionesResult" nillable="true" type="q14:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosCiviles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosCivilesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoEstadosCivilesResult" nillable="true" type="q15:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosInforme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosInformeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoEstadosInformeResult" nillable="true" type="q16:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosKardex">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosKardexResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoEstadosKardexResult" nillable="true" type="q17:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosProceso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoEstadosProcesoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoEstadosProcesoResult" nillable="true" type="q18:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoGeneros">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoGenerosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoGenerosResult" nillable="true" type="q19:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoGestiones">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoGestionesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoGestionesResult" nillable="true" type="q20:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoHidrocarburos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoHidrocarburosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoHidrocarburosResult" nillable="true" type="q21:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoInspectores">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoInspectoresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoInspectoresResult" nillable="true" type="q22:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoLocalidades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idProvincia" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoLocalidadesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoLocalidadesResult" nillable="true" type="q23:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasCilindro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasCilindroResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoMarcasCilindroResult" nillable="true" type="q24:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasKit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasKitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoMarcasKitResult" nillable="true" type="q25:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoMarcasVehiculoResult" nillable="true" type="q26:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMunicipios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdProvincia" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMunicipiosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoMunicipiosResult" nillable="true" type="q27:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPaises">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPaisesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoPaisesResult" nillable="true" type="q28:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPlantas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPlantasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoPlantasResult" nillable="true" type="q29:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPreciosDidrocarburo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPreciosDidrocarburoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoPreciosDidrocarburoResult" nillable="true" type="q30:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPrioridades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoPrioridadesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoPrioridadesResult" nillable="true" type="q31:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoProvincias">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idDepartamento" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoProvinciasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoProvinciasResult" nillable="true" type="q32:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoRegionesGeograficas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoRegionesGeograficasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoRegionesGeograficasResult" nillable="true" type="q33:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoRequisitosGPS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoRequisitosGPSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoRequisitosGPSResult" nillable="true" type="q34:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoServiciosVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoServiciosVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoServiciosVehiculoResult" nillable="true" type="q35:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposActividad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idCategoriaActividad" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposActividadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposActividadResult" nillable="true" type="q36:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposCertificado">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposCertificadoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposCertificadoResult" nillable="true" type="q37:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposCobertura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposCoberturaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposCoberturaResult" nillable="true" type="q38:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposCopia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposCopiaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposCopiaResult" nillable="true" type="q39:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdPadre" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposDocumentoResult" nillable="true" type="q40:ArrayOfO_PARAMETRICA_DOCUMENTOS_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposDocInscr">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposDocInscrResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposDocInscrResult" nillable="true" type="q41:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposDocVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposDocVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposDocVehiculoResult" nillable="true" type="q42:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposEntidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposEntidadResult" nillable="true" type="q43:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposEnvio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposEnvioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposEnvioResult" nillable="true" type="q44:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposFuncion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposFuncionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposFuncionResult" nillable="true" type="q45:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposIdentificacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposIdentificacionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposIdentificacionResult" nillable="true" type="q46:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposImagen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposImagenResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposImagenResult" nillable="true" type="q47:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposInforme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposInformeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposInformeResult" nillable="true" type="q48:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposLicencia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposLicenciaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposLicenciaResult" nillable="true" type="q49:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposParentesco">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposParentescoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposParentescoResult" nillable="true" type="q50:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposPoliza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposPolizaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposPolizaResult" nillable="true" type="q51:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposPropietario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposPropietarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposPropietarioResult" nillable="true" type="q52:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposRepresentante">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposRepresentanteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposRepresentanteResult" nillable="true" type="q53:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposSangre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposSangreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposSangreResult" nillable="true" type="q54:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposSociedad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposSociedadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposSociedadResult" nillable="true" type="q55:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposSucursal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposSucursalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposSucursalResult" nillable="true" type="q56:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposTanque">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposTanqueResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposTanqueResult" nillable="true" type="q57:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposTramite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposTramiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposTramiteResult" nillable="true" type="q58:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposTransporte">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposTransporteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposTransporteResult" nillable="true" type="q59:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoTiposVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoTiposVehiculoResult" nillable="true" type="q60:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoUnidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoUnidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoUnidadResult" nillable="true" type="q61:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoUnidades">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoUnidadesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoUnidadesResult" nillable="true" type="q62:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadClasificacionCargo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadClasificacionCargoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadClasificacionCargoResult" nillable="true" type="q63:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadCondicionesLaborales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadCondicionesLaboralesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadCondicionesLaboralesResult" nillable="true" type="q64:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoOrganigrama">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoOrganigramaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoOrganigramaResult" nillable="true" type="q65:ArrayOfO_ORGANIGRAMAS_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoClasesMaquinaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoClasesMaquinariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoClasesMaquinariaResult" nillable="true" type="q66:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasMaquinaria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listadoMarcasMaquinariaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="listadoMarcasMaquinariaResult" nillable="true" type="q67:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListadoActividadesEconomicas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListadoActividadesEconomicasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ListadoActividadesEconomicasResult" nillable="true" type="q68:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListadoCategoriaFotoPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListadoCategoriaFotoPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ListadoCategoriaFotoPersonaResult" nillable="true" type="q69:ArrayOfO_PARAMETRICA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneDescripcionGeografica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdIdentificador" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decTipoConsulta" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneDescripcionGeograficaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtieneDescripcionGeograficaResult" nillable="true" type="q70:ArrayOfO_UBICACIONES_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaUbicacionGeografica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decNivel" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdPadre" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListaUbicacionGeograficaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ListaUbicacionGeograficaResult" nillable="true" type="q71:ArrayOfO_UBICACION_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneUbicacionGeografica">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdentificador" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneUbicacionGeograficaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtieneUbicacionGeograficaResult" nillable="true" type="q72:ArrayOfO_UBICACION_GEO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneFechaLimite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decFechaInicial" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decFechaFinal" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decDias" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdDepartamento" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneFechaLimiteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtieneFechaLimiteResult" nillable="true" type="q73:ArrayOfO_DATOS_FECHAS_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

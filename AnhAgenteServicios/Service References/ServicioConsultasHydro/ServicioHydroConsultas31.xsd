@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://servicios.anh.gob.bo:8443" elementFormDefault="qualified" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://vsrvuid004.anh.gob.bo:7443/WSCore/ServicioHydroConsultas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+  <xs:element name="ObtenerPersonaPorCI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ci" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerPersonaPorCIResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerPersonaPorCIResult" nillable="true" type="q1:ArrayOfO_PERSONA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEntidadPorDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cite" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="idTipoDocumento" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEntidadPorDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerEntidadPorDocumentoResult" nillable="true" type="q2:ArrayOfO_ENTIDAD_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarCorrelativo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdSolicitante" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdTipoEnvio" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decIdTipoDocumento" type="xs:decimal" />
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GenerarCorrelativoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="GenerarCorrelativoResult" nillable="true" type="q3:O_CORRELATIVO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decIdTipoConsulta" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strDato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="BuscarVehiculoResult" nillable="true" type="q4:O_DETALLE_VEHICULO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decFiltro" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strDato" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BuscarFuncionarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="BuscarFuncionarioResult" nillable="true" type="q5:ArrayOfO_PERSONA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteVehiculo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strDatoBuscar" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decTipoConsulta" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decTipoReporte" type="xs:decimal" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteVehiculoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ReporteVehiculoResult" nillable="true" type="q6:ArrayOfE_VEHICULO_DATO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEntidadPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="credencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEntidadPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerEntidadPorNombreResult" nillable="true" type="q7:ArrayOfO_ENTIDAD_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerBusquedaPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strValorBusqueda" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="decTipoConsulta" type="xs:decimal" />
+        <xs:element minOccurs="0" name="decNroRegistrosMostrar" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strDominio" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCredencial" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerBusquedaPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerBusquedaPersonaResult" nillable="true" type="q8:ArrayOfO_PERSONA_BUSQUEDA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFotoPersona">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdPersona" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerFotoPersonaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerFotoPersonaResult" nillable="true" type="q9:ArrayOfO_FOTO_PERSONA_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDatosUsuarioAnh">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdUsuario" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerDatosUsuarioAnhResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerDatosUsuarioAnhResult" nillable="true" type="q10:ArrayOfO_DATO_USUARIO_ANH_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneIdDocumentoEntidad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdEntidad" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneIdDocumentoEntidadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtieneIdDocumentoEntidadResult" nillable="true" type="q11:ArrayOfO_OBT_DOCUMENTO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strNombre" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtieneUsuarioResult" nillable="true" type="q12:ArrayOfO_OBT_USUARIO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteActividad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="decIdDepartamento" type="xs:decimal" />
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteActividadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ReporteActividadResult" nillable="true" type="q13:ArrayOfO_REPORTE_ACTIVIDAD_NAC_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEntidadesActividad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtenerEntidadesActividadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtenerEntidadesActividadResult" nillable="true" type="q14:ArrayOfO_OBTIENE_ENTIDADES_ACT_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteEmisionPeriodo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteEmisionPeriodoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ReporteEmisionPeriodoResult" nillable="true" type="q15:ArrayOfO_EMISION_PERIODO_CERT_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportePorcentajeActDepto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReportePorcentajeActDeptoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ReportePorcentajeActDeptoResult" nillable="true" type="q16:ArrayOfO_PORCENTAJE_ACT_DEPTO_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteMatrizProyectos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ReporteMatrizProyectosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ReporteMatrizProyectosResult" nillable="true" type="q17:ArrayOfO_OBTIENE_MATRIZ_PROYECTOS_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneActividadGis">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strCredencialHydro" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ObtieneActividadGisResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" minOccurs="0" name="ObtieneActividadGisResult" nillable="true" type="q18:ArrayOfO_OBTIENE_ACTIVIDAD_GIS_CTY" />
+        <xs:element minOccurs="0" name="mensajeError" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

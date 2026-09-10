@@ -1,0 +1,251 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebActivator.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:WebActivator.Fakes.ShimActivationManager">
+            <summary>Tipo de correcciones de compatibilidad (shim) de WebActivator.ActivationManager</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimActivationManager.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimActivationManager.#ctor(WebActivator.ActivationManager)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimActivationManager.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimActivationManager.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimActivationManager.RunActivationMethodsOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Action)">
+            <summary>Establecer el shim de ActivationManager.RunActivationMethods()</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimActivationManager._RunActivationMethodsb__0Of1M0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{``0,System.Int32})">
+            <summary>Establecer el shim de ActivationManager.&lt;RunActivationMethods&gt;b__0(!!0 att)</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.AppCodeAssembliesGet">
+            <summary>Establecer el shim de ActivationManager.get_AppCodeAssemblies()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.AssembliesGet">
+            <summary>Establecer el shim de ActivationManager.get_Assemblies()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.Constructor">
+            <summary>Establecer el shim de ActivationManager.ActivationManager()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.GetAssemblyFiles">
+            <summary>Establecer el shim de ActivationManager.GetAssemblyFiles()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.Reset">
+            <summary>Establecer el shim de ActivationManager.Reset()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.Run">
+            <summary>Establecer el shim de ActivationManager.Run()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.RunPostStartMethods">
+            <summary>Establecer el shim de ActivationManager.RunPostStartMethods()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.RunPreStartMethods">
+            <summary>Establecer el shim de ActivationManager.RunPreStartMethods()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimActivationManager.RunShutdownMethods">
+            <summary>Establecer el shim de ActivationManager.RunShutdownMethods()</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimActivationManager.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute">
+            <summary>Tipo de correcciones de compatibilidad (shim) de WebActivator.ApplicationShutdownMethodAttribute</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.#ctor(WebActivator.ApplicationShutdownMethodAttribute)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.ConstructorTypeString">
+            <summary>Establecer el shim de ApplicationShutdownMethodAttribute.ApplicationShutdownMethodAttribute(Type type, String methodName)</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimApplicationShutdownMethodAttribute.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimBaseActivationMethodAttribute">
+            <summary>Tipo de correcciones de compatibilidad (shim) de WebActivator.BaseActivationMethodAttribute</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimBaseActivationMethodAttribute.#ctor(WebActivator.BaseActivationMethodAttribute)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimBaseActivationMethodAttribute.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimBaseActivationMethodAttribute.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.ConstructorTypeString">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.BaseActivationMethodAttribute(Type type, String methodName)</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.InvokeMethod">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.InvokeMethod()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.MethodNameGet">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.get_MethodName()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.OrderGet">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.get_Order()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.OrderSetInt32">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.set_Order(Int32 value)</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.TypeGet">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.get_Type()</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimBaseActivationMethodAttribute.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.AllInstances.InvokeMethod">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.InvokeMethod()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.AllInstances.MethodNameGet">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.get_MethodName()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.AllInstances.OrderGet">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.get_Order()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.AllInstances.OrderSetInt32">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.set_Order(Int32 value)</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimBaseActivationMethodAttribute.AllInstances.TypeGet">
+            <summary>Establecer el shim de BaseActivationMethodAttribute.get_Type()</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute">
+            <summary>Tipo de correcciones de compatibilidad (shim) de WebActivator.PostApplicationStartMethodAttribute</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.#ctor(WebActivator.PostApplicationStartMethodAttribute)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.ConstructorTypeString">
+            <summary>Establecer el shim de PostApplicationStartMethodAttribute.PostApplicationStartMethodAttribute(Type type, String methodName)</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimPostApplicationStartMethodAttribute.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute">
+            <summary>Tipo de correcciones de compatibilidad (shim) de WebActivator.PreApplicationStartMethodAttribute</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.#ctor">
+            <summary>Inicializa una nueva instancia de correcciones de compatibilidad (shim)</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.#ctor(WebActivator.PreApplicationStartMethodAttribute)">
+            <summary>Inicializa nuevas correcciones de compatibilidad (shim) para la instancia especificada</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.BehaveAsCurrent">
+            <summary>Asigna el comportamiento &apos;Current&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.BehaveAsNotImplemented">
+            <summary>Asigna el comportamiento &apos;NotImplemented&apos; a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.Behavior">
+            <summary>Asigna el comportamiento a todos los métodos del tipo corregido para compatibilidad</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.ConstructorTypeString">
+            <summary>Establecer el shim de PreApplicationStartMethodAttribute.PreApplicationStartMethodAttribute(Type type, String methodName)</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.ShimPreApplicationStartMethodAttribute.AllInstances">
+            <summary>Definir correcciones de compatibilidad (shim) para todos los miembros de instancia</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.StubActivationManager">
+            <summary>Tipo stub de WebActivator.ActivationManager</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubActivationManager.#ctor">
+            <summary>Inicializa una nueva instancia</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubActivationManager.InitializeStub">
+            <summary>Inicializa una nueva instancia de type StubActivationManager</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubActivationManager.CallBase">
+            <summary>Obtiene o establece un valor que indica si debe llamarse al método base en lugar del comportamiento de reserva</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubActivationManager.InstanceBehavior">
+            <summary>Obtiene o establece el comportamiento de instancia.</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubActivationManager.InstanceObserver">
+            <summary>Obtiene o establece el observador de la instancia.</summary>
+        </member>
+        <member name="T:WebActivator.Fakes.StubBaseActivationMethodAttribute">
+            <summary>Tipo stub de WebActivator.BaseActivationMethodAttribute</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubBaseActivationMethodAttribute.#ctor(System.Type,System.String)">
+            <summary>Inicializa una nueva instancia</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubBaseActivationMethodAttribute.Equals(System.Object)">
+            <summary>Establecer el stub de Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="F:WebActivator.Fakes.StubBaseActivationMethodAttribute.EqualsObject">
+            <summary>Establecer el stub de Attribute.Equals(Object obj)</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubBaseActivationMethodAttribute.GetHashCode">
+            <summary>Establecer el stub de Attribute.GetHashCode()</summary>
+        </member>
+        <member name="F:WebActivator.Fakes.StubBaseActivationMethodAttribute.GetHashCode01">
+            <summary>Establecer el stub de Attribute.GetHashCode()</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubBaseActivationMethodAttribute.InitializeStub">
+            <summary>Inicializa una nueva instancia de type StubBaseActivationMethodAttribute</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubBaseActivationMethodAttribute.IsDefaultAttribute">
+            <summary>Establecer el stub de Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="F:WebActivator.Fakes.StubBaseActivationMethodAttribute.IsDefaultAttribute01">
+            <summary>Establecer el stub de Attribute.IsDefaultAttribute()</summary>
+        </member>
+        <member name="M:WebActivator.Fakes.StubBaseActivationMethodAttribute.Match(System.Object)">
+            <summary>Establecer el stub de Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:WebActivator.Fakes.StubBaseActivationMethodAttribute.MatchObject">
+            <summary>Establecer el stub de Attribute.Match(Object obj)</summary>
+        </member>
+        <member name="F:WebActivator.Fakes.StubBaseActivationMethodAttribute.TypeIdGet">
+            <summary>Establecer el stub de Attribute.get_TypeId()</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubBaseActivationMethodAttribute.CallBase">
+            <summary>Obtiene o establece un valor que indica si debe llamarse al método base en lugar del comportamiento de reserva</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubBaseActivationMethodAttribute.InstanceBehavior">
+            <summary>Obtiene o establece el comportamiento de instancia.</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubBaseActivationMethodAttribute.InstanceObserver">
+            <summary>Obtiene o establece el observador de la instancia.</summary>
+        </member>
+        <member name="P:WebActivator.Fakes.StubBaseActivationMethodAttribute.TypeId">
+            <summary>Establecer el stub de Attribute.get_TypeId()</summary>
+        </member>
+    </members>
+</doc>

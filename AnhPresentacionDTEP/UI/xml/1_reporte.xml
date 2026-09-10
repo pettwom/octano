@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="es-BO">
+  <Title Text="Tablero de control" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="172.17.20.141:1751/ANH_ANH_Connection" ProviderKey="Oracle">
+        <Parameters>
+          <Parameter Name="server" Value="172.17.20.141:1751/ANH" />
+          <Parameter Name="database" Value="" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="APP_CANTCAL" />
+          <Parameter Name="password" Value="appcantcal.234m" />
+        </Parameters>
+      </Connection>
+      <Query Type="StoredProcQuery" Name="PUSR_REPORTES_P_REPORTE_CALIDAD_DASHBOARD">
+        <Parameter Name="I_CREDENCIAL" Type="System.String">83809AD945F1F72D0EA9FDA0E599E0B3</Parameter>
+        <Parameter Name="I_ID_ENTIDAD" Type="System.String">0</Parameter>
+        <Parameter Name="I_ID_TIPO_ACTIVIDAD" Type="System.String">0</Parameter>
+        <Parameter Name="I_CITE" Type="System.String" IsNull="true" />
+        <Parameter Name="I_FECHA_INICIO" Type="System.String">20170901000000</Parameter>
+        <Parameter Name="I_FECHA_FIN" Type="System.String">20171009000000</Parameter>
+        <Parameter Name="I_ID_USUARIO" Type="System.String">1687</Parameter>
+        <ProcName>PUSR_REPORTES.P_REPORTE_CALIDAD_DASHBOARD</ProcName>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="PUSR_REPORTES_P_REPORTE_CALIDAD_DASHBOARD">
+            <Field Name="ID_CERTIFICADO_CALIDAD" Type="Int64" />
+            <Field Name="ID_REGISTRO_CALIDAD" Type="Int64" />
+            <Field Name="ENTIDAD" Type="String" />
+            <Field Name="ACTIVIDAD" Type="String" />
+            <Field Name="CORRELATIVO" Type="String" />
+            <Field Name="TABLA_ESPECIFICA" Type="String" />
+            <Field Name="FECHA_OPERACION" Type="Decimal" />
+            <Field Name="VOLUMEN" Type="Decimal" />
+            <Field Name="VALOR_UNIDAD_MEDIDA" Type="String" />
+            <Field Name="VALOR_PUNTO_CUSTODIO" Type="String" />
+            <Field Name="RESOLUCION" Type="String" />
+            <Field Name="FECHA_IMMU" Type="Decimal" />
+            <Field Name="VOLUMEN_MUESTRA" Type="Decimal" />
+            <Field Name="PRECIO" Type="Decimal" />
+            <Field Name="CODIGO_MONEDA" Type="String" />
+            <Field Name="VALOR_MARCA_PRODUCTO" Type="String" />
+            <Field Name="NOMBRE_PRODUCTO" Type="String" />
+            <Field Name="ORDEN" Type="Decimal" />
+            <Field Name="PRUEBA_CALIDAD" Type="String" />
+            <Field Name="VALOR_METODO_ASTM" Type="String" />
+            <Field Name="VALOR_UM_PRUEBA" Type="String" />
+            <Field Name="VALOR_REPORTADO" Type="String" />
+            <Field Name="RANGOS_MULTIPLES" Type="String" />
+            <Field Name="ALERTA" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <TreeView ComponentName="treeViewDashboardItem1" Name="ARBOL" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_DASHBOARD">
+      <DataItems>
+        <Dimension DataMember="ACTIVIDAD" UniqueName="DataItem0" />
+        <Dimension DataMember="ENTIDAD" SortOrder="Descending" UniqueName="DataItem1" />
+        <Dimension DataMember="TABLA_ESPECIFICA" SortOrder="Descending" UniqueName="DataItem2" />
+        <Dimension DataMember="PRUEBA_CALIDAD" SortOrder="Descending" UniqueName="DataItem3" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+        <Dimension UniqueName="DataItem1" />
+        <Dimension UniqueName="DataItem2" />
+        <Dimension UniqueName="DataItem3" />
+      </FilterDimensions>
+    </TreeView>
+    <Chart ComponentName="chartDashboardItem1" Name="BARRAS" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_DASHBOARD">
+      <DataItems>
+        <Dimension DataMember="PRUEBA_CALIDAD" Name="PRUEBA CALIDAD" SortOrder="Descending" UniqueName="DataItem2" />
+        <Dimension DataMember="FECHA_OPERACION" Name="FECHA DE OPERACION AAAAMMDD" SortOrder="Descending" IsDiscreteScale="true" UniqueName="DataItem0">
+          <NumericFormat FormatType="Number" Precision="0" Unit="Ones" />
+        </Dimension>
+        <Measure DataMember="VALOR_REPORTADO" SummaryType="Count" UniqueName="DataItem1" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem2" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Panel 1">
+          <Series>
+            <Simple SeriesType="Line">
+              <Value UniqueName="DataItem1" />
+              <PointLabelOptions OverlappingMode="Reposition" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend OutsidePosition="TopCenterHorizontal" />
+    </Chart>
+    <Card ComponentName="cardDashboardItem1" Name="CONTEO" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_DASHBOARD">
+      <DataItems>
+        <Measure DataMember="ENTIDAD" Name="ENTIDAD" SummaryType="CountDistinct" UniqueName="DataItem0" />
+        <Measure DataMember="ACTIVIDAD" Name="ACTIVIDAD" SummaryType="CountDistinct" UniqueName="DataItem1" />
+        <Measure DataMember="TABLA_ESPECIFICA" Name="TABLA ESPECIFICA" SummaryType="CountDistinct" UniqueName="DataItem2" />
+      </DataItems>
+      <Card>
+        <ActualValue UniqueName="DataItem0" />
+        <DeltaOptions ResultIndicationMode="WarningIfLess" />
+      </Card>
+      <Card>
+        <ActualValue UniqueName="DataItem1" />
+      </Card>
+      <Card>
+        <ActualValue UniqueName="DataItem2" />
+      </Card>
+    </Card>
+    <Pivot ComponentName="pivotDashboardItem1" Name="GRILLA" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_DASHBOARD">
+      <DataItems>
+        <Measure DataMember="VALOR_REPORTADO" Name="VALOR REPORTADO" SummaryType="Count" UniqueName="DataItem6" />
+        <Dimension DataMember="TABLA_ESPECIFICA" Name="TABLA ESPECIFICA" UniqueName="DataItem5" />
+        <Dimension DataMember="PRUEBA_CALIDAD" Name="PRUEBA CALIDAD" SortOrder="Descending" UniqueName="DataItem0" />
+      </DataItems>
+      <Columns>
+        <Column UniqueName="DataItem5" />
+      </Columns>
+      <Rows>
+        <Row UniqueName="DataItem0" />
+      </Rows>
+      <Values>
+        <Value UniqueName="DataItem6" />
+      </Values>
+    </Pivot>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="65.194109772423019">
+        <LayoutItem DashboardItem="treeViewDashboardItem1" Weight="29.967689822294023" />
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="70.03231017770598" />
+      </LayoutGroup>
+      <LayoutGroup Weight="34.805890227576974">
+        <LayoutItem DashboardItem="cardDashboardItem1" Weight="18.012924071082391" />
+        <LayoutItem DashboardItem="pivotDashboardItem1" Weight="81.9870759289176" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

@@ -1,0 +1,553 @@
+.dxpgControl_DevGlp, .dxpgCustForm_DevGlp
+{
+	color: #201f35;
+	font: 10px Century Gothic;
+	border: 1px solid #9da0aa;
+	background-color: white;
+}
+.dxpgContainerCell_DevGlp
+{
+	vertical-align: top;
+}
+.dxpgMainTable_DevGlp
+{
+	border-width: 0;
+	border-collapse: separate;
+	width: 100%;
+	text-align: left;
+}
+div.dxpgMainTable_DevGlp
+{
+	-ms-touch-action: pinch-zoom;
+	touch-action: pinch-zoom;
+}
+.dxpgMainTable_DevGlp caption
+{
+	font-weight: normal;
+	padding: 3px 3px 5px;
+	text-align: center;
+	background: #f2f3f4 url('TitleBack.png') repeat-x left top;
+	color: #201f35;
+	border-bottom: 1px solid #9da0aa;
+}
+.dxpgHeader_DevGlp
+{
+	border-width: 0;
+	color: #FFFFFF;
+	background: #2D7E3E;
+	cursor: pointer;
+	white-space: nowrap;
+	text-align: left;
+}
+.dxpgHeaderTable_DevGlp
+{
+	border: 1px solid #9da0aa;
+	width: 100%;
+}
+.dxpgMSDraggable .dxpgHeaderTable_DevGlp,
+.dxpgCustFieldsDiv_DevGlp .dxpgHeaderTable_DevGlp
+{
+	-ms-touch-action: pinch-zoom;
+	touch-action: pinch-zoom;
+}
+.dxpgHeaderGroupButton_DevGlp
+{
+	padding-left: 4px;
+	vertical-align: middle;
+}
+.dxpgHeaderText_DevGlp
+{
+    padding: 3px 6px;
+}
+.dxpgHeaderSort_DevGlp
+{
+	padding: 0 4px 0 0;
+	vertical-align: middle;
+}
+.dxpgHeaderFilter_DevGlp
+{
+	padding: 2px 2px 2px 0;
+	vertical-align: middle;
+}
+.dxpgHeaderHover_DevGlp
+{
+	background: #f8f8f9 url('HeaderHoverBack.png') repeat-x left top;
+	color: #000000;
+}
+.dxpgArea_DevGlp, .dxpgArea_DevGlp table
+{
+	color: #201f35;
+}
+.dxpgArea_DevGlp
+{
+	border-width: 1px;
+	border-color: #bfc0c9;
+	border-style: none;
+	background-color: #ebecef;
+}
+.dxpgColumnArea_DevGlp
+{
+	border-bottom-style: solid;
+}
+.dxpgRowArea_DevGlp
+{
+}
+.dxpgDataArea_DevGlp
+{
+}
+.dxpgFilterArea_DevGlp
+{
+	color: #201f35;
+	background: #e1e2e7;
+	border-bottom-style: solid;
+}
+.dxpgEmptyArea_DevGlp
+{
+	cursor: default;
+	padding: 6px;
+}
+.dxpgColumnFieldValue_DevGlp
+{
+	color: #FFFFFF;
+	background: #389E4D;
+	border: 1px none #bfc0c9;
+	border-bottom: 1px solid #bfc0c9;
+	border-left: 1px solid #bfc0c9;
+	padding: 4px 6px;
+	font-weight: normal;
+	text-align: left;
+}
+.dxpgColumnTotalFieldValue_DevGlp
+{
+	background: #339146;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-top-style: none;
+}
+.dxpgColumnGrandTotalFieldValue_DevGlp
+{
+	background: #2D7E3E;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: none;
+	border-top-style: none;
+	color: #FFFFFF;
+}
+.dxpgRowFieldValue_DevGlp
+{
+	color: #000000;
+	background: #F0F0F0;
+	border: 1px solid #bfc0c9;
+	border-bottom: 1px none #bfc0c9;
+	border-left: 1px none #bfc0c9;
+	padding: 3px 6px;
+	font-weight: normal;
+	text-align: left;
+}
+.dxpgRowTotalFieldValue_DevGlp
+{
+	background: #DFDFDF;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-top-style: solid;
+	color: #000000;
+	font-weight: bold;
+}
+.dxpgRowTreeFieldValue_DevGlp
+{	
+	padding: 0;
+	font-size: 0;
+}
+.dxpgRowGrandTotalFieldValue_DevGlp
+{
+	background: #2D7E3E;
+	border-left-style: none;
+	border-bottom-style: none;
+	border-right-style: solid;
+	border-top-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #FFFFFF;
+}
+.dxpgCollapsedButton_DevGlp
+{
+	vertical-align: -2px;
+	border-width: 0;
+	margin-right: 5px;
+	background: Transparent;
+}
+.dxpgSortByColumnImage_DevGlp
+{
+	vertical-align: -1px;
+	border: 0;
+	margin-left: 5px;
+}
+.dxpgCell_DevGlp 
+{
+	text-align: right;
+	background-color: White;
+	border-color: #d9dae0;
+	border-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-bottom-style: none;
+	border-right-style: none;
+	padding: 3px 4px;
+	white-space: nowrap;
+}
+.dxpgKPICell_DevGlp
+{
+	text-align: center;
+	vertical-align: middle;
+}
+.dxpgTotalCell_DevGlp
+{
+	background-color: #faf9fb;
+}
+.dxpgGrandTotalCell_DevGlp
+{
+	background: #DFDFDF;
+	text-align: right;
+	border-color: #ffffff;
+	border-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-bottom-style: none;
+	border-right-style: none;
+	padding: 3px 4px;
+	white-space: nowrap;}
+.dxpgFilterItem_DevGlp
+{
+    white-space: nowrap;
+}
+.dxpgFilterButton_DevGlp
+{
+	padding: 2px 6px;
+}
+.dxpgTopPager_DevGlp,
+.dxpgBottomPager_DevGlp
+{
+    background: #f1f2f6 url('PagerBack.png') repeat-x left top;
+    border-color: #9da0aa;
+    border-style: solid;
+}
+.dxpgTopPager_DevGlp
+{
+    border-width: 0 0 1px 0;
+}
+.dxpgBottomPager_DevGlp
+{
+	border-width: 1px 0 0 0;
+}
+.dxpgTopPager_DevGlp,
+.dxpgBottomPager_DevGlp
+{
+	box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+}
+.dxpgCustomizationFieldsHeader_DevGlp
+{
+	color: #201f35;
+}
+.dxpgCustomizationFieldsContent_DevGlp
+{
+	padding: 0px !important;
+}
+.dxpgMenuItem_DevGlp
+{
+}
+.dxpgDataHeadersImage_DevGlp
+{
+	margin-right: 5px;
+	vertical-align: -2px;
+}
+.dxpgPrefilterPanelContainer_DevGlp
+{
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+}
+.dxpgPrefilterPanel_DevGlp
+{
+	border: none;
+	background: #f9f9fc;
+}
+.dxpgPrefilterPanelLink_DevGlp
+{
+	color: #1b3f91;
+	text-decoration: underline;
+}
+.dxpgPrefilterPanelCheckBoxCell_DevGlp
+{
+	padding: 0 3px;
+	padding-right: 7px;
+}
+.dxpgPrefilterPanelImageCell_DevGlp
+{
+	padding: 0 3px;
+	padding-right: 1px;
+	cursor: pointer;
+}
+.dxpgPrefilterPanelExpressionCell_DevGlp
+{
+	padding: 5px 5px 8px 0;
+	white-space: nowrap;
+}
+.dxpgPrefilterPanelClearButtonCell_DevGlp
+{
+	padding: 5px 6px 8px;
+}
+.dxpgFilterBuilderMainArea_DevGlp
+{
+	background: white;
+	padding: 6px 2px;
+} 
+.dxpgFilterBuilderButtonArea_DevGlp
+{
+	background: #ebecef;
+	border-top: 1px solid #abacb9;
+	padding: 6px;
+	white-space: nowrap;
+}
+.dxpgGroupSeparator_DevGlp
+{
+	vertical-align: middle;
+}
+.dxpgCustFieldsFilterAreaHeaders_DevGlp,
+.dxpgCustFieldsRowAreaHeaders_DevGlp,
+.dxpgCustFieldsColumnAreaHeaders_DevGlp,
+.dxpgCustFieldsDataAreaHeaders_DevGlp,
+.BottomPanelOnly1by4 .dxpgFLFRDiv_DevGlp,
+.BottomPanelOnly1by4 .dxpgFLCDDiv_DevGlp
+{
+    width: 100%;
+    height: 50%;
+}
+.StackedDefault .dxpgCustFieldsFieldList_DevGlp
+{
+    height: 33%;
+}
+.StackedDefault .dxpgFLFRDiv_DevGlp
+{
+    width: 50%;
+    height: 66%;
+    float: left;
+}
+.StackedDefault .dxpgFLCDDiv_DevGlp
+{
+    width: 50%;
+    height: 66%;
+    float: right;
+}
+.StackedDefault .dxpgCustFieldsFilterAreaHeaders_DevGlp .dxpgFLTextDiv_DevGlp,
+.StackedDefault .dxpgCustFieldsColumnAreaHeaders_DevGlp .dxpgFLTextDiv_DevGlp
+{
+    height: 47px;
+}
+.TopPanelOnly .dxpgCustFieldsFieldList_DevGlp
+{
+    width: 100%;
+    height: 100%;
+}
+.TopPanelOnly .dxpgFLDefereDiv_DevGlp .dxeBase_DevGlp,
+.TopPanelOnly .dxpgFLDefereDiv_DevGlp .dxpgFLDefereDB_DevGlp,
+.BottomPanelOnly1by4 .dxpgCustFieldsFieldList_DevGlp,
+.TopPanelOnly .dxpgFLFRDiv_DevGlp,
+.TopPanelOnly .dxpgFLCDDiv_DevGlp,
+.BottomPanelOnly2by2 .dxpgCustFieldsFieldList_DevGlp,
+.TopPanelOnly .dxpgFLTextDiv_DevGlp div
+{
+    display: none;
+}
+.TopPanelOnly .dxpgFLTextDiv_DevGlp
+{
+    height: 10px;
+}
+.TopPanelOnly .dxpgFLDefereDiv_DevGlp
+{
+    height: 16px;
+}
+.BottomPanelOnly2by2 .dxpgFLFRDiv_DevGlp,
+.StackedSideBySide .dxpgCustFieldsFieldList_DevGlp
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.BottomPanelOnly2by2 .dxpgFLCDDiv_DevGlp
+{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+.StackedSideBySide .dxpgFLFRDiv_DevGlp,
+.StackedSideBySide .dxpgFLCDDiv_DevGlp
+{
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+.dxpgCustFields_DevGlp
+{
+    display: block;
+    position: relative;
+}
+.dxpgFLListDiv_DevGlp > div
+{
+    border: 1px solid #9da0aa;
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 1px;
+    background: White;
+    overflow: hidden;
+
+    -webkit-user-select:none;
+     -khtml-user-select:none;
+       -moz-user-select:none;
+        -ms-user-select:none;
+         -o-user-select:none;
+            user-select:none;
+}
+.dxpgFLListDiv_DevGlp > div > div
+{
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 0px;
+    background: White;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.DragOver .dxpgFLListDiv_DevGlp > div
+{
+    background: #ffd324;
+}
+.dxpgFLListDiv_DevGlp
+{
+    padding: 0px 3px;
+}
+.dxpgFLButtonDiv_DevGlp .dxbButton_DevGlp div.dxb
+{
+	border: 1px dotted transparent;
+	padding: 1px 7px 0px;
+}
+.dxpgFLButtonDiv_DevGlp .dxbButton_DevGlp div.dxbf
+{
+	border: 1px dotted Black;
+}
+.dxpgFLTextDiv_DevGlp
+{
+    height: 28px;
+}
+.dxpgFLTextDiv_DevGlp div
+{
+   display: block;
+   float: left;
+   margin: -17px 0px 3px;
+   left: 6px;
+   top: 100%;
+   position: relative;
+}
+.dxpgFLButtonDiv_DevGlp
+{
+    float: right;
+    height: 28px;
+    position:relative;
+    z-index:1;
+}
+.dxpgFLDefereDiv_DevGlp
+{
+    height: 46px;
+}
+.dxpgCustFieldsDiv_DevGlp
+{
+     clear: both;
+     padding: 0px 9px;
+}
+.dxpgFLButton_DevGlp
+{
+     margin: 7px 12px 0px 0px;
+     width: 40px;
+     height: 23px;
+}
+.dxpgFLDefereDiv_DevGlp .dxeBase_DevGlp
+{
+     float: left;
+     display: block;
+     border-collapse: separate;
+     padding: 13px 0px 0px 0px;
+     margin-left: 8px;
+}
+.dxpgFLDefereDB_DevGlp
+{
+    float: right;
+    display: block;
+    margin: 12px 12px 0 0;
+}
+.dxpgFLDefereDiv_DevGlp .dxbButton_DevGlp div.dxb
+{
+    padding: 1px 13px;
+    border: 1px dotted transparent;
+}
+.dxpgFLDefereDiv_DevGlp .dxbButton_DevGlp div.dxbf
+{
+    border: 1px dotted Black;
+}
+.dxpgFLListDiv_DevGlp table
+{
+ width:100%;
+ table-layout:fixed;  
+ overflow:visible;
+}
+.dxpgFLListDiv_DevGlp table table td
+{
+     overflow:hidden; 
+}
+div.dxpgFLTextImgDiv_DevGlp
+{
+    display:block;
+    height:16px;
+    width:16px;
+    margin:-18px 0px 3px 0px;
+    left:3px;
+}
+/*Loading Panel*/
+.dxpgLoadingPanel_DevGlp
+{
+	font: 10px Century Gothic;
+	color: #201f35;
+	background-color: White;
+	border: 1px solid #9da0aa;
+}
+.dxpgLoadingPanel_DevGlp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+.dxpgLoadingPanel_DevGlp .dxlp-loadingImage
+{
+	background-image: url('../Web/Loading.gif');
+	height: 32px;
+	width: 32px;
+}
+
+.dxpgVScrollBarAreaCell_DevGlp {
+    background-color: #f5f5f6;
+    border-left: 1px solid #bfc0c9;
+    border-bottom: 1px solid #bfc0c9;
+}
+.dxpgHScrollBarAreaCell_DevGlp {
+    background-color: #f5f5f6;
+    border-top: 1px solid #bfc0c9;
+    border-right: 1px solid #bfc0c9;
+}
+.dxpgScrollBarEdgeCell_DevGlp {
+    background-color: #ebecef;
+    border-left: 1px solid #bfc0c9;
+    border-top: 1px solid #bfc0c9;
+}

@@ -1,0 +1,2098 @@
+/* -- ValidationSummary -- */
+.dxvsValidationSummary_DevGlp
+{
+	font: 10px Century Gothic;
+	color: Red;
+}
+.dxvsValidationSummary_DevGlp td.dxvsRC_DevGlp
+{
+	vertical-align: top;
+	padding: 2px 5px 4px 6px;
+}
+.dxvsValidationSummary_DevGlp .dxvsE_DevGlp
+{
+}
+.dxvsValidationSummary_DevGlp table.dxvsHT_DevGlp
+{
+	width: 100%;
+}
+.dxvsValidationSummary_DevGlp td.dxvsH_DevGlp
+{
+	padding: 2px 0;
+}
+.dxvsValidationSummary_DevGlp a.dxvsHL_DevGlp,
+.dxvsValidationSummary_DevGlp a.dxvsHL_DevGlp:visited
+{
+	color: red;
+}
+.dxvsValidationSummary_DevGlp a.dxvsHL_DevGlp
+{
+	text-decoration: none;
+	border-bottom: 1px dashed #f70;
+}
+.dxvsValidationSummary_DevGlp a.dxvsHL_DevGlp:hover
+{
+	color: #f70;
+}
+.dxvsValidationSummary_DevGlp table.dxvsT_DevGlp
+{
+}
+.dxvsValidationSummary_DevGlp tr.dxvsE_DevGlp
+{
+}
+.dxvsValidationSummary_DevGlp td.dxvsETC_DevGlp
+{
+	padding: 2px 0;
+}
+.dxvsValidationSummary_DevGlp ul.dxvsL_DevGlp
+{
+}
+.dxvsValidationSummary_DevGlp ol.dxvsL_DevGlp
+{
+}
+.dxvsValidationSummary_DevGlp li.dxvsE_DevGlp
+{
+	padding: 2px 0;
+}
+
+/* TrackBar */
+.dxeTrackBar_DevGlp
+{
+    font: 10px Century Gothic;
+	user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	visibility: hidden;
+}
+
+.dxeDisabled_DevGlp .dxeTBHSys a,
+.dxeDisabled_DevGlp .dxeTBVSys a
+{
+    cursor: default;
+}
+
+.dxeTBBarHighlight_DevGlp
+{
+	font-size: 0;
+}
+
+.dxeTBScale_DevGlp,
+.dxeTBTrack_DevGlp,
+.dxeTBBarHighlight_DevGlp
+{
+	cursor: pointer;
+}
+
+.dxeTBScale_DevGlp
+{
+	z-index: 1;
+	font-size: 0.91em;
+}
+.dxeTBSecondaryDH_DevGlp,
+.dxeTBMainDH_DevGlp
+{
+	z-index: 4;
+}
+
+.dxeTrackBar_DevGlp.dxeTBHSys
+{
+	width: 170px;
+	height: 47px;
+}
+.dxeTrackBar_DevGlp.dxeTBVSys
+{
+	height: 170px;
+	width: 47px;
+}
+.dxeTrackBar_DevGlp.dxeTBBScaleSys.dxeTBVSys
+{
+	width: 70px;
+}
+.dxeTrackBar_DevGlp.dxeTBBScaleSys.dxeTBHSys
+{	
+	height: 70px;
+}
+
+.dxeTBTrack_DevGlp
+{
+	z-index: 2;
+	position: absolute;
+}
+
+.dxeTBHSys .dxeTBTrack_DevGlp
+{
+	background-image:  url('edtTrackBarTrackH.gif');
+}
+.dxeTBVSys .dxeTBTrack_DevGlp
+{
+	background-image:  url('edtTrackBarTrackV.gif');
+}
+
+.dxeTBHSys .dxeTBTrack_DevGlp, 
+.dxeTBHSys .dxeTBBarHighlight_DevGlp
+{
+	height: 9px;
+}
+.dxeTBVSys .dxeTBTrack_DevGlp, 
+.dxeTBVSys .dxeTBBarHighlight_DevGlp
+{
+	width: 9px;
+}
+
+.dxeTBHSys .dxeTBMainDH_DevGlp,
+.dxeTBHSys .dxeTBSecondaryDH_DevGlp
+{	
+	top: -5px;
+	width:13px;
+	height:19px;
+}
+.dxeTBVSys .dxeTBMainDH_DevGlp,
+.dxeTBVSys .dxeTBSecondaryDH_DevGlp
+{
+	left: -5px;
+	width:19px;
+	height:13px;
+}
+
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBTrack_DevGlp,
+.dxeTBVSys .dxeTBTrack_DevGlp
+{
+	left: 6px;
+}
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBTrack_DevGlp
+{
+	right: 6px;
+	left: auto;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBTrack_DevGlp
+{
+	bottom: 6px;
+	top: auto;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBTrack_DevGlp,
+.dxeTBHSys .dxeTBTrack_DevGlp
+{
+	top: 6px;
+}
+
+.dxeTBBarHighlight_DevGlp
+{
+	left: 0px;
+	top: 0px;
+	position:absolute;
+	z-index: 3;
+}
+
+.dxeTBHSys .dxeTBBarHighlight_DevGlp
+{
+	background-image:  url('edtTrackBarBarHighlightH.gif');
+}
+.dxeTBVSys .dxeTBBarHighlight_DevGlp
+{
+	background-image:  url('edtTrackBarBarHighlightV.gif');
+}
+
+.dxeTBRBLabel_DevGlp,
+.dxeTBLTLabel_DevGlp
+{
+	text-align: center;
+	cursor: default;
+}
+.dxeTBSmallTickSys .dxeTBRBLabel_DevGlp,
+.dxeTBSmallTickSys .dxeTBLTLabel_DevGlp,
+.dxeTBLargeTickSys .dxeTBRBLabel_DevGlp,
+.dxeTBLargeTickSys .dxeTBLTLabel_DevGlp
+{	
+	position: absolute;
+}
+
+.dxeTBHSys .dxeTBRBLabel_DevGlp,
+.dxeTBHSys .dxeTBLTLabel_DevGlp
+{
+	width: 100%;
+}
+
+.dxeTBIncBtn_DevGlp,
+.dxeTBDecBtn_DevGlp
+{
+}
+
+.dxeTBVSys .dxeTBRBLabel_DevGlp,
+.dxeTBVSys .dxeTBLTLabel_DevGlp
+{
+	padding-top: 2px;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBRBLabel_DevGlp
+{
+	margin-left: -4px;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBRBLabel_DevGlp,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBLTLabel_DevGlp
+{
+	right: 0px;
+}
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBLTLabel_DevGlp,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBRBLabel_DevGlp
+{
+	left: 0px;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBRBLabel_DevGlp,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBLTLabel_DevGlp
+{
+	bottom: 0px;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBLTLabel_DevGlp,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBRBLabel_DevGlp
+{
+	top: 0px;
+}
+
+.dxeTBHSys .dxeTBItem_DevGlp .dxeTBRBLabel_DevGlp,
+.dxeTBHSys .dxeTBItem_DevGlp .dxeTBLTLabel_DevGlp
+{
+	display: inline-block;
+	margin-left: 0px!important;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBItem_DevGlp .dxeTBRBLabel_DevGlp
+{
+	padding-top: 12px;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBItem_DevGlp .dxeTBLTLabel_DevGlp
+{
+	margin-top: 8px;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBItem_DevGlp .dxeTBRBLabel_DevGlp 
+{
+	margin-left: 5px;
+}
+
+.dxeTBSelectedItem_DevGlp .dxeTBRBLabel_DevGlp,
+.dxeTBSelectedItem_DevGlp .dxeTBLTLabel_DevGlp,
+.dxeTBSelectedTick_DevGlp .dxeTBRBLabel_DevGlp,
+.dxeTBSelectedTick_DevGlp .dxeTBLTLabel_DevGlp
+{
+	color: #898D98;
+}
+
+.dxeDisabled_DevGlp .dxeTBSelectedItem_DevGlp .dxeTBRBLabel_DevGlp,
+.dxeDisabled_DevGlp .dxeTBSelectedItem_DevGlp .dxeTBLTLabel_DevGlp,
+.dxeDisabled_DevGlp .dxeTBSelectedTick_DevGlp .dxeTBRBLabel_DevGlp,
+.dxeDisabled_DevGlp .dxeTBSelectedTick_DevGlp .dxeTBLTLabel_DevGlp
+{
+	color: #C4C6CB;
+}
+
+.dxeTBRBLabel_DevGlp,
+.dxeTBLTLabel_DevGlp,
+.dxeTBItem_DevGlp
+{
+	color: #C4C6CC;
+}
+
+.dxeDisabled_DevGlp .dxeTBRBLabel_DevGlp,
+.dxeDisabled_DevGlp .dxeTBLTLabel_DevGlp,
+.dxeDisabled_DevGlp .dxeTBItem_DevGlp
+{
+	color: #E1E2E5;
+}
+
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBItem_DevGlp
+{
+	text-align: left;
+}
+
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBItem_DevGlp
+{
+	text-align: right;
+}
+
+.dxeTBVSys .dxeTBBScaleSys .dxeTBItem_DevGlp
+{
+	text-align: center;
+}
+
+.dxeTBHSys .dxeTBItem_DevGlp
+{
+	background-image:  url('edtTrackBarLargeTickH.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBItem_DevGlp
+{
+	background-image:  url('edtTrackBarDoubleSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBItem_DevGlp 
+{
+	background-image:  url('edtTrackBarLargeTickV.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBItem_DevGlp
+{
+	background-image:  url('edtTrackBarDoubleSmallTickV.gif');
+}
+
+.dxeTBHSys .dxeTBLargeTick_DevGlp
+{
+	background-image:  url('edtTrackBarLargeTickH.gif');
+}
+.dxeTBVSys .dxeTBLargeTick_DevGlp
+{
+	background-image: url('edtTrackBarLargeTickV.gif');
+}
+.dxeTBHSys .dxeTBSmallTick_DevGlp
+{
+	background-image: url('edtTrackBarSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBSmallTick_DevGlp
+{
+	background-image: url('edtTrackBarSmallTickV.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBLargeTick_DevGlp
+{
+	background-image: url('edtTrackBarDoubleLargeTickH.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBLargeTick_DevGlp
+{
+	background-image: url('edtTrackBarDoubleLargeTickV.gif');
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBSmallTick_DevGlp
+{
+	background-image: url('edtTrackBarDoubleSmallTickH.gif');
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBSmallTick_DevGlp
+{
+	background-image: url('edtTrackBarDoubleSmallTickV.gif');
+}
+
+.dxeTBVSys .dxeTBIncBtn_DevGlp,
+.dxeTBVSys .dxeReversedDirectionSys .dxeTBDecBtn_DevGlp
+{
+	bottom: 0px;
+	top: auto;
+}
+.dxeTBVSys .dxeTBDecBtn_DevGlp,
+.dxeTBVSys .dxeReversedDirectionSys .dxeTBIncBtn_DevGlp
+{
+	top: 0px;
+	bottom: auto;
+}
+.dxeTBHSys .dxeTBDecBtn_DevGlp, 
+.dxeTBHSys .dxeReversedDirectionSys .dxeTBIncBtn_DevGlp
+{
+	left: 0px;
+	right: auto;
+}
+.dxeTBHSys .dxeTBIncBtn_DevGlp,
+.dxeTBHSys .dxeReversedDirectionSys .dxeTBDecBtn_DevGlp
+{
+	right: 0px;
+	left: auto;
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBDecBtn_DevGlp,
+.dxeTBVSys .dxeTBBScaleSys .dxeTBIncBtn_DevGlp
+{
+	margin-left: -9px;
+	left: 50%;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBDecBtn_DevGlp,
+.dxeTBHSys .dxeTBBScaleSys .dxeTBIncBtn_DevGlp
+{
+	margin-top: -9px;
+	top: 50%;
+}
+.dxeTBVSys .dxeTBBScaleSys .dxeTBTrack_DevGlp
+{ 
+	margin-left: -4px;
+	left: 50%;
+}
+.dxeTBHSys .dxeTBBScaleSys .dxeTBTrack_DevGlp
+{ 
+	margin-top: -4px;
+	top: 50%;
+}
+
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBDecBtn_DevGlp,
+.dxeTBVSys .dxeTBLTScaleSys .dxeTBIncBtn_DevGlp
+{
+	right: 2px;
+	left: auto;
+}
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBDecBtn_DevGlp,
+.dxeTBHSys .dxeTBLTScaleSys .dxeTBIncBtn_DevGlp
+{
+	bottom: 2px;
+	top: auto;
+}
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBDecBtn_DevGlp,
+.dxeTBVSys .dxeTBRBScaleSys .dxeTBIncBtn_DevGlp,
+.dxeTBVSys .dxeTBDecBtn_DevGlp,
+.dxeTBVSys .dxeTBIncBtn_DevGlp
+{
+	left: 2px;
+}
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBDecBtn_DevGlp,
+.dxeTBHSys .dxeTBRBScaleSys .dxeTBIncBtn_DevGlp,
+.dxeTBHSys .dxeTBDecBtn_DevGlp,
+.dxeTBHSys .dxeTBIncBtn_DevGlp
+{
+	top: 2px;
+}
+
+.dxeHelpText_DevGlp,
+.dxeTBValueToolTip_DevGlp
+{
+    font: 10px Century Gothic;
+}
+div.dxeHelpText_DevGlp,
+.dxeTBValueToolTip_DevGlp
+{
+	padding: 3px 8px 4px 8px;
+    display: inline;
+    position:absolute;
+    border-radius: 3px;
+    z-index: 41998;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #A8A8A8;
+    background: #FDFEFE;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FDFEFE', endColorstr='#EEEFF2');
+	background: -webkit-gradient(linear, left top, left bottom, from(#FDFEFE), to(#EEEFF2));
+	background: -moz-linear-gradient(top,  #FDFEFE,  #EEEFF2);
+}
+td.dxeHelpText_DevGlp {
+    visibility: visible;
+    color: #9F9F9F;
+}
+td.dxeHelpText_DevGlp label {
+    font-size: 0.91em;
+}
+td.dxeHelpText_DevGlp.dxeHHelpTextSys {
+    padding: 0 6px;
+}
+td.dxeHelpText_DevGlp.dxeVHelpTextSys {
+    padding: 2px 0;
+}
+
+/* InternalCheckBox */
+.dxeIRBFocused_DevGlp
+{
+	border: 1px dotted #a390ec;
+	margin: 0px!important;
+}
+.dxeIRadioButton_DevGlp
+{
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingDiv_DevGlp
+{
+	opacity: 1!important;
+	filter: alpha(opacity=100)!important;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_DevGlp
+{
+    background-color: transparent!important;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_DevGlp td.dx
+{
+	padding: 0px!important;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_DevGlp td.dx > span
+{
+	display: none;
+}
+
+.dxeButtonEditSys .dxic .dxeLoadingPanel_DevGlp td.dx > img
+{
+	height: 15px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.dxeReadOnly_DevGlp
+{
+}
+.dxeBase_DevGlp
+{
+	font: 10px Century Gothic;
+}
+/* -- ErrorFrame -- */
+.dxeErrorCell_DevGlp
+{
+	font: 10px Century Gothic;
+	color: Red;
+    border-color: black;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.dxeErrorFrameWithoutError_DevGlp
+{
+	border: 1px solid Red;
+}
+.dxeErrorFrameWithoutError_DevGlp .dxeControlsCell_DevGlp,
+.dxeErrorFrameWithoutError_DevGlp.dxeControlsCell_DevGlp
+{
+	padding: 2px;
+}
+
+.dxeEditArea_DevGlp
+{
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+}
+body input.dxeEditArea_DevGlp /*Bootstrap correction*/
+{
+    color: black;
+}
+input[type="text"].dxeEditArea_DevGlp, /*Bootstrap correction*/
+input[type="password"].dxeEditArea_DevGlp /*Bootstrap correction*/
+{
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+.dxFirefox input[type="text"].dxeEditArea_DevGlp,
+.dxFirefox input[type="password"].dxeEditArea_DevGlp
+{
+	margin-top: -1px;
+    margin-bottom: 0;
+}
+
+/* -- Binary Image -- */
+.dxeBinaryImageButtonPanel_DevGlp
+{
+    height: 36px;
+}
+.dxeBinaryImageButton_DevGlp
+{
+    margin: 0 6px;
+}
+
+/* -- Buttons -- */
+.dxeButtonEditButton_DevGlp,
+.dxeCalendarButton_DevGlp,
+.dxeSpinIncButton_DevGlp,
+.dxeSpinDecButton_DevGlp,
+.dxeSpinLargeIncButton_DevGlp,
+.dxeSpinLargeDecButton_DevGlp,
+.dxeColorEditButton_DevGlp
+{
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.dxeCalendarButton_DevGlp,
+.dxeColorEditButton_DevGlp
+{
+	border-style: solid;
+	border-color: #a9acb5;
+}
+.dxeButtonEditButton_DevGlp
+{
+	border-style: solid;
+	border-color: Transparent;
+	-border-color: White;
+}
+.dxeButtonEditButton_DevGlp.dxeButtonEditButtonHover_DevGlp
+{
+	border-color: #c0c9e3;
+}
+.dxeButtonEditButton_DevGlp.dxeButtonEditButtonPressed_DevGlp
+{
+	border-color: #c2c4cb;
+}
+.dxeButtonEditButton_DevGlp.dxeDisabled_DevGlp
+{
+	border-color: Transparent;
+	-border-color: White;
+}
+
+.dxeCalendarButton_DevGlp,
+.dxeColorEditButton_DevGlp
+{
+	border-width: 1px;
+}
+.dxeButtonEditButton_DevGlp
+{
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+}
+.dxeButtonEdit_DevGlp .dxeButtonLeft
+{
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 0;
+}
+.dxeSpinIncButton_DevGlp,
+.dxeSpinDecButton_DevGlp,
+.dxeSpinLargeIncButton_DevGlp,
+.dxeSpinLargeDecButton_DevGlp
+{
+	border-width: 0;
+}
+
+.dxeButtonEditButton_DevGlp,
+.dxeSpinLargeIncButton_DevGlp,
+.dxeSpinLargeDecButton_DevGlp,
+.dxeSpinIncButton_DevGlp,
+.dxeSpinDecButton_DevGlp
+{
+	background: White none;
+}
+
+.dxeButtonEditButton_DevGlp 
+{
+	padding: 3px 2px 3px 3px;
+}
+.dxeSpinIncButton_DevGlp
+{
+	padding: 2px 5px 2px 5px;
+}
+.dxeSpinDecButton_DevGlp
+{
+	padding: 3px 5px 2px 5px;
+}
+.dxeSpinLargeIncButton_DevGlp,
+.dxeSpinLargeDecButton_DevGlp
+{
+	padding: 6px 4px 6px 4px;
+}
+
+.dxeCalendarButton_DevGlp,
+.dxeColorEditButton_DevGlp
+{
+	background: #ebedf2 url('edtBtnBack.png') repeat-x left top;
+	padding: 3px 11px 4px;
+	min-width: 37px;
+}
+
+
+.dxeButtonEditButton_DevGlp.dxeButtonEditClearButton_DevGlp,
+.dxeButtonEditButton_DevGlp.dxeButtonEditClearButton_DevGlp:hover
+{
+    background: none;
+    border-width: 0;
+    padding-bottom: 1px;
+    padding-top: 2px;
+}
+
+.dxeButtonEditClearButton_DevGlp img
+{
+    vertical-align: baseline;
+}
+
+/* -- Pressed -- */
+.dxeCalendarButtonPressed_DevGlp,
+.dxeColorEditButton_DevGlp:active
+{
+	color: #3c3c3c;
+	border-color: #9da0aa;
+	background: #dbdde2 url('edtBtnPBack.png') repeat-x left top;
+}
+.dxeButtonEditButtonPressed_DevGlp,
+.dxeSpinIncButtonPressed_DevGlp,
+.dxeSpinDecButtonPressed_DevGlp,
+.dxeSpinLargeIncButtonPressed_DevGlp, 
+.dxeSpinLargeDecButtonPressed_DevGlp
+{
+	background: #e3e5e8 url('edtDropDownBtnPBack.png') repeat-x left top;
+}
+
+/* -- Hover -- */
+.dxeCalendarButtonHover_DevGlp,
+.dxeColorEditButton_DevGlp:hover
+{
+	border-color: #a9acb5;
+}
+.dxeCalendarButtonHover_DevGlp,
+.dxeColorEditButton_DevGlp:hover
+{
+	background: #dde6fe url('edtBtnHBack.png') repeat-x left top;
+}
+.dxeButtonEditButtonHover_DevGlp,
+.dxeSpinIncButtonHover_DevGlp,
+.dxeSpinDecButtonHover_DevGlp,
+.dxeSpinLargeIncButtonHover_DevGlp,
+.dxeSpinLargeDecButtonHover_DevGlp
+{
+	background: #e6edfe url('edtDropDownBtnHBack.png') repeat-x left top;
+}
+
+.dxeButtonEdit_DevGlp
+{
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    font: 10px Century Gothic;
+}
+.dxeButtonEdit_DevGlp td.dxic,
+.dxFirefox .dxeButtonEdit_DevGlp td.dxic
+{
+    padding: 3px 3px 2px 3px;
+}
+.dxeButtonEdit_DevGlp .dxeEditArea_DevGlp
+{
+	background-color: white;
+}
+.dxeButtonEdit_DevGlp .dxeIIC,
+.dxeButtonEdit_DevGlp .dxeIICR
+{
+	padding: 1px;
+}
+.dxeButtonEdit_DevGlp .dxeIIC img
+{
+	padding-left: 3px;
+}
+.dxeButtonEdit_DevGlp .dxeIICR img
+{
+	padding-right: 3px;
+}
+
+.dxeTextBox_DevGlp
+{
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+
+    font: 10px Century Gothic;
+}
+.dxeTextBox_DevGlp .dxeEditArea_DevGlp
+{
+	background-color: white;
+}
+.dxeRadioButtonList_DevGlp,
+.dxeCheckBoxList_DevGlp
+{
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+}
+
+.dxeCheckBoxList_DevGlp .dxe > table,
+.dxeRadioButtonList_DevGlp .dxe > table 
+{
+    width: 100%;
+}
+
+.dxeRadioButtonList_DevGlp,
+.dxeCheckBoxList_DevGlp
+{
+	font: 10px Century Gothic;
+}
+.dxeRadioButtonList_DevGlp td.dxe,
+.dxeCheckBoxList_DevGlp td.dxe
+{
+	padding: 7px 5px 6px 11px;
+}
+.dxeRadioButtonList_DevGlp[dir='rtl'] td.dxe,
+.dxeCheckBoxList_DevGlp[dir='rtl'] td.dxe
+{
+	padding: 7px 11px 6px 5px;
+}
+
+/* Disabled */
+.dxeDisabled_DevGlp .dxeButtonEditButton_DevGlp,
+.dxeDisabled_DevGlp .dxeSpinIncButton_DevGlp,
+.dxeDisabled_DevGlp .dxeSpinDecButton_DevGlp,
+.dxeDisabled_DevGlp .dxeSpinLargeIncButton_DevGlp,
+.dxeDisabled_DevGlp .dxeSpinLargeDecButton_DevGlp
+{
+	background: White none;
+}
+
+/* -- Memo -- */
+.dxeMemo_DevGlp
+{
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+
+    font: 10px Century Gothic;
+}
+.dxeMemoEditArea_DevGlp
+{
+    outline: none;
+	background-color: white;
+}
+
+/* -- Hyperlink -- */
+.dxeHyperlink_DevGlp
+{
+	font: 10px Century Gothic;
+	color: #1b3f91;
+	text-decoration: none;
+}
+a.dxeHyperlink_DevGlp:hover
+{
+	text-decoration: underline;
+}
+a.dxeHyperlink_DevGlp:visited
+{
+	color: #8684ed;
+}
+
+/* -- ListBox -- */
+.dxeListBox_DevGlp
+{
+	color: #201f35;
+	font: 10px Century Gothic;
+	background-color: white;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #c2c4cb;
+	border-bottom: 1px solid #d9dae0;
+	border-left: 1px solid #c2c4cb;
+	width: 70px;
+	height: 109px;
+}
+.dxeListBox_DevGlp div.dxlbd
+{
+	height: 108px;
+}
+.dxeListBoxItemRow_DevGlp
+{
+	cursor: default;
+}
+.dxeListBoxItem_DevGlp
+{
+	padding: 2px 5px;
+	white-space: nowrap;
+	text-align: left;
+	border-width: 0;
+}
+.dxeListBoxItem_DevGlp em
+{
+	background: #e2eafd none repeat 0 0;
+	color: #201f35;
+	font-weight: bold;
+	font-style: normal;
+}
+
+.dxeListBox_DevGlp td.dxeI,
+.dxeListBox_DevGlp td.dxeIM,
+.dxeListBox_DevGlp .dxeHIC, 
+.dxeListBox_DevGlp td.dxeFTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp td.dxeC,
+.dxeListBox_DevGlp td.dxeCM,
+.dxeListBox_DevGlp td.dxeHCC,
+.dxeListBox_DevGlp td.dxeMI,
+.dxeListBox_DevGlp td.dxeMIM
+{
+	border-right-width: 0!important;
+}
+
+.dxeListBox_DevGlp td.dxeIR,
+.dxeListBox_DevGlp td.dxeIMR,
+.dxeListBox_DevGlp .dxeHICR, 
+.dxeListBox_DevGlp td.dxeFTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp td.dxeCR,
+.dxeListBox_DevGlp td.dxeCMR,
+.dxeListBox_DevGlp td.dxeHCCR,
+.dxeListBox_DevGlp td.dxeMIR,
+.dxeListBox_DevGlp td.dxeMIMR
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_DevGlp td.dxeCM,
+.dxeListBox_DevGlp td.dxeHCC,
+.dxeListBox_DevGlp td.dxeCMR,
+.dxeListBox_DevGlp td.dxeHCCR
+{
+	width: 31px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.dxeListBox_DevGlp td.dxeIM,
+.dxeListBox_DevGlp td.dxeIMR
+{
+	width: 0;
+}
+.dxeListBox_DevGlp td.dxeC
+{
+	padding-right: 3px!important;
+}
+.dxeListBox_DevGlp td.dxeCR
+{
+	padding-left: 3px!important;
+}
+.dxeListBox_DevGlp td.dxeC > span,
+.dxeListBox_DevGlp td.dxeCM > span
+{
+    margin: 2px 2px 2px 3px;
+}
+.dxeListBox_DevGlp td.dxeCR > span,
+.dxeListBox_DevGlp td.dxeCMR > span
+{
+    margin: 2px 3px 2px 2px;
+}
+.dxeListBox_DevGlp td.dxeT
+{
+	width: 100%;
+	padding-left: 0!important;
+}
+
+.dxeListBox_DevGlp td.dxeTR
+{
+	width: 100%;
+	padding-right: 0!important;
+}
+
+.dxeListBox_DevGlp td.dxeT,
+.dxeListBox_DevGlp td.dxeMI
+{
+	border-left-width: 0!important;
+}
+
+.dxeListBox_DevGlp td.dxeTR,
+.dxeListBox_DevGlp td.dxeMIR
+{
+	border-right-width: 0!important;
+}
+
+.dxeListBox_DevGlp td.dxeFTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp td.dxeLTM,
+.dxeListBox_DevGlp .dxeHFC,
+.dxeListBox_DevGlp .dxeHC,
+.dxeListBox_DevGlp .dxeHLC,
+.dxeListBox_DevGlp td.dxeFTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp td.dxeLTMR,
+.dxeListBox_DevGlp .dxeHFCR,
+.dxeListBox_DevGlp .dxeHCR,
+.dxeListBox_DevGlp .dxeHLCR
+{
+	overflow: hidden;
+}
+
+.dxeListBox_DevGlp td.dxeFTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp .dxeHFC,
+.dxeListBox_DevGlp .dxeHC
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_DevGlp td.dxeFTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp .dxeHFCR,
+.dxeListBox_DevGlp .dxeHCR
+{
+	padding-left: 6px!important;
+}
+
+.dxeListBox_DevGlp td.dxeLTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp .dxeHC,
+.dxeListBox_DevGlp .dxeHLC
+{
+	padding-left: 6px!important;
+}
+
+.dxeListBox_DevGlp td.dxeLTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp .dxeHCR,
+.dxeListBox_DevGlp .dxeHLCR
+{
+	padding-right: 6px!important;
+}
+
+.dxeListBox_DevGlp .dxeFTM,
+.dxeListBox_DevGlp .dxeTM,
+.dxeListBox_DevGlp .dxeHFC,
+.dxeListBox_DevGlp .dxeHC,
+.dxeListBox_DevGlp .dxeLTM,
+.dxeListBox_DevGlp .dxeTM,
+.dxeListBox_DevGlp .dxeHC,
+.dxeListBox_DevGlp .dxeHLC,
+.dxeListBox_DevGlp td.dxeIM,
+.dxeListBox_DevGlp td.dxeFTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp td.dxeCM,
+.dxeListBox_DevGlp td.dxeMIM,
+.dxeListBox_DevGlp .dxeFTMR,
+.dxeListBox_DevGlp .dxeTMR,
+.dxeListBox_DevGlp .dxeHFCR,
+.dxeListBox_DevGlp .dxeHCR,
+.dxeListBox_DevGlp .dxeLTMR,
+.dxeListBox_DevGlp .dxeTMR,
+.dxeListBox_DevGlp .dxeHCR,
+.dxeListBox_DevGlp .dxeHLCR,
+.dxeListBox_DevGlp td.dxeIMR,
+.dxeListBox_DevGlp td.dxeFTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp td.dxeCMR,
+.dxeListBox_DevGlp td.dxeMIMR
+{
+	border-top-width: 0;
+	border-bottom-width: 0;
+}
+
+/*Grid lines*/
+
+.dxeListBox_DevGlp td.dxeLTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp td.dxeMIM
+{
+	border-left: 1px solid #d9dae0!important;
+}
+.dxeListBox_DevGlp td.dxeLTM 
+{
+	border-right: 1px solid Transparent!important;
+}
+.dxeListBox_DevGlp td.dxeLTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp td.dxeMIMR
+{
+	border-right: 1px solid #d9dae0!important;
+}
+
+.dxeListBox_DevGlp td.dxeIM,
+.dxeListBox_DevGlp td.dxeFTM,
+.dxeListBox_DevGlp td.dxeTM,
+.dxeListBox_DevGlp td.dxeLTM,
+.dxeListBox_DevGlp td.dxeCM,
+.dxeListBox_DevGlp td.dxeMIM,
+.dxeListBox_DevGlp td.dxeIMR,
+.dxeListBox_DevGlp td.dxeFTMR,
+.dxeListBox_DevGlp td.dxeTMR,
+.dxeListBox_DevGlp td.dxeLTMR,
+.dxeListBox_DevGlp td.dxeCMR,
+.dxeListBox_DevGlp td.dxeMIMR
+{
+	border-bottom: 1px solid #d9dae0;
+}
+
+.dxeListBoxItemSelected_DevGlp     
+{
+	color: #201f35;
+	background: #eff0f2 none;
+}
+.dxeListBoxItemHover_DevGlp        
+{
+	color: #201f35;
+	background: #e2eafd none;
+}
+.dxeListBoxItemHover_DevGlp em,
+.dxeListBoxItemSelected_DevGlp em
+{
+	background-image: none;
+}
+
+/*Header*/
+
+.dxeListBox_DevGlp .dxeHD
+{
+	background: #f3f3f4 url('lbHeaderBack.png') repeat-x left top;
+	border-bottom: 1px solid #abacb9;
+}
+.dxeHD .dxeListBoxItem_DevGlp
+{
+	color: #201f35;
+	border-top-width: 0;
+	border-right-width: 1px;
+	border-bottom-width: 0;
+	border-left-width: 1px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.dxeListBox_DevGlp .dxeHC,
+.dxeListBox_DevGlp .dxeHLC,
+.dxeListBox_DevGlp td.dxeHMIC
+{
+	border-left: 1px solid #cacbd3;
+}
+
+.dxeListBox_DevGlp .dxeHCR,
+.dxeListBox_DevGlp .dxeHLCR,
+.dxeListBox_DevGlp td.dxeHMICR
+{
+	border-right: 1px solid #cacbd3;
+	text-align: right;
+}
+
+.dxeListBox_DevGlp .dxeHIC,
+.dxeListBox_DevGlp .dxeHFC,
+.dxeListBox_DevGlp .dxeHCC
+{
+}
+
+.dxeListBox_DevGlp .dxeHICR,
+.dxeListBox_DevGlp .dxeHFCR,
+.dxeListBox_DevGlp .dxeHCCR
+{
+}
+
+.dxeListBox_DevGlp .dxeHFC,
+.dxeListBox_DevGlp .dxeHC,
+.dxeListBox_DevGlp .dxeHMIC
+{
+	border-right-width: 0;
+}
+
+.dxeListBox_DevGlp .dxeHFCR,
+.dxeListBox_DevGlp .dxeHCR,
+.dxeListBox_DevGlp .dxeHMICR
+{
+	border-left-width: 0;
+	text-align: right;
+}
+
+.dxeListBox_DevGlp .dxeHLC
+{
+	border-right: 1px solid #cacbd3;
+}
+
+.dxeListBox_DevGlp .dxeHLCR
+{
+	border-left: 1px solid #cacbd3;
+	text-align: right;
+}
+
+/* -- Calendar -- */
+.dxeCalendar_DevGlp
+{
+    font: 10px Century Gothic;
+	font-weight: normal;
+	color: #201f35;
+	border: 1px solid #9da0aa;
+	background-color: White;
+	cursor: default;
+}
+.dxeCalendar_DevGlp td.dxMonthGrid
+{
+	padding: 1px 8px;
+}
+.dxeCalendar_DevGlp td.dxMonthGridWithWeekNumbers
+{
+	padding: 1px 20px 6px 8px;
+}
+.dxeCalendar_DevGlp td.dxMonthGridWithWeekNumbersRtl
+{
+	padding: 1px 8px 1px 20px;
+}
+.dxeCalendarDayHeader_DevGlp
+{
+	padding: 2px 4px 6px;
+	border-bottom: 1px solid #d7d8dd;
+}
+.dxeCalendarWeekNumber_DevGlp
+{
+	font-size: 0.82em;
+	text-align: right;
+	padding: 3px 8px 2px 4px;
+	color: #cccccc;
+}
+.dxeCalendarDay_DevGlp
+{
+	padding: 2px 5px 3px;
+	text-align: center;
+}
+.dxeCalendarWeekend_DevGlp        
+{
+	color: #c00000;
+}
+.dxeCalendarOtherMonth_DevGlp     
+{
+	color: #cccccc;
+}
+.dxeCalendarOutOfRange_DevGlp     
+{
+	color: #cccccc;
+}
+.dxeCalendarDayDisabled_DevGlp {
+	background-color: #fcfdfe;
+	color: #ecedee!important;
+}
+.dxeCalendarToday_DevGlp         
+{
+	border: 1px solid #c95c05;
+    padding: 1px 4px 2px;
+}
+.dxeCalendarSelected_DevGlp       
+{
+	color: #201f35;
+	background-color: #e2eafd;
+}
+.dxeDayInRange.dxeCalendarSelected_DevGlp
+{
+    background-color: #f6f9fe;
+}
+.dxeCalendarHeader_DevGlp
+{
+	border-style: none;
+	padding: 4px 4px 12px;
+}
+.dxeCalendarHeader_DevGlp td.dxe
+{
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarHeader_DevGlp .dxeCHS
+{
+    min-width: 1px;
+}
+.dxeCalendarFooter_DevGlp
+{
+	background-color: White;
+	padding: 11px 0;
+}
+.dxeCalendarFooter_DevGlp .dxeCFS
+{
+    min-width: 12px;
+    *width: 12px;
+}
+.dxeCalendarFastNav_DevGlp
+{
+	color: #201f35;
+	background: White none;
+	border-top: 1px solid #9da0aa;
+	border-right: 1px solid #9da0aa;
+	border-bottom: 0 solid #9da0aa;
+	border-left: 1px solid #9da0aa;
+	padding: 5px 8px;
+	cursor: default;
+}
+.dxeCalendarFastNavMonthArea_DevGlp
+{
+	padding: 0px 9px;
+}
+.dxeCalendarFastNavYearArea_DevGlp
+{
+    padding-top: 8px;
+}
+.dxeCalendarFastNavFooter_DevGlp
+{
+	color: #201f35;
+	background: White none;
+	padding: 8px 0 17px;
+	border-top: 0 solid #d7d8dd;
+	border-right: 1px solid #9da0aa;
+	border-bottom: 1px solid #9da0aa;
+	border-left: 1px solid #9da0aa;
+}
+.dxeCalendarFastNavFooter_DevGlp .dxeCFNFS
+{
+    min-width: 11px;
+    *width: 11px;
+}
+.dxeCalendarFastNavMonth_DevGlp,
+.dxeCalendarFastNavYear_DevGlp
+{
+	color: #201f35;
+	padding: 3px 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.dxeCalendarFastNavYear_DevGlp
+{
+	padding: 3px 5px;
+}
+.dxeCalendarFastNavMonth_DevGlp
+{
+	padding: 6px;
+}
+
+.dxeCalendarFastNavMonthHover_DevGlp,
+.dxeCalendarFastNavYearHover_DevGlp
+{
+	color: #201f35;
+	background: #f3ebfe none;
+	border-width: 0;
+}
+.dxeCalendarFastNavYearHover_DevGlp,
+.dxeCalendarFastNavYearSelected_DevGlp
+{
+	padding: 3px 5px;
+}
+.dxeCalendarFastNavMonthHover_DevGlp,
+.dxeCalendarFastNavMonthSelected_DevGlp
+{
+	padding: 6px;
+}
+.dxeCalendarFastNavMonthSelected_DevGlp,
+.dxeCalendarFastNavYearSelected_DevGlp
+{
+	color: #201f35;
+	background-color: #e2eafd;
+}
+.dxeDateEditTimeEditCell_DevGlp
+{
+    padding: 7px 34px 9px;
+    width: 100px;
+}
+.dxeDateEditClockCell_DevGlp
+{
+    padding: 14px 24px 0;
+}
+.dxeCalendarFooter_DevGlp.dxeDETSF
+{
+    padding-left: 11px;
+    padding-right: 11px;
+}
+.dxeCalendarHeader_DevGlp.dxeDETSH
+{
+    display: none;
+}
+
+/* Disabled */
+.dxeDisabled_DevGlp,
+.dxeDisabled_DevGlp td.dxe
+{
+	color: #b1b1b8;
+	cursor: default;
+}
+.dxeEditArea_DevGlp.dxeDisabled_DevGlp /*Bootstrap correction*/
+{
+    color: #b1b1b8;
+}
+a.dxeDisabled_DevGlp:hover
+{
+	color: #b1b1b8;
+}
+.dxeButtonDisabled_DevGlp
+{
+	color: #b1b1b8;
+	cursor: default;
+}
+/* -- Button -- */
+.dxbButton_DevGlp
+{
+	color: #201f35;
+	font: 10px Century Gothic;
+	border: 1px solid #a9acb5;
+	background: #ebedf2 url('edtBtnBack.png') repeat-x left top;
+	padding: 1px;
+}
+.dxbButtonHover_DevGlp
+{
+	color: #201f35;
+	background: #dde6fe url('edtBtnHBack.png') repeat-x left top;
+	border: 1px solid #a9acb5;
+}
+.dxbButtonChecked_DevGlp
+{
+	color: #3c3c3c;
+	background: #dbdde2 url('edtBtnPBack.png') repeat-x left top;
+	border: 1px solid #9da0aa;
+}
+.dxbButtonPressed_DevGlp
+{
+	color: #3c3c3c;
+	background: #dbdde2 url('edtBtnPBack.png') repeat-x left top;
+	border: 1px solid #9da0aa;
+}
+.dxbButton_DevGlp div.dxb
+{
+	padding: 2px 14px;
+	border: 1px dotted transparent;
+}
+.dxbButton_DevGlp div.dxbf
+{
+	border: 1px dotted black;
+}
+/* Button Link */
+a.dxbButton_DevGlp
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+a.dxbButton_DevGlp:hover
+{
+	text-decoration: underline;
+}
+a.dxbButton_DevGlp:visited
+{
+	color: #8684ed;
+}
+/* Disabled */
+.dxbDisabled_DevGlp
+{
+	border-color: #e1e2e5;
+	background: #f8f9fa url('edtBtnDisabledBack.png') repeat-x left top;
+}
+.dxbDisabled_DevGlp,
+a.dxbButton_DevGlp.dxbDisabled_DevGlp
+{
+	color: #babac1;
+	cursor: default;
+    text-decoration: none;
+}
+/* -- FilterControl -- */
+.dxfcControl_DevGlp
+{
+	font: 10px Century Gothic;
+	color: #201f35;
+	padding: 0 1em;
+}
+.dxfcTable_DevGlp
+{
+	border-collapse: separate!important;
+}
+.dxfcTable_DevGlp td.dxfc
+{
+	padding: 0px 0px 0px 3px;
+}
+a.dxfcPropertyName_DevGlp
+{
+	white-space: nowrap!important;
+	color: Blue!important;
+}
+a.dxfcGroupType_DevGlp
+{
+	white-space: nowrap!important;
+	padding: 0px 3px!important;
+	color: Red!important;
+}
+a.dxfcOperation_DevGlp
+{
+	white-space: nowrap!important;
+	color: Green!important;
+}
+a.dxfcValue_DevGlp
+{
+	white-space: nowrap!important;
+	color: Gray!important;
+}
+
+.dxeMaskHint_DevGlp
+{
+	font: 10px Century Gothic;
+	color: Black;
+	background: #ffffe1 none;
+	padding: 2px 5px 3px;
+	border: 1px solid Black;
+}
+
+.dxfcControl_DevGlp ul.dxfc-tree,
+.dxfcControl_DevGlp .dxfc-tree ul
+{
+    list-style-type: none;
+    margin: 0;
+    overflow-y: hidden;
+    padding: 0;
+}
+
+.dxfcControl_DevGlp .dxfc-tree
+{
+    width: 100%;
+}
+
+.dxfcControl_DevGlp .dxfc-subnd
+{
+    margin-left: 22px;
+}
+
+.dxfcControl_DevGlp .dxfc > li > table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.dxfcControl_DevGlp .dxfc-elb
+{
+    float: left;
+    height: 21px;
+    vertical-align: top;
+    width: 26px;
+}
+
+.dxfcControl_DevGlp .dxfc-clr
+{
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.dxfcControl_DevGlp .dxfc-nd
+{
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 24px;
+    outline: 0 none;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > a,
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > span,
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > img,
+.dxfcControl_DevGlp .dxfc-editor
+{
+    vertical-align: middle;
+}
+
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > a,
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > td,
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > span
+{
+    padding: 0 0.1ex;
+}
+
+.dxfcControl_DevGlp .dxfc-nd > tbody > tr > td > a
+{
+    line-height: 24px;
+}
+
+.dxfcControl_DevGlp .dxfc-ln
+{
+    vertical-align: top;
+}
+/* -- ProgressBar -- */
+.dxeProgressBar_DevGlp
+{
+	background: #f3f4f5 url('edtProgressBack.png') repeat-x left top;
+	border: 1px solid #b9bac3;
+	font: 10px Century Gothic;
+	color: #201f35;
+    height: 21px;
+}
+.dxeProgressBar_DevGlp .dxePBMainCell,
+.dxeProgressBar_DevGlp td.dxe
+{
+	padding: 0;
+}
+.dxeProgressBarIndicator_DevGlp
+{
+	background: #edd0f4 url('edtProgressIndicatorBack.png') repeat-x left top;
+}
+
+/* -- DropDownWindow -- */
+.dxpcDropDown_DevGlp,
+.dxeDropDownWindow_DevGlp
+{
+    font: 10px Century Gothic;
+}
+.dxeDropDownWindow_DevGlp
+{
+	background-color: white;
+	border: 1px solid #9da0aa;
+}
+
+/*----------------- ColorTable -----------------*/
+.dxeColorIndicator_DevGlp
+{
+	border: 1px solid #9da0aa;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+}
+.dxeItemPicker_DevGlp
+{
+	background-color: White;
+	border: 1px solid #9da0aa;
+}
+.dxeColorTable_DevGlp td.dx,
+.dxeItemPicker_DevGlp td.dx
+{
+	padding: 4px;
+}
+.dxeColorTableCell_DevGlp,
+.dxeItemPickerCell_DevGlp
+{
+	padding: 3px;
+	cursor: pointer;
+}
+.dxeColorTableCellDiv_DevGlp
+{
+	border: 1px solid #808080;
+	width: 12px;
+	height: 12px;
+	font-size: 0;
+}
+.dxeColorTableCellSelected_DevGlp
+{
+	padding: 2px!important;
+	background: #e9eaee url('../Web/mItemSBack.png') repeat-x left top;
+	border: 1px solid #9da0aa;
+}
+.dxeColorTableCellHover_DevGlp,
+.dxeItemPickerCellHover_DevGlp
+{
+	padding: 2px!important;
+	background: #e3ebff url('../Web/mSubItemHBack.png') repeat-x left top;
+	border: 1px solid #a6a9b2;
+}
+
+/* -- Invalid Style -- */
+.dxeInvalid_DevGlp
+{
+}
+.dxeInvalid_DevGlp .dxeEditArea_DevGlp,
+.dxeInvalid_DevGlp .dxeMemoEditArea_DevGlp
+{
+}
+
+/* -- Focused Style -- */
+.dxeFocused_DevGlp
+{
+	border-top: 1px solid #434756;
+	border-right: 1px solid #7d808d;
+	border-bottom: 1px solid #aaacb9;
+	border-left: 1px solid #7d808d;
+}
+
+.dxeFocused_DevGlp.dxeTrackBar_DevGlp
+{	
+	border: 0px;
+}
+
+/* -- Null Text Style -- */
+.dxeNullText_DevGlp .dxeEditArea_DevGlp,
+.dxeNullText_DevGlp .dxeMemoEditArea_DevGlp
+{
+	color: #b1b1b8;
+}
+
+/* -- Captcha -- */
+.dxcaControl_DevGlp 
+{
+    font: 10px Century Gothic;
+}
+
+.dxcaRefreshButton_DevGlp
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+
+.dxcaDisabledRefreshButton_DevGlp
+{
+	color: #b1b1b8;
+}
+
+.dxcaRefreshButtonCell_DevGlp
+{
+	padding-left: 2px;
+}
+
+.dxcaRefreshButtonText_DevGlp
+{
+}
+
+.dxcaDisabledRefreshButtonText_DevGlp
+{
+}
+
+.dxcaTextBoxCell_DevGlp,
+.dxcaTextBoxCellNoIndent_DevGlp
+{
+}
+
+.dxcaTextBoxCell_DevGlp .dxeErrorCell_DevGlp
+{
+}
+
+.dxcaTextBoxCellNoIndent_DevGlp .dxeErrorCell_DevGlp
+{
+	padding-left: 0px;
+	padding-top: 4px;
+	color: Red;
+}
+
+.dxcaTextBoxLabel_DevGlp
+{
+	padding-bottom: 4px;
+	display: block;
+}
+
+.dxcaLoadingPanel_DevGlp
+{
+	font: 10px Century Gothic;
+	color: #201f35;
+	background: White none;
+	border: 1px solid #9da0aa;
+}
+
+.dxcaLoadingPanel_DevGlp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+.dxcaLoadingPanel_DevGlp .dxlp-loadingImage 
+{
+	margin:0px;
+}
+
+.dxpcLite_DevGlp .dxHFBPS
+{
+    width: 6px;
+}
+
+.dxeTextBox_DevGlp,
+.dxeButtonEdit_DevGlp,
+.dxeIRadioButton_DevGlp,
+.dxeRadioButtonList_DevGlp,
+.dxeCheckBoxList_DevGlp
+{
+    cursor: default;
+}
+
+/* Removes flicking in iOS Safari*/
+.dxeTrackBar_DevGlp, 
+.dxeIRadioButton_DevGlp, 
+.dxeButtonEdit_DevGlp, 
+.dxeTextBox_DevGlp, 
+.dxeRadioButtonList_DevGlp, 
+.dxeCheckBoxList_DevGlp, 
+.dxeMemo_DevGlp, 
+.dxeListBox_DevGlp, 
+.dxeCalendar_DevGlp, 
+.dxeColorTable_DevGlp
+{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*B232817*/
+.dxIE.dxBrowserVersion-9 .dxeEditArea_DevGlp,
+.dxIE.dxBrowserVersion-10 .dxeEditArea_DevGlp
+{
+	padding-bottom: 1px;
+    margin-bottom: 0px;
+}
+.dxMacOSMobilePlatform .dxeEditArea_DevGlp
+{
+    padding-bottom: 2px!important;
+    margin-bottom: -1px!important;
+}
+
+/* ASPxCololrEdit */
+.dxcpParametersCellSys .dxcpWebColorInput_DevGlp
+{
+	float: right;
+	margin-top: 40px;
+}
+.dxcpColorParameterMainDiv_DevGlp
+{
+	padding: 0px 0 4px 9px;
+	width: 90px;
+	text-align: right;
+}
+.dxeCustomColorButton_DevGlp
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+	margin: 3px 7px;
+	cursor: pointer;
+}
+.dxcpCurrentColor_DevGlp, 
+.dxcpSavedColor_DevGlp
+{
+	height: 35px;
+}
+.dxcpCurrentAndSaved_DevGlp
+{
+	width: 65px;
+	margin: 34px 0px 0px auto;
+	cursor: pointer;
+}
+.dxeColorTablesMainDiv_DevGlp,
+.dxeColorSelectorMainDiv_DevGlp
+{
+	background-color: #FFFFFF;
+}
+.dxeColorSelectorMainDiv_DevGlp
+{
+	padding: 7px;
+}
+.dxcpColorArea_DevGlp,
+.dxcpHueAreaImage_DevGlp,
+.dxcpCurrentAndSaved_DevGlp,
+.dxeColorTablesMainDiv_DevGlp,
+.dxeColorSelectorMainDiv_DevGlp,
+.dxcpParametersCell_DevGlp input
+{
+	border: 1px solid #9da0aa;
+}
+.dxeButtonsPanelDiv_DevGlp
+{
+	margin-top: 15px;
+	text-align: right;
+}
+.dxeButtonsPanelDiv_DevGlp input
+{
+	min-width: 61px;
+	margin-left: 10px;
+}
+
+/* -- ASPxTokenBox -- */
+input.dxeTokenBoxInput_DevGlp[type="text"] {
+	display: inline-block;
+	float: left;
+	outline: none;
+	width: 30px;
+	padding: 2px 0px 2px 0px;
+	margin: 0px 1px 1px 3px;
+}
+.dxeToken_DevGlp {
+    display: inline-block;
+	float: left;
+	min-width: 30px;
+	margin: 0px 1px 1px 0px;
+}
+.dxeTokenText_DevGlp, .dxeTokenRemoveButton_DevGlp {
+	display: block;
+	float: left;
+}
+.dxeTokenText_DevGlp {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0px 2px 0px 4px;
+	padding: 2px 0px 2px 0px;
+}
+.dxeTokenRemoveButton_DevGlp {
+	cursor: pointer;
+	margin-top: 1px;
+}
+.dxeToken_DevGlp {
+	background: #f4f4f4 url('edtTokenBoxTokenBackground.png') repeat-x top;
+}
+.dxFirefox .dxeButtonEdit_DevGlp td.dxictb,
+.dxeButtonEdit_DevGlp td.dxictb {
+    padding: 0;
+}
+.dxFirefox input.dxeTokenBoxInput_DevGlp[type="text"] {
+	padding: 1px 0px 1px 0px;
+	margin: 0px 1px 1px 1px;
+}
+.dxFirefox .dxeTokenText_DevGlp {
+	padding: 1px 0px 1px 0px;
+}
+
+/* ASPxPictureEdit */
+.dxpePreviewContainer_DevGlp
+{
+    position: relative;
+}
+.dxpeCommandPanel_DevGlp
+{
+    background-color: #333333;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    height: 32px;
+    position: absolute;
+}
+.dxpeBottomCommandPanel_DevGlp
+{
+    width: 100%;
+    bottom: 0;
+}
+
+.dxpeTopCommandPanel_DevGlp
+{
+    width: 100%;      
+    top: 0;    
+}
+.dxpeCommandPanelDeleteButton_DevGlp, 
+.dxpeCommandPanelOpenDialogButton_DevGlp
+{    
+    cursor: pointer;
+    display: inline-block;
+}
+.dxpeCommandPanelButtonsWrapper_DevGlp
+{
+    position: absolute;
+}
+.dxpeCommandPanelButtonsWrapperLeft_DevGlp
+{
+    left: 0;
+}
+.dxpeCommandPanelButtonsWrapperCenter_DevGlp
+{
+    left: 50%;
+    margin-left: -32px;
+}
+.dxpeCommandPanelButtonsWrapperRight_DevGlp
+{
+    right: 0;
+}
+.dxpeCommandPanelDeleteButtonHover_DevGlp,
+.dxpeCommandPanelDeleteButtonPressed_DevGlp,
+.dxpeCommandPanelOpenDialogButtonHover_DevGlp,
+.dxpeCommandPanelOpenDialogButtonPressed_DevGlp
+{
+}
+.dxpeCommandPanelDeleteButtonDisabled_DevGlp,
+.dxpeCommandPanelOpenDialogButtonDisabled_DevGlp
+{
+}
+.dxpeDropZone_DevGlp
+{
+    background-color: gray;
+}
+.dxpePlaceHolder_DevGlp
+{
+    background-color: lightgray;
+    z-index: -1;
+}
+.dxpeTextPanelContainer_DevGlp
+{
+    height: 100%;
+    font-size: 200%;
+    text-align: center;
+    width: 100%;
+}
+.dxpeTextPanel_DevGlp
+{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/* Editor caption */
+.dxeCaptionCell_DevGlp
+{
+    font: 10px Century Gothic;
+    color: #201f35;
+    white-space: nowrap;
+    line-height: 16px;
+    height: 100%;
+}
+.dxeRoot_DevGlp
+{
+}
+.dxeCaption_DevGlp
+{
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeTextEditCTypeSys
+{
+    padding-top: 3px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeCheckBoxCTypeSys
+{
+    padding-top: 3px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeRadioButtonCTypeSys
+{
+    padding-top: 4px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeCheckBoxListCTypeSys
+{
+    padding-top: 11px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeRadioButtonListCTypeSys
+{
+    padding-top: 11px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeListBoxCTypeSys
+{
+    padding-top: 2px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeTrackBarCTypeSys
+{
+    padding-top: 2px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeProgressBarCTypeSys
+{
+    padding-top: 3px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeMemoCTypeSys
+{
+    padding-top: 3px;
+}
+.dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeCustomCTypeSys
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dxFirefox .dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeTextEditCTypeSys,
+.dxFirefox .dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeMemoCTypeSys,
+.dxFirefox .dxeCaptionCell_DevGlp.dxeCaptionVATSys.dxeProgressBarCTypeSys
+{
+    padding-top: 2px;
+}
+
+.dxeRequiredMark_DevGlp {
+    color: green;
+    font-style: normal;
+}
+
+.dxeOptionalMark_DevGlp {
+    color: gray;
+    font-style: normal;
+}
+/*Loading Panel*/
+.dxlpLoadingPanel_DevGlp,
+.dxlpLoadingPanelWithContent_DevGlp
+{
+	font: 10px Century Gothic;
+	color: #201f35;
+	background-color: White;
+	border: 1px solid #9da0aa;
+}
+.dxlpLoadingPanel_DevGlp td.dx,
+.dxlpLoadingPanelWithContent_DevGlp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+.dxlpLoadingPanel_DevGlp .dxlp-loadingImage,
+.dxcaLoadingPanel_DevGlp .dxlp-loadingImage,
+.dxlpLoadingPanelWithContent_DevGlp .dxlp-loadingImage,
+.dxeImage_DevGlp.dxe-loadingImage
+{
+	background-image: url('../Web/Loading.gif');
+	height: 32px;
+	width: 32px;
+}
+
+/* Out of range warning*/
+.dxeOutOfRWarn_DevGlp {
+    font: 10px Century Gothic;
+    padding: 3px 8px 4px 8px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: red;
+    border-radius: 3px;
+    z-index: 41998;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #A8A8A8;
+}
+.dxeOutOfRWarnRight_DevGlp {
+    margin-left: 10px;
+}
+.dxeOutOfRWarnBottom_DevGlp {
+    margin-top: 10px;
+}

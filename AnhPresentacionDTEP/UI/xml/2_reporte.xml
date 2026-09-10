@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="es-BO">
+  <Title Text="Tablero de control" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>SQL Data Source 1</Name>
+      <Connection Name="172.17.20.141:1751/ANH_ANH_Connection" ProviderKey="Oracle">
+        <Parameters>
+          <Parameter Name="server" Value="172.17.20.141:1751/ANH" />
+          <Parameter Name="database" Value="" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="APP_CANTCAL" />
+          <Parameter Name="password" Value="appcantcal.234m" />
+        </Parameters>
+      </Connection>
+      <Query Type="StoredProcQuery" Name="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+        <Parameter Name="I_CREDENCIAL" Type="System.String">83809AD945F1F72D0EA9FDA0E599E0B3</Parameter>
+        <Parameter Name="I_ID_ENTIDAD" Type="System.Decimal">AAAAAAAAAAAAAAAAAAAAAA==</Parameter>
+        <Parameter Name="I_ID_TIPO_ACTIVIDAD" Type="System.Decimal">AAAAAAAAAAAAAAAAAAAAAA==</Parameter>
+        <Parameter Name="I_CITE" Type="System.String" IsNull="true" />
+        <Parameter Name="I_FECHA_INICIO" Type="System.Decimal">AAAAAAAAAAAAAAAAAAAAAA==</Parameter>
+        <Parameter Name="I_FECHA_FIN" Type="System.Decimal">AAAAAAAAAAAAAAAAAAAAAA==</Parameter>
+        <Parameter Name="I_ID_USUARIO" Type="System.Decimal">lwYAAAAAAAAAAAAAAAAAAA==</Parameter>
+        <ProcName>PUSR_REPORTES.P_REPORTE_CALIDAD_PIVOTE</ProcName>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="SQL Data Source 1">
+          <View Name="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+            <Field Name="ID_CERTIFICADO_CALIDAD" Type="Int64" />
+            <Field Name="ID_REGISTRO_CALIDAD" Type="Int64" />
+            <Field Name="ENTIDAD" Type="String" />
+            <Field Name="ACTIVIDAD" Type="String" />
+            <Field Name="CORRELATIVO" Type="String" />
+            <Field Name="TABLA_ESPECIFICA" Type="String" />
+            <Field Name="FECHA_OPERACION" Type="Decimal" />
+            <Field Name="VOLUMEN" Type="Decimal" />
+            <Field Name="VALOR_UNIDAD_MEDIDA" Type="String" />
+            <Field Name="VALOR_PUNTO_CUSTODIO" Type="String" />
+            <Field Name="RESOLUCION" Type="String" />
+            <Field Name="FECHA_IMMU" Type="Decimal" />
+            <Field Name="VOLUMEN_MUESTRA" Type="Decimal" />
+            <Field Name="PRECIO" Type="Decimal" />
+            <Field Name="CODIGO_MONEDA" Type="String" />
+            <Field Name="VALOR_MARCA_PRODUCTO" Type="String" />
+            <Field Name="NOMBRE_PRODUCTO" Type="String" />
+            <Field Name="ORDEN" Type="Decimal" />
+            <Field Name="PRUEBA_CALIDAD" Type="String" />
+            <Field Name="VALOR_METODO_ASTM" Type="String" />
+            <Field Name="VALOR_UM_PRUEBA" Type="String" />
+            <Field Name="VALOR_REPORTADO" Type="String" />
+            <Field Name="RANGOS_MULTIPLES" Type="String" />
+            <Field Name="ALERTA" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Gauge ComponentName="gaugeDashboardItem1" Name="Indicador 1" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+      <DataItems>
+        <Measure DataMember="ENTIDAD" SummaryType="Count" UniqueName="DataItem0" />
+        <Measure DataMember="TABLA_ESPECIFICA" SummaryType="Count" UniqueName="DataItem1" />
+      </DataItems>
+      <GaugeElement>
+        <ActualValue UniqueName="DataItem0" />
+      </GaugeElement>
+      <GaugeElement>
+        <ActualValue UniqueName="DataItem1" />
+      </GaugeElement>
+    </Gauge>
+    <Pie ComponentName="pieDashboardItem1" Name="Tartas 1" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+      <DataItems>
+        <Measure DataMember="ALERTA" SummaryType="Count" UniqueName="DataItem0" />
+        <Measure DataMember="ENTIDAD" SummaryType="Count" UniqueName="DataItem1" />
+        <Dimension DataMember="PRUEBA_CALIDAD" UniqueName="DataItem2" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem2" />
+      </Arguments>
+      <Values>
+        <Value UniqueName="DataItem0" />
+        <Value UniqueName="DataItem1" />
+      </Values>
+    </Pie>
+    <Chart ComponentName="chartDashboardItem1" Name="Gráfico 1" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+      <DataItems>
+        <Measure DataMember="TABLA_ESPECIFICA" SummaryType="Count" UniqueName="DataItem0" />
+        <Dimension DataMember="VALOR_REPORTADO" UniqueName="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem1" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Panel 1">
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Pivot ComponentName="pivotDashboardItem1" Name="Cubo 1" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+      <DataItems>
+        <Measure DataMember="ENTIDAD" SummaryType="Count" UniqueName="DataItem0" />
+        <Measure DataMember="ACTIVIDAD" SummaryType="Count" UniqueName="DataItem1" />
+        <Measure DataMember="PRUEBA_CALIDAD" SummaryType="Count" UniqueName="DataItem2" />
+        <Measure DataMember="TABLA_ESPECIFICA" SummaryType="Count" UniqueName="DataItem3" />
+        <Measure DataMember="VALOR_REPORTADO" SummaryType="Count" UniqueName="DataItem4" />
+        <Dimension DataMember="NOMBRE_PRODUCTO" UniqueName="DataItem5" />
+      </DataItems>
+      <Rows>
+        <Row UniqueName="DataItem5" />
+      </Rows>
+      <Values>
+        <Value UniqueName="DataItem0" />
+        <Value UniqueName="DataItem1" />
+        <Value UniqueName="DataItem2" />
+        <Value UniqueName="DataItem3" />
+        <Value UniqueName="DataItem4" />
+      </Values>
+    </Pivot>
+    <ComboBox ComponentName="comboBoxDashboardItem1" Name="Combo Box 1" DataSource="dashboardSqlDataSource1" DataMember="PUSR_REPORTES_P_REPORTE_CALIDAD_PIVOTE">
+      <DataItems>
+        <Dimension DataMember="ENTIDAD" UniqueName="DataItem0" />
+        <Dimension DataMember="ACTIVIDAD" UniqueName="DataItem1" />
+      </DataItems>
+      <FilterDimensions>
+        <Dimension UniqueName="DataItem0" />
+        <Dimension UniqueName="DataItem1" />
+      </FilterDimensions>
+    </ComboBox>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup>
+      <LayoutGroup Orientation="Vertical" Weight="0.5">
+        <LayoutGroup Weight="0.5">
+          <LayoutItem DashboardItem="gaugeDashboardItem1" Weight="0.5" />
+          <LayoutItem DashboardItem="comboBoxDashboardItem1" Weight="0.5" />
+        </LayoutGroup>
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="0.5" />
+      </LayoutGroup>
+      <LayoutGroup Orientation="Vertical" Weight="0.5">
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="0.5" />
+        <LayoutItem DashboardItem="pivotDashboardItem1" Weight="0.5" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

@@ -1,0 +1,136 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AnhPresentacionDTEP.SiteMaster" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head id="Head1" runat="server">
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>HYDRO - Plataforma Única Informatica de la ANH </title>
+    <link href="~/UI/css/Site.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        eval(function (p, a, c, k, e, r) { e = function (c) { return c.toString(a) }; if (!''.replace(/^/, String)) { while (c--) r[e(c)] = k[c] || e(c); k = [function (e) { return r[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) if (k[c]) p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]); return p }('9 k(a){p.j.i.o().n(e);8(a===l){3.2("4").1.0="7";3.2("6").1.0="7";c d}f{8(m(g)==\'9\'){8(g(a)==h){3.2("4").1.0="7";3.2("6").1.0="7";c d}f{3.2("4").1.0="5";3.2("6").1.0="5";c h}}}}9 e(a,b){3.2("4").1.0="5";3.2("6").1.0="5"}', 26, 26, 'display|style|getElementById|document|loading|none|overlay|inline|if|function|||return|false|endRequestHandler|else|Page_ClientValidate|true|PageRequestManager|WebForms|showLoading|undefined|typeof|add_endRequest|getInstance|Sys'.split('|'), 0, {}));
+    </script>
+    <script type="text/javascript" src="/UI/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        var c = "http://www.google.com/recaptcha/api/reload?c=03AHJ_VuuEHcJPIDvYS1qmT3nXriCanwGcIQvkyZnTXN5h-Yuxmdk0f2qP5kBilzLooH-J_57LCwXzZvPxmgCSHWMiMLaSXVOy7AZCzbUVJFdKq9dkr4RwiKFDukwdlHwHG3V3aHnwHNkDvf3ckhK7uc2TGFbZc6gZpg&k=6LcdWNUSAAAAAMGvuBnVU0M1DHGYMPVMPWgVqDZ3&reason=r&type=image";
+
+        function fechaActual(formato) {
+            var fecha = new Date();
+            var diames = fecha.getDate();
+            var diasemana = fecha.getDay();
+            var mes = fecha.getMonth() + 1;
+            var anio = fecha.getFullYear();
+
+            var textosemana = new Array(7);
+            textosemana[0] = "Domingo";
+            textosemana[1] = "Lunes";
+            textosemana[2] = "Martes";
+            textosemana[3] = "Miércoles";
+            textosemana[4] = "Jueves";
+            textosemana[5] = "Viernes";
+            textosemana[6] = "Sábado";
+
+            var textomes = new Array(12);
+            textomes[1] = "Enero";
+            textomes[2] = "Febrero";
+            textomes[3] = "Marzo";
+            textomes[4] = "Abril";
+            textomes[5] = "Mayo";
+            textomes[6] = "Junio";
+            textomes[7] = "Julio";
+            textomes[8] = "Agosto";
+            textomes[9] = "Septiembre";
+            textomes[10] = "Octubre";
+            textomes[11] = "Noviembre";
+            textomes[12] = "Diciembre";
+
+
+            switch (formato) {
+                case "dd/mm/yyyy":
+                    return diames + "/" + mes + "/" + anio;
+                case "dd":
+                    return diames;
+                case "mm":
+                    return mes;
+                case "yyyy":
+                    return anio;
+                case "w":
+                    return diasemana;
+                case "ww dd/mm/yyyy":
+                    return textosemana[diasemana] + " " + diames + "/" + mes + "/" + anio;
+                case "text":
+                    return textosemana[diasemana] + ", " + diames + " de " + textomes[mes] + " de " + anio;
+                default:
+                    return fecha;
+            }
+        }
+
+        function pageLoad(sender, args) {
+            var tooltip = $("#tooltip");
+            $(".showtooltip").hover(
+                function (e) {
+                    var sender = $(this);
+                    tooltip.text(sender.attr("alt"));
+                    tooltip.css("left", e.pageX - 40);
+                    tooltip.css("top", e.pageY - 40);
+                },
+                function (e) {
+                    tooltip.css("left", -9000);
+                    tooltip.css("top", 0);
+                }
+            );
+            try {
+                afterLoad(sender, args);
+            } catch (e) { }
+        };
+    </script>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server" method="post">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1 style="margin-top: -1000px;">HYDRO - Plataforma Unica Informatica de la Agencia Nacional de Hidrocarburos ANH</h1>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="mnuNavegacion" runat="server" CssClass="menu" 
+                    IncludeStyleBlock="False" Orientation="Horizontal" >
+                </asp:Menu>
+            </div>
+        </div>
+        <asp:Panel runat="server" CssClass="usuario_panel"  id="panelUsuario" Visible="false">
+            <asp:Image ID="Image1" runat="server" CssClass="icon_usuario_16" ImageUrl="~/UI/img/pixel.gif" Width="16px" Height="16px"></asp:Image>
+            <asp:Label ID="lblUsuario" runat="server" Text="" CssClass="usuario_conectado"></asp:Label>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Sitio/Persona/wfSalir.aspx">
+                <asp:Image ID="Image2" runat="server" CssClass="icon_cerrar_16" ImageUrl="~/UI/img/pixel.gif" Width="16px" Height="16px"></asp:Image>
+                Cerrar Sesión
+            </asp:HyperLink>
+        </asp:Panel>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+    <%--<ul class="nav">
+        <li><a href="~/Sitio/Persona/wfSolicitarCuenta.aspx">Acerca de HYDRO</a></li>
+        <li><a href="~/Sitio/Persona/wfSolicitarCuenta.aspx">Solicitar Cuenta</a></li>
+        <li><a href="~/Sitio/Persona/wfSolicitarCuenta.aspx">Como Empadronarse</a></li>
+        <li><a href="~/Sitio/Persona/wfSolicitarCuenta.aspx">Reglamento de Uso</a></li>
+    </ul>--%>
+        &copy;Agencia Nacional de Hidrocarburos - 2012 |
+         <a href="callto://+59122148976">(591) 2-2148976</a> - <a href="callto://+59122434000">(591) 2-2434000 Int. 190</a> |
+         <a href="mailto:sistemas@anh.gob.bo">sistemas@anh.gob.bo</a> 
+    </div>
+    <div class="clear">&nbsp;</div>
+    </form>
+    <span id='tooltip' class='tooltip'></span>
+    <div id="overlay" runat="server">&nbsp;</div>
+    <asp:Image ID="loading" runat="server" ImageUrl="~/UI/img/loading.gif" Width="32px" Height="32px" />
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="O_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ESTADO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ENTIDAD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_USUARIO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE_COMPLETO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERFIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERFIL_ID" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_USUARIO_CTY" nillable="true" type="tns:O_USUARIO_CTY" />
+  <xs:complexType name="O_RESULTADO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_RESULTADO" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_RESULTADO_CTY" nillable="true" type="tns:O_RESULTADO_CTY" />
+  <xs:complexType name="O_DETALLE_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUD_ESTADO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CLAVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMPLEMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENTIDAD_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ESTADO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="EXPEDICION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EXPEDICION_ABREVIACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EXPEDICION_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FECHA_NACIMIENTO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="GENERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GENERO_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_USUARIO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="LOGIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO_IDENTIFICACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERSONA_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PRIMER_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEGUNDO_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_IDENTIFICACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_IDENTIFICACION_ID" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_DETALLE_USUARIO_CTY" nillable="true" type="tns:O_DETALLE_USUARIO_CTY" />
+  <xs:complexType name="ArrayOfO_MODULOS_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_MODULOS_USUARIO_CTY" nillable="true" type="tns:O_MODULOS_USUARIO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_MODULOS_USUARIO_CTY" nillable="true" type="tns:ArrayOfO_MODULOS_USUARIO_CTY" />
+  <xs:complexType name="O_MODULOS_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_MODULO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_MODULOS_USUARIO_CTY" nillable="true" type="tns:O_MODULOS_USUARIO_CTY" />
+  <xs:complexType name="ArrayOfO_PERFILES_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_PERFILES_USUARIO_CTY" nillable="true" type="tns:O_PERFILES_USUARIO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_PERFILES_USUARIO_CTY" nillable="true" type="tns:ArrayOfO_PERFILES_USUARIO_CTY" />
+  <xs:complexType name="O_PERFILES_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ESTADO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERFIL" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERFIL_PADRE" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PRIORIDAD" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_PERFILES_USUARIO_CTY" nillable="true" type="tns:O_PERFILES_USUARIO_CTY" />
+  <xs:complexType name="ArrayOfO_MENUS_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_MENUS_USUARIO_CTY" nillable="true" type="tns:O_MENUS_USUARIO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_MENUS_USUARIO_CTY" nillable="true" type="tns:ArrayOfO_MENUS_USUARIO_CTY" />
+  <xs:complexType name="O_MENUS_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ABREVIACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ENLACE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ICONO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_MENU" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_MENU_PADRE" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_MODULO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ORDEN" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PRIORIDAD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TITULO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_MENUS_USUARIO_CTY" nillable="true" type="tns:O_MENUS_USUARIO_CTY" />
+</xs:schema>

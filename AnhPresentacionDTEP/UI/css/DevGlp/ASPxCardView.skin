@@ -1,0 +1,11 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web" Assembly="DevExpress.Web.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
+<dx:ASPxCardView runat="server" CssFilePath="{0}/styles.css" CssPostfix="DevGlp">
+	<Images SpriteCssFilePath="{0}/sprite.css" />
+    <SettingsPager CurrentPageNumberFormat="{0}" />
+    <Styles>
+        <Header SortingImageSpacing="5" />
+    </Styles>
+</dx:ASPxCardView>
+

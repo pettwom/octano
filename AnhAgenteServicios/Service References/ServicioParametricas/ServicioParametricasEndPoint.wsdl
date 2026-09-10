@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://servicios.anh.gob.bo:8443" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://servicios.anh.gob.bo/WSParametricas/ServicioParametricas.svc" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioParametricasEndPoint" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://servicios.anh.gob.bo/WSParametricas/ServicioParametricas.svc" location="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://servicios.anh.gob.bo:8443/Imports">
+      <xsd:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc?xsd=xsd0" namespace="http://servicios.anh.gob.bo:8443" />
+      <xsd:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioParametricas_listadoAmbitosOperacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoAmbitosOperacion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoAmbitosOperacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoAmbitosOperacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoAseguradoras_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoAseguradoras" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoAseguradoras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoAseguradorasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoBancos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoBancos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoBancos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoBancosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCargos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCargos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCargos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCargosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasActividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasActividad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasActividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasLicCond_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasLicCond" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasLicCond_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasLicCondResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasTramite" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCategoriasVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCategoriasVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCatInstaladoras_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCatInstaladoras" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoCatInstaladoras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoCatInstaladorasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoClasesVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoClasesVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoClasesVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoClasesVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoColegiosContadores_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoColegiosContadores" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoColegiosContadores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoColegiosContadoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoColoresVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoColoresVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoColoresVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoColoresVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoDepartamentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoDepartamentos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoDepartamentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoDepartamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoDirecciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoDirecciones" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoDirecciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoDireccionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosCiviles_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosCiviles" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosCiviles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosCivilesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosInforme_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosInforme" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosInforme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosInformeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosKardex_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosKardex" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosKardex_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosKardexResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosProceso_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosProceso" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoEstadosProceso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoEstadosProcesoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoGeneros_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoGeneros" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoGeneros_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoGenerosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoGestiones_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoGestiones" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoGestiones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoGestionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoHidrocarburos_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoHidrocarburos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoHidrocarburos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoHidrocarburosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoInspectores_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoInspectores" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoInspectores_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoInspectoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoLocalidades_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoLocalidades" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoLocalidades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoLocalidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasCilindro_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasCilindro" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasCilindro_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasCilindroResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasKit_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasKit" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasKit_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasKitResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMunicipios_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMunicipios" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMunicipios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMunicipiosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPaises_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPaises" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPaises_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPaisesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPlantas_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPlantas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPlantas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPlantasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPreciosDidrocarburo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPreciosDidrocarburo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPreciosDidrocarburo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPreciosDidrocarburoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPrioridades_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPrioridades" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoPrioridades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoPrioridadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoProvincias_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoProvincias" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoProvincias_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoProvinciasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoRegionesGeograficas_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoRegionesGeograficas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoRegionesGeograficas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoRegionesGeograficasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoRequisitosGPS_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoRequisitosGPS" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoRequisitosGPS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoRequisitosGPSResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoServiciosVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoServiciosVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoServiciosVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoServiciosVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposActividad_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposActividad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposActividad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposActividadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposCertificado_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposCertificado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposCertificado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposCertificadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposCobertura_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposCobertura" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposCobertura_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposCoberturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposCopia_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposCopia" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposCopia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposCopiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposDocumento_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposDocumento" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposDocumento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposDocumentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposDocInscr_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposDocInscr" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposDocInscr_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposDocInscrResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposDocVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposDocVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposDocVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposDocVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposEntidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposEntidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposEntidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposEntidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposEnvio_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposEnvio" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposEnvio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposFuncion_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposFuncion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposFuncion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposFuncionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposIdentificacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposIdentificacion" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposIdentificacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposIdentificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposImagen_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposImagen" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposImagen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposImagenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposInforme_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposInforme" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposInforme_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposInformeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposLicencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposLicencia" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposLicencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposLicenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposParentesco_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposParentesco" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposParentesco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposParentescoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposPoliza_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposPoliza" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposPoliza_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposPolizaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposPropietario_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposPropietario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposPropietario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposPropietarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposRepresentante_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposRepresentante" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposRepresentante_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposRepresentanteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposSangre_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposSangre" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposSangre_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposSangreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposSociedad_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposSociedad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposSociedad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposSociedadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposSucursal_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposSucursal" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposSucursal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposSucursalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposTanque_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposTanque" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposTanque_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposTanqueResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposTramite_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposTramite" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposTramite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposTramiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposTransporte_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposTransporte" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposTransporte_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposTransporteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposVehiculo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposVehiculo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoTiposVehiculo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoTiposVehiculoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoUnidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoUnidad" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoUnidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoUnidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoUnidades_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoUnidades" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoUnidades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoUnidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadClasificacionCargo_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadClasificacionCargo" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadClasificacionCargo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadClasificacionCargoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadCondicionesLaborales_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadCondicionesLaborales" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadCondicionesLaborales_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadCondicionesLaboralesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoOrganigrama_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoOrganigrama" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoOrganigrama_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoOrganigramaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoClasesMaquinaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoClasesMaquinaria" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoClasesMaquinaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoClasesMaquinariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasMaquinaria_InputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasMaquinaria" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_listadoMarcasMaquinaria_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listadoMarcasMaquinariaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ListadoActividadesEconomicas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoActividadesEconomicas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ListadoActividadesEconomicas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoActividadesEconomicasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ListadoCategoriaFotoPersona_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoCategoriaFotoPersona" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ListadoCategoriaFotoPersona_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListadoCategoriaFotoPersonaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ObtieneDescripcionGeografica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneDescripcionGeografica" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ObtieneDescripcionGeografica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneDescripcionGeograficaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ListaUbicacionGeografica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaUbicacionGeografica" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ListaUbicacionGeografica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaUbicacionGeograficaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ObtieneUbicacionGeografica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneUbicacionGeografica" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ObtieneUbicacionGeografica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneUbicacionGeograficaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ObtieneFechaLimite_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneFechaLimite" />
+  </wsdl:message>
+  <wsdl:message name="IServicioParametricas_ObtieneFechaLimite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtieneFechaLimiteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioParametricas">
+    <wsdl:operation name="listadoAmbitosOperacion">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoAmbitosOperacion" message="tns:IServicioParametricas_listadoAmbitosOperacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoAmbitosOperacionResponse" message="tns:IServicioParametricas_listadoAmbitosOperacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoAseguradoras">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoAseguradoras" message="tns:IServicioParametricas_listadoAseguradoras_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoAseguradorasResponse" message="tns:IServicioParametricas_listadoAseguradoras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoBancos">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoBancos" message="tns:IServicioParametricas_listadoBancos_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoBancosResponse" message="tns:IServicioParametricas_listadoBancos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoCargos">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCargos" message="tns:IServicioParametricas_listadoCargos_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCargosResponse" message="tns:IServicioParametricas_listadoCargos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasActividad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasActividad" message="tns:IServicioParametricas_listadoCategoriasActividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasActividadResponse" message="tns:IServicioParametricas_listadoCategoriasActividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasLicCond">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasLicCond" message="tns:IServicioParametricas_listadoCategoriasLicCond_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasLicCondResponse" message="tns:IServicioParametricas_listadoCategoriasLicCond_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasTramite">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasTramite" message="tns:IServicioParametricas_listadoCategoriasTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasTramiteResponse" message="tns:IServicioParametricas_listadoCategoriasTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoCategoriasVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasVehiculo" message="tns:IServicioParametricas_listadoCategoriasVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCategoriasVehiculoResponse" message="tns:IServicioParametricas_listadoCategoriasVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoCatInstaladoras">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCatInstaladoras" message="tns:IServicioParametricas_listadoCatInstaladoras_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoCatInstaladorasResponse" message="tns:IServicioParametricas_listadoCatInstaladoras_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoClasesVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoClasesVehiculo" message="tns:IServicioParametricas_listadoClasesVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoClasesVehiculoResponse" message="tns:IServicioParametricas_listadoClasesVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoColegiosContadores">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoColegiosContadores" message="tns:IServicioParametricas_listadoColegiosContadores_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoColegiosContadoresResponse" message="tns:IServicioParametricas_listadoColegiosContadores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoColoresVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoColoresVehiculo" message="tns:IServicioParametricas_listadoColoresVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoColoresVehiculoResponse" message="tns:IServicioParametricas_listadoColoresVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoDepartamentos">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoDepartamentos" message="tns:IServicioParametricas_listadoDepartamentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoDepartamentosResponse" message="tns:IServicioParametricas_listadoDepartamentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoDirecciones">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoDirecciones" message="tns:IServicioParametricas_listadoDirecciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoDireccionesResponse" message="tns:IServicioParametricas_listadoDirecciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosCiviles">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosCiviles" message="tns:IServicioParametricas_listadoEstadosCiviles_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosCivilesResponse" message="tns:IServicioParametricas_listadoEstadosCiviles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosInforme">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosInforme" message="tns:IServicioParametricas_listadoEstadosInforme_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosInformeResponse" message="tns:IServicioParametricas_listadoEstadosInforme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosKardex">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosKardex" message="tns:IServicioParametricas_listadoEstadosKardex_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosKardexResponse" message="tns:IServicioParametricas_listadoEstadosKardex_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoEstadosProceso">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosProceso" message="tns:IServicioParametricas_listadoEstadosProceso_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoEstadosProcesoResponse" message="tns:IServicioParametricas_listadoEstadosProceso_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoGeneros">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoGeneros" message="tns:IServicioParametricas_listadoGeneros_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoGenerosResponse" message="tns:IServicioParametricas_listadoGeneros_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoGestiones">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoGestiones" message="tns:IServicioParametricas_listadoGestiones_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoGestionesResponse" message="tns:IServicioParametricas_listadoGestiones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoHidrocarburos">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoHidrocarburos" message="tns:IServicioParametricas_listadoHidrocarburos_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoHidrocarburosResponse" message="tns:IServicioParametricas_listadoHidrocarburos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoInspectores">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoInspectores" message="tns:IServicioParametricas_listadoInspectores_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoInspectoresResponse" message="tns:IServicioParametricas_listadoInspectores_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoLocalidades">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoLocalidades" message="tns:IServicioParametricas_listadoLocalidades_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoLocalidadesResponse" message="tns:IServicioParametricas_listadoLocalidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasCilindro">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasCilindro" message="tns:IServicioParametricas_listadoMarcasCilindro_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasCilindroResponse" message="tns:IServicioParametricas_listadoMarcasCilindro_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasKit">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasKit" message="tns:IServicioParametricas_listadoMarcasKit_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasKitResponse" message="tns:IServicioParametricas_listadoMarcasKit_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasVehiculo" message="tns:IServicioParametricas_listadoMarcasVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasVehiculoResponse" message="tns:IServicioParametricas_listadoMarcasVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoMunicipios">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMunicipios" message="tns:IServicioParametricas_listadoMunicipios_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMunicipiosResponse" message="tns:IServicioParametricas_listadoMunicipios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoPaises">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPaises" message="tns:IServicioParametricas_listadoPaises_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPaisesResponse" message="tns:IServicioParametricas_listadoPaises_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoPlantas">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPlantas" message="tns:IServicioParametricas_listadoPlantas_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPlantasResponse" message="tns:IServicioParametricas_listadoPlantas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoPreciosDidrocarburo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPreciosDidrocarburo" message="tns:IServicioParametricas_listadoPreciosDidrocarburo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPreciosDidrocarburoResponse" message="tns:IServicioParametricas_listadoPreciosDidrocarburo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoPrioridades">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPrioridades" message="tns:IServicioParametricas_listadoPrioridades_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoPrioridadesResponse" message="tns:IServicioParametricas_listadoPrioridades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoProvincias">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoProvincias" message="tns:IServicioParametricas_listadoProvincias_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoProvinciasResponse" message="tns:IServicioParametricas_listadoProvincias_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoRegionesGeograficas">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoRegionesGeograficas" message="tns:IServicioParametricas_listadoRegionesGeograficas_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoRegionesGeograficasResponse" message="tns:IServicioParametricas_listadoRegionesGeograficas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoRequisitosGPS">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoRequisitosGPS" message="tns:IServicioParametricas_listadoRequisitosGPS_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoRequisitosGPSResponse" message="tns:IServicioParametricas_listadoRequisitosGPS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoServiciosVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoServiciosVehiculo" message="tns:IServicioParametricas_listadoServiciosVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoServiciosVehiculoResponse" message="tns:IServicioParametricas_listadoServiciosVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposActividad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposActividad" message="tns:IServicioParametricas_listadoTiposActividad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposActividadResponse" message="tns:IServicioParametricas_listadoTiposActividad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposCertificado">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCertificado" message="tns:IServicioParametricas_listadoTiposCertificado_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCertificadoResponse" message="tns:IServicioParametricas_listadoTiposCertificado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposCobertura">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCobertura" message="tns:IServicioParametricas_listadoTiposCobertura_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCoberturaResponse" message="tns:IServicioParametricas_listadoTiposCobertura_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposCopia">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCopia" message="tns:IServicioParametricas_listadoTiposCopia_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposCopiaResponse" message="tns:IServicioParametricas_listadoTiposCopia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposDocumento">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocumento" message="tns:IServicioParametricas_listadoTiposDocumento_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocumentoResponse" message="tns:IServicioParametricas_listadoTiposDocumento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposDocInscr">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocInscr" message="tns:IServicioParametricas_listadoTiposDocInscr_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocInscrResponse" message="tns:IServicioParametricas_listadoTiposDocInscr_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposDocVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocVehiculo" message="tns:IServicioParametricas_listadoTiposDocVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposDocVehiculoResponse" message="tns:IServicioParametricas_listadoTiposDocVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposEntidad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposEntidad" message="tns:IServicioParametricas_listadoTiposEntidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposEntidadResponse" message="tns:IServicioParametricas_listadoTiposEntidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposEnvio">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposEnvio" message="tns:IServicioParametricas_listadoTiposEnvio_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposEnvioResponse" message="tns:IServicioParametricas_listadoTiposEnvio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposFuncion">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposFuncion" message="tns:IServicioParametricas_listadoTiposFuncion_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposFuncionResponse" message="tns:IServicioParametricas_listadoTiposFuncion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposIdentificacion">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposIdentificacion" message="tns:IServicioParametricas_listadoTiposIdentificacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposIdentificacionResponse" message="tns:IServicioParametricas_listadoTiposIdentificacion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposImagen">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposImagen" message="tns:IServicioParametricas_listadoTiposImagen_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposImagenResponse" message="tns:IServicioParametricas_listadoTiposImagen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposInforme">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposInforme" message="tns:IServicioParametricas_listadoTiposInforme_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposInformeResponse" message="tns:IServicioParametricas_listadoTiposInforme_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposLicencia">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposLicencia" message="tns:IServicioParametricas_listadoTiposLicencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposLicenciaResponse" message="tns:IServicioParametricas_listadoTiposLicencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposParentesco">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposParentesco" message="tns:IServicioParametricas_listadoTiposParentesco_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposParentescoResponse" message="tns:IServicioParametricas_listadoTiposParentesco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposPoliza">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposPoliza" message="tns:IServicioParametricas_listadoTiposPoliza_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposPolizaResponse" message="tns:IServicioParametricas_listadoTiposPoliza_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposPropietario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposPropietario" message="tns:IServicioParametricas_listadoTiposPropietario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposPropietarioResponse" message="tns:IServicioParametricas_listadoTiposPropietario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposRepresentante">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposRepresentante" message="tns:IServicioParametricas_listadoTiposRepresentante_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposRepresentanteResponse" message="tns:IServicioParametricas_listadoTiposRepresentante_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposSangre">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSangre" message="tns:IServicioParametricas_listadoTiposSangre_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSangreResponse" message="tns:IServicioParametricas_listadoTiposSangre_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposSociedad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSociedad" message="tns:IServicioParametricas_listadoTiposSociedad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSociedadResponse" message="tns:IServicioParametricas_listadoTiposSociedad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposSucursal">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSucursal" message="tns:IServicioParametricas_listadoTiposSucursal_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposSucursalResponse" message="tns:IServicioParametricas_listadoTiposSucursal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposTanque">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTanque" message="tns:IServicioParametricas_listadoTiposTanque_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTanqueResponse" message="tns:IServicioParametricas_listadoTiposTanque_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposTramite">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTramite" message="tns:IServicioParametricas_listadoTiposTramite_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTramiteResponse" message="tns:IServicioParametricas_listadoTiposTramite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposTransporte">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTransporte" message="tns:IServicioParametricas_listadoTiposTransporte_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposTransporteResponse" message="tns:IServicioParametricas_listadoTiposTransporte_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoTiposVehiculo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposVehiculo" message="tns:IServicioParametricas_listadoTiposVehiculo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoTiposVehiculoResponse" message="tns:IServicioParametricas_listadoTiposVehiculo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoUnidad">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoUnidad" message="tns:IServicioParametricas_listadoUnidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoUnidadResponse" message="tns:IServicioParametricas_listadoUnidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoUnidades">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoUnidades" message="tns:IServicioParametricas_listadoUnidades_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoUnidadesResponse" message="tns:IServicioParametricas_listadoUnidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadClasificacionCargo">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadClasificacionCargo" message="tns:IServicioParametricas_listadClasificacionCargo_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadClasificacionCargoResponse" message="tns:IServicioParametricas_listadClasificacionCargo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadCondicionesLaborales">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadCondicionesLaborales" message="tns:IServicioParametricas_listadCondicionesLaborales_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadCondicionesLaboralesResponse" message="tns:IServicioParametricas_listadCondicionesLaborales_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoOrganigrama">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoOrganigrama" message="tns:IServicioParametricas_listadoOrganigrama_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoOrganigramaResponse" message="tns:IServicioParametricas_listadoOrganigrama_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoClasesMaquinaria">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoClasesMaquinaria" message="tns:IServicioParametricas_listadoClasesMaquinaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoClasesMaquinariaResponse" message="tns:IServicioParametricas_listadoClasesMaquinaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listadoMarcasMaquinaria">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasMaquinaria" message="tns:IServicioParametricas_listadoMarcasMaquinaria_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/listadoMarcasMaquinariaResponse" message="tns:IServicioParametricas_listadoMarcasMaquinaria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoActividadesEconomicas">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListadoActividadesEconomicas" message="tns:IServicioParametricas_ListadoActividadesEconomicas_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListadoActividadesEconomicasResponse" message="tns:IServicioParametricas_ListadoActividadesEconomicas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListadoCategoriaFotoPersona">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListadoCategoriaFotoPersona" message="tns:IServicioParametricas_ListadoCategoriaFotoPersona_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListadoCategoriaFotoPersonaResponse" message="tns:IServicioParametricas_ListadoCategoriaFotoPersona_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneDescripcionGeografica">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneDescripcionGeografica" message="tns:IServicioParametricas_ObtieneDescripcionGeografica_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneDescripcionGeograficaResponse" message="tns:IServicioParametricas_ObtieneDescripcionGeografica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaUbicacionGeografica">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListaUbicacionGeografica" message="tns:IServicioParametricas_ListaUbicacionGeografica_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ListaUbicacionGeograficaResponse" message="tns:IServicioParametricas_ListaUbicacionGeografica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneUbicacionGeografica">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneUbicacionGeografica" message="tns:IServicioParametricas_ObtieneUbicacionGeografica_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneUbicacionGeograficaResponse" message="tns:IServicioParametricas_ObtieneUbicacionGeografica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtieneFechaLimite">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneFechaLimite" message="tns:IServicioParametricas_ObtieneFechaLimite_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioParametricas/ObtieneFechaLimiteResponse" message="tns:IServicioParametricas_ObtieneFechaLimite_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="ServicioParametricasEndPoint">
+    <wsdl:port name="HydroParametricasEndPoint" binding="i0:HydroParametricasEndPoint">
+      <soap:address location="https://vsrvuid013.anh.gob.bo:7443/WSParametricas/ServicioParametricas.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

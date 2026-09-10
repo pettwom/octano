@@ -1,0 +1,1173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDADAFCC-95A5-48A8-8BE7-30FCCE2B463B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnhPresentacionDTEP</RootNamespace>
+    <AssemblyName>AnhPresentacionDTEP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\AnhHydroAdministrador\AnhHydroAdministrador\AnhAdministradorPresentacion\Dll\Ajaxtoolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AnhClases, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\AnhClases.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.1.Web, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.Dashboard.v15.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.1.Win, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.Dashboard.v15.1.Win.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Dashboard.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.Design.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress 15.1\Components\Bin\Framework\DevExpress.Web.ASPxTreeList.v15.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v15.1.Web, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Presets, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v15.1.Win, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v15.1.Web, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v15.1, Version=15.1.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Librerias.Anh.Us, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AnhPersistenciaCore\DLL\Librerias.Anh.Us.dll</HintPath>
+    </Reference>
+    <Reference Include="Llaves.Anh.Dtic, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Llaves\Llaves.Anh.Dtic.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\ServiceStack\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\ServiceStack\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\ServiceStack\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivator">
+      <HintPath>..\packages\WebActivator.1.5\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Comun\Persona\CtrAnhDatosPersona.ascx" />
+    <Content Include="Comun\Persona\CtrDatoPersona.ascx" />
+    <Content Include="Comun\Persona\ucMensajeAlerta.ascx" />
+    <Content Include="Comun\UControl\ucCargadoMenuCertificadoCalidad.ascx" />
+    <Content Include="Comun\UControl\ucMensajeError.ascx" />
+    <Content Include="Comun\UControl\ucRegistroCertificadoCalidadCarburantes.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Dll\Ajaxtoolkit\AjaxControlToolkit.dll" />
+    <Content Include="Dll\Itext\itextsharp.dll" />
+    <Content Include="Dll\Itext\itextsharp.xmlworker.dll" />
+    <Content Include="Dll\Itext\itextsharp.xtra.dll" />
+    <Content Include="Dll\Json\Newtonsoft.Json.dll" />
+    <Content Include="Dll\Json\Newtonsoft.Json.pdb" />
+    <Content Include="Dll\Json\Newtonsoft.Json.xml" />
+    <Content Include="Dll\Json\Recaptcha.dll" />
+    <Content Include="Dll\AnhClases.dll" />
+    <Content Include="Dll\AnhCore.dll" />
+    <Content Include="Dll\AnhDominio.dll" />
+    <Content Include="Dll\Librerias.Anh.Us.dll" />
+    <Content Include="Dll\Llaves\Llaves.Anh.Dtic.dll" />
+    <Content Include="Dll\Oracle.ManagedDataAccess.dll" />
+    <Content Include="Dll\ServiceStack\ServiceStack.Common.dll" />
+    <Content Include="Dll\ServiceStack\ServiceStack.Interfaces.dll" />
+    <Content Include="Dll\ServiceStack\ServiceStack.Text.dll" />
+    <Content Include="README.txt" />
+    <Content Include="Scripts\cldr.js" />
+    <Content Include="Scripts\cldr\event.js" />
+    <Content Include="Scripts\cldr\supplemental.js" />
+    <Content Include="Scripts\cldr\unresolved.js" />
+    <Content Include="Scripts\globalize.js" />
+    <Content Include="Scripts\globalize\currency.js" />
+    <Content Include="Scripts\globalize\date.js" />
+    <Content Include="Scripts\globalize\message.js" />
+    <Content Include="Scripts\globalize\number.js" />
+    <Content Include="Scripts\globalize\plural.js" />
+    <Content Include="Scripts\globalize\relative-time.js" />
+    <Content Include="Scripts\globalize\unit.js" />
+    <None Include="Scripts\jquery-1.11.3.intellisense.js" />
+    <Content Include="Scripts\jquery-1.11.3.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Sitio\Persona\wfAutenticacion.aspx" />
+    <Content Include="Sitio\Persona\wfSalir.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\Administrador\wfGestionParametricas.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAccesos\WfGestionNuevoAcceso.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAccesos\WfGestionReplicaUsuario.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAdministrador\WfAmpliacion.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAdministrador\wfGestionUsuariosExternos.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAdministrador\WfParametricaProducto.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAdministrador\WfParametricas.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAlertas\wfCalidadAlertaLotes.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAlertas\wfCertificadoCalidadAlertas.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAlertas\wfCertificadoCalidadAlertasDetalle.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAlertas\wfModificar.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAlertas\wfRegistroPDF.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionAlertas\wfVeDocumento.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionCalidad\wfAsignacionCertificadoCalidad.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionCalidad\wfGestionCertificadoCalidad.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionCalidad\wfRegistroCertificadoCalidad.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionVolumenes\WfCampos.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionVolumenes\WfCamposEntidad.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionVolumenes\WfProde.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\GestionVolumenes\WfVolumenesGLP.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfDashboard.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfManulaUsuarioOperadorRefineria.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfReglamentacionCalidad.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfReglamentacionCalidad2741.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCalidadGeneral.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidad.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadAdm.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadBajas.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadConsultas.aspx" />
+    <Content Include="Sitio\VolumenesCalidad\Reportes\wfReporteCalidad.aspx" />
+    <Content Include="Sitio\wfInicio.aspx" />
+    <Content Include="UI\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="UI\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="UI\bootstrap\css\bootstrap.css" />
+    <Content Include="UI\bootstrap\css\bootstrap.min.css" />
+    <Content Include="UI\bootstrap\css\font-awesome.min.css" />
+    <Content Include="UI\bootstrap\css\simple-sidebar.css" />
+    <Content Include="UI\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="UI\bootstrap\js\bootstrap.js" />
+    <Content Include="UI\bootstrap\js\bootstrap.min.js" />
+    <Content Include="UI\bootstrap\js\npm.js" />
+    <Content Include="UI\css\demo_page.css" />
+    <Content Include="UI\css\demo_table.css" />
+    <Content Include="UI\css\demo_table_jui.css" />
+    <Content Include="UI\css\DevGlp\CardView\cvHeaderBack.png" />
+    <Content Include="UI\css\DevGlp\CardView\cvPagerPanelBack.png" />
+    <Content Include="UI\css\DevGlp\CardView\cvTitleBack.png" />
+    <Content Include="UI\css\DevGlp\CardView\sprite.css" />
+    <Content Include="UI\css\DevGlp\CardView\sprite.png" />
+    <Content Include="UI\css\DevGlp\CardView\StatusBarLoading.gif" />
+    <Content Include="UI\css\DevGlp\CardView\styles.css" />
+    <Content Include="UI\css\DevGlp\Editors\caChallengeImageBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtBtnBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtBtnDisabledBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtBtnHBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtBtnPBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtDropDownBtnHBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtDropDownBtnPBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtProgressBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtProgressIndicatorBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtTokenBoxTokenBackground.png" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarBarHighlightH.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarBarHighlightV.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarDoubleLargeTickH.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarDoubleLargeTickV.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarDoubleSmallTickH.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarDoubleSmallTickV.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarLargeTickH.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarLargeTickV.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarSmallTickH.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarSmallTickV.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarTrackH.gif" />
+    <Content Include="UI\css\DevGlp\Editors\edtTrackBarTrackV.gif" />
+    <Content Include="UI\css\DevGlp\Editors\lbHeaderBack.png" />
+    <Content Include="UI\css\DevGlp\Editors\sprite.css" />
+    <Content Include="UI\css\DevGlp\Editors\sprite.png" />
+    <Content Include="UI\css\DevGlp\Editors\styles.css" />
+    <Content Include="UI\css\DevGlp\GridView\gvFocusedBack.png" />
+    <Content Include="UI\css\DevGlp\GridView\gvGroupPanelBack.png" />
+    <Content Include="UI\css\DevGlp\GridView\gvHeaderBack.png" />
+    <Content Include="UI\css\DevGlp\GridView\gvPagerPanelBack.png" />
+    <Content Include="UI\css\DevGlp\GridView\gvTitleBack.png" />
+    <Content Include="UI\css\DevGlp\GridView\sprite.css" />
+    <Content Include="UI\css\DevGlp\GridView\sprite.png" />
+    <Content Include="UI\css\DevGlp\GridView\StatusBarLoading.gif" />
+    <Content Include="UI\css\DevGlp\GridView\styles.css" />
+    <Content Include="UI\css\DevGlp\PivotGrid\HeaderBack.png" />
+    <Content Include="UI\css\DevGlp\PivotGrid\HeaderHoverBack.png" />
+    <Content Include="UI\css\DevGlp\PivotGrid\PagerBack.png" />
+    <Content Include="UI\css\DevGlp\PivotGrid\pcHBack.png" />
+    <Content Include="UI\css\DevGlp\PivotGrid\sprite.css" />
+    <Content Include="UI\css\DevGlp\PivotGrid\sprite.png" />
+    <Content Include="UI\css\DevGlp\PivotGrid\styles.css" />
+    <Content Include="UI\css\DevGlp\PivotGrid\TitleBack.png" />
+    <Content Include="UI\css\DevGlp\PivotGrid\tvNodeLoading.gif" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\AltBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\ControlBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\FocusedBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\HeaderBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\PagerBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\PreviewBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\CssImages\TitleBack.png" />
+    <Content Include="UI\css\DevGlp\TreeList\sprite.css" />
+    <Content Include="UI\css\DevGlp\TreeList\sprite.png" />
+    <Content Include="UI\css\DevGlp\TreeList\styles.css" />
+    <Content Include="UI\css\DevGlp\Web\dvItemBack.png" />
+    <Content Include="UI\css\DevGlp\Web\dvPagerPanelBack.png" />
+    <Content Include="UI\css\DevGlp\Web\dvPagerPanelSpacingBack.png" />
+    <Content Include="UI\css\DevGlp\Web\edtBtnBack.png" />
+    <Content Include="UI\css\DevGlp\Web\edtBtnDisabledBack.png" />
+    <Content Include="UI\css\DevGlp\Web\edtBtnHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\fmFileCheck.png" />
+    <Content Include="UI\css\DevGlp\Web\fmSplitterSeparator.gif" />
+    <Content Include="UI\css\DevGlp\Web\igLoading.gif" />
+    <Content Include="UI\css\DevGlp\Web\igNavBtnsBack.png" />
+    <Content Include="UI\css\DevGlp\Web\isLoading.gif" />
+    <Content Include="UI\css\DevGlp\Web\Loading.gif" />
+    <Content Include="UI\css\DevGlp\Web\mHorzItemSepBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mHorzLargeItemSepBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mItemBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mItemHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mItemSBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mScrollHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mScrollPBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mSubItemHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mSubItemSepBack.png" />
+    <Content Include="UI\css\DevGlp\Web\mVertItemSepBack.png" />
+    <Content Include="UI\css\DevGlp\Web\nbHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\nbIHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\nbISBack.png" />
+    <Content Include="UI\css\DevGlp\Web\ncPagerPanelSpacingBack.png" />
+    <Content Include="UI\css\DevGlp\Web\pcFBack.png" />
+    <Content Include="UI\css\DevGlp\Web\pcHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\pDropDownButtonHoverBack.png" />
+    <Content Include="UI\css\DevGlp\Web\pDropDownButtonPressedBack.png" />
+    <Content Include="UI\css\DevGlp\Web\pSepBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rcMapImage.png" />
+    <Content Include="UI\css\DevGlp\Web\rFileTabBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rFileTabHoverBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rFileTabPressedBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rGroupSepBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rItemHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rItemSBack.png" />
+    <Content Include="UI\css\DevGlp\Web\rpHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\splHSepHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\splResizingPointer.gif" />
+    <Content Include="UI\css\DevGlp\Web\splVSepHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\sprite.css" />
+    <Content Include="UI\css\DevGlp\Web\sprite.png" />
+    <Content Include="UI\css\DevGlp\Web\styles.css" />
+    <Content Include="UI\css\DevGlp\Web\tcTabBack.png" />
+    <Content Include="UI\css\DevGlp\Web\tcTabHoverBack.png" />
+    <Content Include="UI\css\DevGlp\Web\tiFBBack.png" />
+    <Content Include="UI\css\DevGlp\Web\tiHBack.png" />
+    <Content Include="UI\css\DevGlp\Web\tvNodeLoading.gif" />
+    <Content Include="UI\css\DevGlp\Web\ucButtonBack.png" />
+    <Content Include="UI\css\DevGlp\Web\ucButtonDisabledBack.png" />
+    <Content Include="UI\css\DevGlp\Web\ucButtonHoverBack.png" />
+    <Content Include="UI\css\DevGlp\Web\ucButtonPressedBack.png" />
+    <Content Include="UI\css\DevGlp\Web\ucProgressBack.png" />
+    <Content Include="UI\css\DevGlp\Web\ucProgressIndicatorBack.png" />
+    <Content Include="UI\css\fancybox_loading.gif" />
+    <Content Include="UI\css\fancybox_overlay.png" />
+    <Content Include="UI\css\fancybox_sprite.png" />
+    <Content Include="UI\css\Fonts\GOTHIC.svg" />
+    <Content Include="UI\css\Hydro.css" />
+    <Content Include="UI\css\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="UI\css\jquery.dataTables.css" />
+    <Content Include="UI\css\jquery.fancybox.2.1.5.css" />
+    <Content Include="UI\css\jquery.fancybox.css" />
+    <Content Include="UI\css\mensajesAlerta.css" />
+    <Content Include="UI\css\msgBoxLight.css" />
+    <Content Include="UI\css\sidebar.css" />
+    <Content Include="UI\css\Site.css" />
+    <Content Include="UI\css\SlickGrid\slick-default-theme.css" />
+    <Content Include="UI\css\SlickGrid\slick.grid.css" />
+    <Content Include="UI\css\SlickGrid\slick.grid.excel.css" />
+    <Content Include="UI\css\TableTools.css" />
+    <Content Include="UI\css\VolumenesCalidad\iconos20120607.png" />
+    <Content Include="UI\css\VolumenesCalidad\jquery.treeview.css" />
+    <Content Include="UI\css\VolumenesCalidad\loading.gif" />
+    <Content Include="UI\css\VolumenesCalidad\MenuHydroOctano.css" />
+    <Content Include="UI\css\VolumenesCalidad\VolumenesCalidad.css" />
+    <Content Include="UI\img\anh\anh.png" />
+    <Content Include="UI\img\anh\banner_hydro.jpg" />
+    <Content Include="UI\img\anh\Hydro_octano_calidad_reducido.png" />
+    <Content Include="UI\img\anh\logo_ISO_2015.png" />
+    <Content Include="UI\img\anh\logo_iso_9001_2015.png" />
+    <Content Include="UI\img\anh\LogoHydro_small.png" />
+    <Content Include="UI\img\anh\logosISO2008.jpg" />
+    <Content Include="UI\img\anh\logo_login.png" />
+    <Content Include="UI\img\bg.jpg" />
+    <Content Include="UI\img\iconos\Add-icon.png" />
+    <Content Include="UI\img\iconos\adj.png" />
+    <Content Include="UI\img\iconos\Alertas\checkmark.png" />
+    <Content Include="UI\img\iconos\Alertas\error.png" />
+    <Content Include="UI\img\iconos\Alertas\help.png" />
+    <Content Include="UI\img\iconos\Alertas\information.png" />
+    <Content Include="UI\img\iconos\Alertas\warning.png" />
+    <Content Include="UI\img\iconos\asignar copia.png" />
+    <Content Include="UI\img\iconos\asignar.png" />
+    <Content Include="UI\img\iconos\ASTM.png" />
+    <Content Include="UI\img\iconos\btn_inicio_aceptar.png" />
+    <Content Include="UI\img\iconos\btn_inicio_ayuda.png" />
+    <Content Include="UI\img\iconos\btn_inicio_cancelar.png" />
+    <Content Include="UI\img\iconos\btn_inicio_registrar.png" />
+    <Content Include="UI\img\iconos\btn_inicio_volver.png" />
+    <Content Include="UI\img\iconos\cerrar_sesion.png" />
+    <Content Include="UI\img\iconos\cerrar_sesion14.png" />
+    <Content Include="UI\img\iconos\click.gif" />
+    <Content Include="UI\img\iconos\clickDown.gif" />
+    <Content Include="UI\img\iconos\delete32.png" />
+    <Content Include="UI\img\iconos\Detalles.png" />
+    <Content Include="UI\img\iconos\edit32.png" />
+    <Content Include="UI\img\iconos\editar copia.png" />
+    <Content Include="UI\img\iconos\editar.png" />
+    <Content Include="UI\img\iconos\eliminar copia.png" />
+    <Content Include="UI\img\iconos\eliminar.png" />
+    <Content Include="UI\img\iconos\flechaAzulAbajo.gif" />
+    <Content Include="UI\img\iconos\icono_entidad.png" />
+    <Content Include="UI\img\iconos\Icon_anh_reg_exitoso.png" />
+    <Content Include="UI\img\iconos\NuevaPrueba.png" />
+    <Content Include="UI\img\iconos\reporte.png" />
+    <Content Include="UI\img\iconos\usuario.png" />
+    <Content Include="UI\img\iconos\ver.png" />
+    <Content Include="UI\img\iconos\verDoc.png" />
+    <Content Include="UI\img\iconos\VerPruebas.png" />
+    <Content Include="UI\img\iconos\VerPruebas2.png" />
+    <Content Include="UI\img\iconos\viewp32.png" />
+    <Content Include="UI\img\silueta.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\alerta_naranja.png" />
+    <Content Include="UI\img\VolumenesCalidad\background.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\background_menu.png" />
+    <Content Include="UI\img\VolumenesCalidad\btnInicio.png" />
+    <Content Include="UI\img\VolumenesCalidad\btn_cerrar_sesion.png" />
+    <Content Include="UI\img\VolumenesCalidad\btn_usuario.png" />
+    <Content Include="UI\img\VolumenesCalidad\cargando.gif" />
+    <Content Include="UI\img\VolumenesCalidad\cerrar_sesion14.png" />
+    <Content Include="UI\img\VolumenesCalidad\editar.png" />
+    <Content Include="UI\img\VolumenesCalidad\eliminar.png" />
+    <Content Include="UI\img\VolumenesCalidad\encabezado1.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\encabezado2.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\encabezado3.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\fondo1.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\fondoContenido.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\fondoEncabezado.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\fondoPagina.png" />
+    <Content Include="UI\img\VolumenesCalidad\fondoPie.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_logo.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_1.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_2.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_3.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_4.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_5.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_6.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_7.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_8.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_maqueta_9.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_titulo.png" />
+    <Content Include="UI\img\VolumenesCalidad\Hydro_titulo_small_octano_calidad2.png" />
+    <Content Include="UI\img\VolumenesCalidad\icono_entidad.png" />
+    <Content Include="UI\img\VolumenesCalidad\loading.gif" />
+    <Content Include="UI\img\VolumenesCalidad\logoAnhLogin.png" />
+    <Content Include="UI\img\VolumenesCalidad\LogoOctano.png" />
+    <Content Include="UI\img\VolumenesCalidad\LogoOctano1.png" />
+    <Content Include="UI\img\VolumenesCalidad\octano128.ico" />
+    <Content Include="UI\img\VolumenesCalidad\pie1.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\pie2.jpg" />
+    <Content Include="UI\img\VolumenesCalidad\pie3.jpg" />
+    <Content Include="UI\js\bootbox.min.js" />
+    <Content Include="UI\js\highcharts.js" />
+    <Content Include="Sitio\VolumenesCalidad\ReportesMaster.Master" />
+    <Content Include="Parametros\CAppSettings.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CAppSettings.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\AppOctano.pubxml" />
+    <Content Include="UI\Docs\DSW_OperadoresRefinerias_v1.0.pdf" />
+    <Content Include="UI\Docs\DS_1499.pdf" />
+    <Content Include="UI\Docs\ManualInstalacion_Octano_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDCD_v2.0.pdf" />
+    <Content Include="Sitio\VolumenesCalidad\SiteInicioMaster.Master" />
+    <Content Include="UI\Docs\ManualUsuario_AdministradorDRI_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDRI_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_SupervisorDRI_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_AdministradorDTEP_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDTEP_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_SupervisorDTEP_v1.0.pdf" />
+    <Content Include="UI\css\Fonts\GOTHIC.eot" />
+    <Content Include="UI\css\Fonts\GOTHIC.otf" />
+    <Content Include="UI\css\Fonts\GOTHIC.ttf" />
+    <Content Include="UI\Docs\ManualUsuario_AdministradorDCD_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDCD_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_SupervisorDCD_v1.0.pdf" />
+    <Content Include="UI\Docs\DS_2741.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_AdministradorDCD_TA_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_AdministradorDRI_IND_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDCD_TA_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDRI_IND_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_SupervisorDCD_TA_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_SupervisorDRI_IND_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_Operador_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_AdministradorDCD_PSCAA_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_OperadorDCD_PSCAA_v1.0.pdf" />
+    <Content Include="UI\Docs\ManualUsuario_SupervisorDCD_PSCAA_v1.0.pdf" />
+    <Content Include="Sitio\VolumenesCalidad\Administrador\wfGestionParametricas.aspx.bak" />
+    <Content Include="Sitio\VolumenesCalidad\Administrador\wfGestionParametricas.aspx.designer.cs.bak" />
+    <Content Include="Scripts\jquery-1.11.3.min.map" />
+    <Content Include="UI\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="UI\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="UI\bootstrap\css\bootstrap.css.map" />
+    <Content Include="UI\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="UI\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="UI\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="UI\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="UI\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="UI\css\DevGlp\ASPxCardView.skin" />
+    <Content Include="UI\css\DevGlp\ASPxGridLookup.skin" />
+    <Content Include="UI\css\DevGlp\ASPxGridView.skin" />
+    <Content Include="UI\css\DevGlp\ASPxPivotGrid.skin" />
+    <Content Include="UI\css\DevGlp\ASPxTreeList.skin" />
+    <Content Include="UI\css\DevGlp\Parameters.config" />
+    <Content Include="UI\Docs\DS_5619.pdf" />
+    <None Include="UI\js\jquery-1.10.2-vsdoc.js" />
+    <Content Include="UI\js\jquery-1.10.2.js" />
+    <Content Include="UI\js\jquery-1.10.2.min.js" />
+    <Content Include="UI\js\jquery-1.11.2.min.js" />
+    <Content Include="UI\js\jquery-1.9.1.min.js" />
+    <Content Include="UI\js\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="UI\js\jquery.dataTables.min.js" />
+    <Content Include="UI\js\jquery.dataTables.tableTools.min.js" />
+    <Content Include="UI\js\jquery.fancybox.pack.2.1.5.js" />
+    <Content Include="UI\js\jquery.fancybox.pack.js" />
+    <Content Include="UI\js\jquery.maskedinput.min.js" />
+    <Content Include="UI\js\jquery.msgBox.js" />
+    <Content Include="UI\js\pdfobject.js" />
+    <Content Include="UI\js\script.js" />
+    <Content Include="UI\js\SlickGrid\lib\firebugx.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery-1.7.min.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery.event.drag-2.2.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery.event.drop-2.2.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery.jsonp-2.4.min.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery.simulate.js" />
+    <Content Include="UI\js\SlickGrid\lib\jquery.sparkline.min.js" />
+    <Content Include="UI\js\SlickGrid\lib\qunit.css" />
+    <Content Include="UI\js\SlickGrid\lib\qunit.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.autotooltips.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellcopymanager.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellexternalcopymanager.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellexternalcopymanager.todo.txt" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellrangedecorator.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellrangeselector.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellselectionmodel.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.checkboxselectcolumn.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.headerbuttons.css" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.headerbuttons.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.headermenu.css" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.headermenu.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.rowmovemanager.js" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.rowselectionmodel.js" />
+    <Content Include="UI\js\SlickGrid\slick.core.js" />
+    <Content Include="UI\js\SlickGrid\slick.dataview.js" />
+    <Content Include="UI\js\SlickGrid\slick.editors.js" />
+    <Content Include="UI\js\SlickGrid\slick.formatters.js" />
+    <Content Include="UI\js\SlickGrid\slick.grid.js" />
+    <Content Include="UI\js\SlickGrid\slick.groupitemmetadataprovider.js" />
+    <Content Include="UI\js\SlickGrid\slick.remotemodel.js" />
+    <Content Include="UI\js\VolumenesCalidad\calidad.presentacion.js" />
+    <Content Include="UI\js\VolumenesCalidad\calidad.validacion.js" />
+    <Content Include="UI\js\VolumenesCalidad\GestionVolumenes\saldoMovimientoAlmacenaje.js" />
+    <Content Include="UI\js\VolumenesCalidad\GestionVolumenes\volumenesDRUIN.js" />
+    <Content Include="UI\js\VolumenesCalidad\GestionVolumenes\volumenesGLP.js" />
+    <Content Include="UI\js\VolumenesCalidad\jquery.treeview.js" />
+    <Content Include="UI\xml\1_reporte.xml" />
+    <Content Include="UI\xml\2_reporte.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Empadronamiento\CHydroConsultas.cs" />
+    <Compile Include="Clases\Empadronamiento\CHydroListados.cs" />
+    <Compile Include="Clases\Parametricas\CParametricas.cs" />
+    <Compile Include="Clases\Persona\CPersonaSesion.cs" />
+    <Compile Include="Clases\VolumenesCalidad\CCalidadLibreria.cs" />
+    <Compile Include="Clases\VolumenesCalidad\FormatHelper.cs" />
+    <Compile Include="Clases\VolumenesCalidad\CControlUsuario.cs" />
+    <Compile Include="Clases\VolumenesCalidad\CCParametricas.cs" />
+    <Compile Include="Comun\Persona\CtrAnhDatosPersona.ascx.cs">
+      <DependentUpon>CtrAnhDatosPersona.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\Persona\CtrAnhDatosPersona.ascx.designer.cs">
+      <DependentUpon>CtrAnhDatosPersona.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Persona\CtrDatoPersona.ascx.cs">
+      <DependentUpon>CtrDatoPersona.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\Persona\CtrDatoPersona.ascx.designer.cs">
+      <DependentUpon>CtrDatoPersona.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\Persona\ucMensajeAlerta.ascx.cs">
+      <DependentUpon>ucMensajeAlerta.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\Persona\ucMensajeAlerta.ascx.designer.cs">
+      <DependentUpon>ucMensajeAlerta.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\UControl\ucCargadoMenuCertificadoCalidad.ascx.cs">
+      <DependentUpon>ucCargadoMenuCertificadoCalidad.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\UControl\ucCargadoMenuCertificadoCalidad.ascx.designer.cs">
+      <DependentUpon>ucCargadoMenuCertificadoCalidad.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\UControl\ucMensajeError.ascx.cs">
+      <DependentUpon>ucMensajeError.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\UControl\ucMensajeError.ascx.designer.cs">
+      <DependentUpon>ucMensajeError.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Comun\UControl\ucRegistroCertificadoCalidadCarburantes.ascx.cs">
+      <DependentUpon>ucRegistroCertificadoCalidadCarburantes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comun\UControl\ucRegistroCertificadoCalidadCarburantes.ascx.designer.cs">
+      <DependentUpon>ucRegistroCertificadoCalidadCarburantes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\EParametroEntidad.cs" />
+    <Compile Include="Entidades\EResultado.cs" />
+    <Compile Include="Entidades\O_RESULTADO_CTY.cs" />
+    <Compile Include="Entidades\Resultado\EResultadoEntidad.cs" />
+    <Compile Include="Entidades\Resultado\EResultadoLista.cs" />
+    <Compile Include="Lib\CLibreriaFunciones.cs" />
+    <Compile Include="Lib\CLog.cs" />
+    <Compile Include="Lib\CLogs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lib\CMessageBoxManager.cs" />
+    <Compile Include="Lib\CPersonaSesion.cs" />
+    <Compile Include="Lib\CValidarSesion.cs" />
+    <Compile Include="Lib\MessageBoxManager.cs" />
+    <Compile Include="Parametros\CAppSettings.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CAppSettings.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Parametros\CParametrosHydro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parametros\CVariablesSesion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parametros\EObtenerEntidadesUsuario.cs" />
+    <Compile Include="Parametros\EResultadoPermisos.cs" />
+    <Compile Include="Parametros\EResultadoUsuarioPermisosForm.cs" />
+    <Compile Include="Parametros\O_OBTIENE_ENTIDADES_USR_CTY.cs" />
+    <Compile Include="Parametros\VolumenesCalidad\cParametrosHydro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\Persona\wfAutenticacion.aspx.cs">
+      <DependentUpon>wfAutenticacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\Persona\wfAutenticacion.aspx.designer.cs">
+      <DependentUpon>wfAutenticacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\Persona\wfSalir.aspx.cs">
+      <DependentUpon>wfSalir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\Persona\wfSalir.aspx.designer.cs">
+      <DependentUpon>wfSalir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Administrador\wfGestionParametricas.aspx.cs">
+      <DependentUpon>wfGestionParametricas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Administrador\wfGestionParametricas.aspx.designer.cs">
+      <DependentUpon>wfGestionParametricas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAccesos\WfGestionNuevoAcceso.aspx.cs">
+      <DependentUpon>WfGestionNuevoAcceso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAccesos\WfGestionNuevoAcceso.aspx.designer.cs">
+      <DependentUpon>WfGestionNuevoAcceso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAccesos\WfGestionReplicaUsuario.aspx.cs">
+      <DependentUpon>WfGestionReplicaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAccesos\WfGestionReplicaUsuario.aspx.designer.cs">
+      <DependentUpon>WfGestionReplicaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\WfAmpliacion.aspx.cs">
+      <DependentUpon>WfAmpliacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\WfAmpliacion.aspx.designer.cs">
+      <DependentUpon>WfAmpliacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\wfGestionUsuariosExternos.aspx.cs">
+      <DependentUpon>wfGestionUsuariosExternos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\wfGestionUsuariosExternos.aspx.designer.cs">
+      <DependentUpon>wfGestionUsuariosExternos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\WfParametricaProducto.aspx.cs">
+      <DependentUpon>WfParametricaProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\WfParametricaProducto.aspx.designer.cs">
+      <DependentUpon>WfParametricaProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\WfParametricas.aspx.cs">
+      <DependentUpon>WfParametricas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAdministrador\WfParametricas.aspx.designer.cs">
+      <DependentUpon>WfParametricas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfCalidadAlertaLotes.aspx.cs">
+      <DependentUpon>wfCalidadAlertaLotes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfCalidadAlertaLotes.aspx.designer.cs">
+      <DependentUpon>wfCalidadAlertaLotes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfCertificadoCalidadAlertas.aspx.cs">
+      <DependentUpon>wfCertificadoCalidadAlertas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfCertificadoCalidadAlertas.aspx.designer.cs">
+      <DependentUpon>wfCertificadoCalidadAlertas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfCertificadoCalidadAlertasDetalle.aspx.cs">
+      <DependentUpon>wfCertificadoCalidadAlertasDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfCertificadoCalidadAlertasDetalle.aspx.designer.cs">
+      <DependentUpon>wfCertificadoCalidadAlertasDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfModificar.aspx.cs">
+      <DependentUpon>wfModificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfModificar.aspx.designer.cs">
+      <DependentUpon>wfModificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfRegistroPDF.aspx.cs">
+      <DependentUpon>wfRegistroPDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfRegistroPDF.aspx.designer.cs">
+      <DependentUpon>wfRegistroPDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfVeDocumento.aspx.cs">
+      <DependentUpon>wfVeDocumento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionAlertas\wfVeDocumento.aspx.designer.cs">
+      <DependentUpon>wfVeDocumento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\DireccionesAnh.cs" />
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\wfAsignacionCertificadoCalidad.aspx.cs">
+      <DependentUpon>wfAsignacionCertificadoCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\wfAsignacionCertificadoCalidad.aspx.designer.cs">
+      <DependentUpon>wfAsignacionCertificadoCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\wfGestionCertificadoCalidad.aspx.cs">
+      <DependentUpon>wfGestionCertificadoCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\wfGestionCertificadoCalidad.aspx.designer.cs">
+      <DependentUpon>wfGestionCertificadoCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\wfRegistroCertificadoCalidad.aspx.cs">
+      <DependentUpon>wfRegistroCertificadoCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionCalidad\wfRegistroCertificadoCalidad.aspx.designer.cs">
+      <DependentUpon>wfRegistroCertificadoCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\CantidadesMaster.Master.cs">
+      <DependentUpon>CantidadesMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\CantidadesMaster.Master.designer.cs">
+      <DependentUpon>CantidadesMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfCampos.aspx.cs">
+      <DependentUpon>WfCampos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfCampos.aspx.designer.cs">
+      <DependentUpon>WfCampos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfCamposEntidad.aspx.cs">
+      <DependentUpon>WfCamposEntidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfCamposEntidad.aspx.designer.cs">
+      <DependentUpon>WfCamposEntidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfProde.aspx.cs">
+      <DependentUpon>WfProde.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfProde.aspx.designer.cs">
+      <DependentUpon>WfProde.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfVolumenesGLP.aspx.cs">
+      <DependentUpon>WfVolumenesGLP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\GestionVolumenes\WfVolumenesGLP.aspx.designer.cs">
+      <DependentUpon>WfVolumenesGLP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfDashboard.aspx.cs">
+      <DependentUpon>wfDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfDashboard.aspx.designer.cs">
+      <DependentUpon>wfDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfManulaUsuarioOperadorRefineria.aspx.cs">
+      <DependentUpon>wfManulaUsuarioOperadorRefineria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfManulaUsuarioOperadorRefineria.aspx.designer.cs">
+      <DependentUpon>wfManulaUsuarioOperadorRefineria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfReglamentacionCalidad.aspx.cs">
+      <DependentUpon>wfReglamentacionCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfReglamentacionCalidad.aspx.designer.cs">
+      <DependentUpon>wfReglamentacionCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfReglamentacionCalidad2741.aspx.cs">
+      <DependentUpon>wfReglamentacionCalidad2741.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfReglamentacionCalidad2741.aspx.designer.cs">
+      <DependentUpon>wfReglamentacionCalidad2741.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCalidadGeneral.aspx.cs">
+      <DependentUpon>wfRptCalidadGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCalidadGeneral.aspx.designer.cs">
+      <DependentUpon>wfRptCalidadGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidad.aspx.cs">
+      <DependentUpon>wfRptCertificadoCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidad.aspx.designer.cs">
+      <DependentUpon>wfRptCertificadoCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadAdm.aspx.cs">
+      <DependentUpon>wfRptCertificadoCalidadAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadAdm.aspx.designer.cs">
+      <DependentUpon>wfRptCertificadoCalidadAdm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadBajas.aspx.cs">
+      <DependentUpon>wfRptCertificadoCalidadBajas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadBajas.aspx.designer.cs">
+      <DependentUpon>wfRptCertificadoCalidadBajas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadConsultas.aspx.cs">
+      <DependentUpon>wfRptCertificadoCalidadConsultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesCalidad\wfRptCertificadoCalidadConsultas.aspx.designer.cs">
+      <DependentUpon>wfRptCertificadoCalidadConsultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesMaster.Master.cs">
+      <DependentUpon>ReportesMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\ReportesMaster.Master.designer.cs">
+      <DependentUpon>ReportesMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidad.Designer.cs">
+      <DependentUpon>devReporteCalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadDTEP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadDTEP.Designer.cs">
+      <DependentUpon>devReporteCalidadDTEP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadImportadores.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadImportadores.designer.cs">
+      <DependentUpon>devReporteCalidadImportadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadObservados.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadObservados.Designer.cs">
+      <DependentUpon>devReporteCalidadObservados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteVerificacion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\devReporteVerificacion.Designer.cs">
+      <DependentUpon>devReporteVerificacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\UtilReport.cs" />
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\wfReporteCalidad.aspx.cs">
+      <DependentUpon>wfReporteCalidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\Reportes\wfReporteCalidad.aspx.designer.cs">
+      <DependentUpon>wfReporteCalidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\SiteInicioMaster.Master.cs">
+      <DependentUpon>SiteInicioMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\SiteInicioMaster.Master.designer.cs">
+      <DependentUpon>SiteInicioMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\VolumenesCalidadMasterLogin.Master.cs">
+      <DependentUpon>VolumenesCalidadMasterLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\VolumenesCalidad\VolumenesCalidadMasterLogin.Master.designer.cs">
+      <DependentUpon>VolumenesCalidadMasterLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Sitio\wfInicio.aspx.cs">
+      <DependentUpon>wfInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitio\wfInicio.aspx.designer.cs">
+      <DependentUpon>wfInicio.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Site.Master" />
+    <Content Include="Sitio\VolumenesCalidad\VolumenesCalidadMasterLogin.Master" />
+    <Content Include="Sitio\VolumenesCalidad\CantidadesMaster.Master" />
+    <Content Include="UI\js\SlickGrid\plugins\slick.cellexternalcopymanager.js.suggestion" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AnhAgenteServicios\AnhAgenteServicios.csproj">
+      <Project>{30a308e0-00c4-47e2-87fe-8ca277220672}</Project>
+      <Name>AnhAgenteServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnhPersistenciaCore\AnhPersistenciaCore.csproj">
+      <Project>{0e120b05-23a5-4b69-8bba-97cba6034077}</Project>
+      <Name>AnhPersistenciaCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnhServicioWebOctano\AnhServicioWebOctano.csproj">
+      <Project>{67784a94-6afb-4464-971e-bb31d6b31687}</Project>
+      <Name>AnhServicioWebOctano</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidad.resx">
+      <DependentUpon>devReporteCalidad.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadDTEP.resx">
+      <DependentUpon>devReporteCalidadDTEP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadImportadores.resx">
+      <DependentUpon>devReporteCalidadImportadores.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sitio\VolumenesCalidad\Reportes\devReporteCalidadObservados.resx">
+      <DependentUpon>devReporteCalidadObservados.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sitio\VolumenesCalidad\Reportes\devReporteVerificacion.resx">
+      <DependentUpon>devReporteVerificacion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UI\img\iconos\AnhVolumenesCalidadPresentacion\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>34918</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

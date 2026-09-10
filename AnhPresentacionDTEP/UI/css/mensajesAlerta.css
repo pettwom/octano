@@ -1,0 +1,63 @@
+﻿
+/* Mensaje de información */
+.informacion {
+background: #BDE5F8 url(../img/iconos/Alertas/information.png) center no-repeat;
+background-position: 15px 50%;
+color: #00529B;
+font-family: Arial;
+font-size: 16px;
+text-align: center;
+padding: 10px 10px 10px 10px;
+border-top: 5px double #00529B;
+border-bottom: 5px double #00529B;
+}
+/* Mensaje de éxito */
+.exito {
+background: #DFF2BF url(../img/iconos/Alertas/checkmark.png) center no-repeat;
+background-position: 15px 50%;
+color: #4F8A10;
+font-family: Arial;
+font-size: 16px;
+text-align: center;
+padding: 10px 10px 10px 10px;
+border-top: 5px double #4F8A10;
+border-bottom: 5px double #4F8A10;
+}
+
+/* Mensaje de alerta */
+.alerta {
+background: #FEEFB3 url(../img/iconos/Alertas/warning.png) center no-repeat;
+background-position: 15px 50%;
+color: #9F6000;
+font-family: Arial;
+font-size: 16px;
+text-align: center;
+padding: 10px 10px 10px 10px;
+border-top: 5px double #9F6000;
+border-bottom: 5px double #9F6000;
+}
+
+/* Mensaje de error */
+.error {
+background: #FFBABA url(../img/iconos/Alertas/error.png) center no-repeat;
+background-position: 15px 50%;
+color: #D8000C;
+font-family: Arial;
+font-size: 16px;
+text-align: center;
+padding: 10px 10px 10px 10px;
+border-top: 5px double #D8000C;
+border-bottom: 5px double #D8000C;
+}
+/* Mensaje de ayuda */
+.ayuda {
+background: #0080FF url(../img/iconos/Alertas/help.png) center no-repeat;
+background-position: 15px 50%;
+color: #0080DD;
+font-family: Arial;
+font-size: 16px;
+text-align: center;
+padding: 10px 10px 10px 10px;
+border-top: 5px double #0080DD;
+border-bottom: 5px double #0080DD;
+}

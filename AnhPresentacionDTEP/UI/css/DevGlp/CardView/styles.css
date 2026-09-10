@@ -1,0 +1,401 @@
+.dxcvControl_DevGlp,
+.dxcvDisabled_DevGlp
+{
+	border: 1px solid #9da0aa;
+	font: 10px Century Gothic;
+	background-color: #f1f2f6;
+	color: #201f35;
+	cursor: default;
+}
+.dxcvDisabled_DevGlp
+{
+	color: #b1b1b8;
+}
+.dxcvControl_DevGlp a
+{
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxcvControl_DevGlp a:hover
+{
+	text-decoration: underline;
+}
+.dxcvDisabled_DevGlp a
+{
+	color: #b1b1b8;
+}
+/*Loading Panel*/
+.dxcvLoadingPanel_DevGlp
+{
+	font: 10px Century Gothic;
+	color: #201f35;
+	background-color: White;
+	border: 1px solid #9da0aa;
+}
+.dxcvLoadingPanel_DevGlp td.dx
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 7px 10px;
+}
+.dxcvLoadingPanel_DevGlp .dxlp-loadingImage
+{
+	background-image: url('../Web/Loading.gif');
+	height: 32px;
+	width: 32px;
+}
+.dxcvLoadingPanelStatusBar_DevGlp .dxlp-loadingImage 
+{
+	background-image: url('StatusBarLoading.gif');
+	height: 15px;
+	width: 15px;
+}
+.dxcvLoadingPanelStatusBar_DevGlp
+{
+	background-color: Transparent;
+}
+.dxcvLoadingPanelStatusBar_DevGlp td
+{
+	white-space: nowrap;
+	text-align: center;
+	padding: 0 2px;
+}
+.dxcvFilterPopupWindow_DevGlp
+{
+	color: #201f35;
+	border: 1px solid #9da0aa;
+}
+.dxcvFilterPopupItemsArea_DevGlp
+{
+	color: #201f35;
+	background-color: White;
+}
+.dxcvFilterPopupButtonPanel_DevGlp
+{
+	background-color: #ebecef;
+	border-top: 1px solid #9da0aa;
+	color: #201f35;
+}
+
+.dxcvFilterPopupItem_DevGlp td.dxcv,
+.dxcvFilterPopupActiveItem_DevGlp td.dxcv,
+.dxcvFilterPopupSelectedItem_DevGlp td.dxcv
+{
+	padding: 3px 2px 3px 3px;
+	cursor: default;
+	white-space: nowrap;
+}
+.dxcvFilterPopupActiveItem_DevGlp
+{
+	background: #e2eafd none;
+	color: #201f35;
+}
+.dxcvFilterPopupSelectedItem_DevGlp
+{
+	background: #eff0f2 none;
+	color: #201f35;
+}
+
+.dxcvTable_DevGlp
+{
+	background-color: White;
+	border-width: 0;
+	border-collapse: separate!important;
+	overflow: hidden;
+    padding: 20px;
+}
+.dxcvHeader_DevGlp
+{
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 5px 6px;
+	border: 1px solid #cacbd3;
+	background: #f2f3f4 url('../GridView/gvHeaderBack.png') repeat-x left top;
+	overflow: hidden;
+	font-weight: normal;
+	text-align: left;
+}
+.dxcvHeader_DevGlp,
+.dxcvHeader_DevGlp table
+{
+	color: #201f35;
+}
+.dxcvHeader_DevGlp td
+{
+	white-space: nowrap;
+}
+.dxcvHeader_DevGlp a
+{
+	color: #1b3f91;
+	text-decoration: underline;
+}
+.dxcvHeader_DevGlp a.dxcvCommandItem_DevGlp
+{
+	margin: 0px 3px 0px 0px;
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxcvHeader_DevGlp a.dxcvCommandItem_DevGlp:hover
+{
+	text-decoration: underline;
+}
+.dxcvCustomization_DevGlp,
+.dxcvPopupEditForm_DevGlp
+{
+	padding: 0;
+	margin: 0;
+}
+
+.dxcvTitlePanel_DevGlp,
+.dxcvTable_DevGlp caption
+{
+	font-weight: normal;
+	padding: 3px 3px 5px;
+	text-align: center;
+	background: #f2f3f4 url('cvTitleBack.png') repeat-x left top;
+	color: #201f35;
+	border-bottom: 1px solid #9da0aa;
+}
+.dxcvLoadingDiv_DevGlp
+{
+	background-color: Gray;
+	opacity: 0.01;
+	filter: alpha(opacity=1);
+}
+.dxcvStatusBar_DevGlp
+{
+	background: #f9f9fc none;
+	border-top: 1px solid #cacbd3;
+}
+.dxcvStatusBar_DevGlp tr.dxcv
+{
+	height: 20px;
+}
+.dxcvStatusBar_DevGlp tr.dxcv > td
+{
+	padding: 4px;
+}
+.dxcvCommandItem_DevGlp 
+{
+    vertical-align: middle;
+}
+.dxcvCommandItem_DevGlp a
+{
+	margin: 0px 3px 0px 0px;
+	color: #1b3f91;
+	text-decoration: none;
+}
+.dxcvCommandItem_DevGlp a:hover
+{
+	text-decoration: underline;
+}
+
+.dxbButton_DevGlp[class~="dxcvCommandItem_DevGlp"]
+{
+	margin: -2px 2px;
+}
+.dxbButton_DevGlp[class~="dxcvCommandItem_DevGlp"] .dxb
+{
+	margin: -2px 2px;
+}
+
+.dxcvPagerTopPanel_DevGlp,
+.dxcvPagerBottomPanel_DevGlp
+{
+	background: #f1f2f6 url('cvPagerPanelBack.png') repeat-x left top;
+}
+.dxcvPagerTopPanel_DevGlp
+{
+    border-bottom: 1px solid #cacbd3;
+}
+.dxcvPagerBottomPanel_DevGlp
+{
+    border-top: 1px solid #cacbd3;
+}
+
+.dxcvFilterBar_DevGlp
+{
+	border-top: 1px solid #cacbd3;
+	background: #f9f9fc none;
+}
+.dxcvFilterBar_DevGlp a
+{
+	color: #1b3f91;
+	text-decoration: underline;
+}
+.dxcvFilterBarCheckBoxCell_DevGlp
+{
+	padding: 0 7px 0 3px;
+}
+.dxcvFilterBarImageCell_DevGlp
+{
+	padding: 0 1px 0 3px;
+	cursor: pointer;
+}
+.dxcvFilterBarExpressionCell_DevGlp
+{
+	padding: 5px 5px 8px 0;
+	white-space: nowrap;
+}
+.dxcvFilterBarClearButtonCell_DevGlp
+{
+	padding: 5px 6px 8px;
+}
+.dxcvFilterBuilderMainArea_DevGlp
+{
+	background: white none;
+	padding: 6px 2px;
+} 
+.dxcvFilterBuilderButtonArea_DevGlp
+{
+	background: #ebecef none;
+	border-top: 1px solid #abacb9;
+	padding: 6px;
+	white-space: nowrap;
+}
+
+.dxcvControl_DevGlp .dxpLite_DevGlp,
+.dxcvDisabled_DevGlp .dxpLite_DevGlp
+{
+	padding-top: 4px;
+}
+
+.dxcvControl_DevGlp .dxcvHFSAC
+{
+    padding: 6px 0 0 5px;
+}
+.dxcvControl_DevGlp .dxcvHFSC
+{
+    padding: 6px 0 5px;
+}
+.dxcvControl_DevGlp .dxcvHFSC div
+{
+    height: 1px;
+    background: #9DA0AA;
+}
+.dxcvControl_DevGlp div[id$='DXEPLPC']
+{
+    height: 47px;
+}
+
+/* Removes flicking in iOS Safari*/
+.dxcvTable_DevGlp
+{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.dxcvSearchPanel_DevGlp
+{
+    background: #ebecef;
+    border-bottom: 1px solid #cacbd3;
+    padding: 7px 6px;
+}
+.dxcvSearchPanel_DevGlp > table 
+{
+    width: 70%;
+    max-width: 450px;
+}
+.dxcvControl_DevGlp .dxcvSearchPanel_DevGlp .dxbButton_DevGlp
+{
+    margin-left: 7px;
+    margin-right: 0;
+}
+*[dir="rtl"].dxcvControl_DevGlp .dxcvSearchPanel_DevGlp .dxbButton_DevGlp {
+    margin-left: 0;
+    margin-right: 7px;
+}
+.dxcvControl_DevGlp .dxcvHL
+{
+    background: #ffd83a;
+	color: #201f35;
+	font-weight: bold;
+	font-style: normal;
+}
+
+/* TODO remove (replace to command button style) */
+.dxcvControl_DevGlp .dxcvSearchPanel_DevGlp .dxbButton_DevGlp
+{
+    font-size: 0.9em;
+    margin-top: -2px;
+    margin-bottom: -2px;
+}
+.dxcvControl_DevGlp .dxcvSearchPanel_DevGlp .dxbButton_DevGlp .dxb
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+
+.dxcvCard_DevGlp,
+.dxcvFlowCard_DevGlp,
+.dxcvEmptyCard_DevGlp
+{
+    width: 250px;
+    height: 180px;
+    vertical-align: top;
+}
+.dxcvCard_DevGlp,
+.dxcvFlowCard_DevGlp
+{
+    border: 1px solid #CACBD3;
+    background-color: #F2F3F4;
+    color: #262626;
+    outline: none;
+}
+.dxcvEmptyCard_DevGlp
+{
+    border: 1px solid transparent;
+    background-color: transparent;
+}
+.dxcvFlowCard_DevGlp
+{
+    display: inline-block;
+    margin: 20px 0 0 20px;
+    overflow: hidden;
+}
+.dxcvSelectedCard_DevGlp,
+.dxcvFocusedCard_DevGlp
+{
+    border-color: #CACBD3;
+    outline: 3px solid #EFF0F2;
+}
+.dxcvFocusedCard_DevGlp
+{
+    background-color: White;
+}
+.dxcvCardHover_DevGlp
+{
+    border-color: #CACBD3;
+    outline: 3px solid #E2EAFD;
+}
+
+.dxcvCard_DevGlp .dxflCaption_DevGlp,
+.dxcvFlowCard_DevGlp .dxflCaption_DevGlp
+{
+    color: #7F7F7F;
+}
+.dxcvCard_DevGlp .dxcvViewLayout .dxflItem_DevGlp,
+.dxcvFlowCard_DevGlp .dxcvViewLayout .dxflItem_DevGlp
+{
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+.dxcvCard_DevGlp .dxcvViewLayout .dxflCommandItemSys,
+.dxcvFlowCard_DevGlp .dxcvViewLayout .dxflCommandItemSys
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.dxcvCustPanel_DevGlp
+{
+    background: White;
+    padding: 15px 20px 0 15px;
+    text-align: right;
+}
+.dxcvControl_DevGlp .dxcvSeparator_DevGlp,
+.dxcvControl_DevGlp .dxcvSeparator_DevGlp div
+{
+    width: 20px;
+    height: 20px;
+}

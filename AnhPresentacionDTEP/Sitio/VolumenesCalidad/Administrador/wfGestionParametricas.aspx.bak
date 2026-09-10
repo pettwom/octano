@@ -1,0 +1,90 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sitio/VolumenesCalidad/CantidadesMaster.Master" AutoEventWireup="true" CodeBehind="wfGestionParametricas.aspx.cs" Inherits="AnhPresentacionDTEP.Sitio.VolumenesCalidad.Administrador.wfGestionParametricas" %>
+
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxGridView" Assembly="DevExpress.Web.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Web.ASPxGridView.Export" Assembly="DevExpress.Web.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <h1>PARAMÉTRICAS - Gestión de Paramétrica</h1>
+    <div runat="server" id="divMensaje" style="display: none;"></div>
+    <hr class="Hydro_Linea_Verde" />
+    <input type="button" value="Nueva PARAMETRICA" id="btnNuevo" />
+    <asp:LinkButton ID="btnExcel" runat="server" title="Exportar datos de la grilla a Excel"
+        CssClass="Hydro_Boton_Blanco" OnClick="btnExcel_Click"><span class="icon ui-icon-excel"></span><span class="label">Exportar a Excel</span></asp:LinkButton>
+    <dx:ASPxGridView ID="grdParametrica" ClientInstanceName="grdParametrica" runat="server"
+        KeyFieldName="ID_PRODE" Width="100%" OnRowDeleting="grdProde_RowDeleting"
+        OnRowInserting="grdProde_RowInserting" OnRowUpdating="grdProde_RowUpdating"
+        AutoGenerateColumns="False" OnCellEditorInitialize="grdProde_CellEditorInitialize"
+        OnCustomErrorText="grdProde_CustomErrorText"
+        OnInitNewRow="grdProde_InitNewRow">
+        <Columns>
+            <dx:GridViewCommandColumn VisibleIndex="0" Width="80px" ButtonType="Image">
+                <EditButton Visible="true" Text="Editar" Image-Url="~/UI/img/iconos/editar.png">
+                    <Image Url="~/UI/img/iconos/editar.png"></Image>
+                </EditButton>
+                <DeleteButton Visible="true" Text="Eliminar" Image-Url="~/UI/img/iconos/eliminar.png">
+                    <Image Url="~/UI/img/iconos/eliminar.png"></Image>
+                </DeleteButton>
+                <UpdateButton Visible="True" Text="Guardar este registro" Image-Url="~/UI/img/iconos/btn_inicio_aceptar.png">
+                    <Image Url="~/UI/img/iconos/btn_inicio_aceptar.png"></Image>
+                </UpdateButton>
+                <CancelButton Visible="true" Text="Cancelar" Image-Url="~/UI/img/iconos/btn_inicio_cancelar.png">
+                    <Image Url="~/UI/img/iconos/btn_inicio_cancelar.png"></Image>
+                </CancelButton>
+                <ClearFilterButton Visible="True" Text="Nueva búsqueda"></ClearFilterButton>
+            </dx:GridViewCommandColumn>
+
+            <dx:GridViewDataTextColumn FieldName="Parametrica" Caption="PARAMETRICA" VisibleIndex="1">
+                <Settings AutoFilterCondition="Contains" HeaderFilterMode="CheckedList" AllowHeaderFilter="True"></Settings>
+            </dx:GridViewDataTextColumn>
+
+            <dx:GridViewDataTextColumn FieldName="Valor" Caption="VALOR" VisibleIndex="2">
+                <Settings AutoFilterCondition="Contains" HeaderFilterMode="CheckedList" AllowHeaderFilter="True"></Settings>
+                <PropertiesTextEdit MaxLength="100" Width="500px">
+                    <ClientSideEvents Validation="function(s,e) { e.isValid = s.GetText().length > 4}" />
+                    <ValidationSettings ValidationGroup="ProductoValidationGroup" CausesValidation="True"
+                        Display="Dynamic" SetFocusOnError="True" ErrorDisplayMode="ImageWithText"
+                        ErrorTextPosition="Bottom">
+                        <RequiredField IsRequired="True" ErrorText="El nombre del campo es requerido" />
+                    </ValidationSettings>
+                </PropertiesTextEdit>
+            </dx:GridViewDataTextColumn>
+            
+            <dx:GridViewDataTextColumn FieldName="Descripcion" Caption="DESCRIPCION" VisibleIndex="2">
+                <Settings AutoFilterCondition="Contains" HeaderFilterMode="CheckedList" AllowHeaderFilter="True"></Settings>
+                <PropertiesTextEdit MaxLength="100" Width="500px">
+                    <ClientSideEvents Validation="function(s,e) { e.isValid = s.GetText().length > 4}" />
+                    <ValidationSettings ValidationGroup="ProductoValidationGroup" CausesValidation="True"
+                        Display="Dynamic" SetFocusOnError="True" ErrorDisplayMode="ImageWithText"
+                        ErrorTextPosition="Bottom">
+                        <RequiredField IsRequired="True" ErrorText="El nombre del campo es requerido" />
+                    </ValidationSettings>
+                </PropertiesTextEdit>
+            </dx:GridViewDataTextColumn>
+
+        </Columns>
+        <SettingsEditing EditFormColumnCount="3" />
+        <SettingsBehavior ConfirmDelete="true" AllowFocusedRow="True" />
+        <SettingsText ConfirmDelete="Eliminar este registro?" HeaderFilterSelectAll="(Seleccionar Todos)" HeaderFilterOkButton="Aceptar" HeaderFilterCancelButton="Cancelar" />
+        <SettingsPager PageSize="20">
+            <PageSizeItemSettings Visible="true" ShowAllItem="true" AllItemText="Todos" />
+        </SettingsPager>
+        <Settings ShowFilterRow="false" ShowHeaderFilterButton="true" ShowHeaderFilterBlankItems="true" />
+        <SettingsPopup>
+            <HeaderFilter Height="300px" Width="300" />
+        </SettingsPopup>
+        <Paddings Padding="5px" />
+        <Styles>
+            <Header CssClass="Hydro_Td_Titulo"></Header>
+            <Row CssClass="Hydro_Tr_Contenido"></Row>
+            <Table CssClass="Hydro_Table"></Table>
+            <FocusedRow CssClass="Hydro_Tr_Seleccionado"></FocusedRow>
+        </Styles>
+    </dx:ASPxGridView>
+
+    <dx:ASPxGridViewExporter ID="grdExportar" runat="server" GridViewID="grdParametrica">
+    </dx:ASPxGridViewExporter>
+
+</asp:Content>
+

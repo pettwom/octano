@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteInicioMaster.master.cs" Inherits="AnhPresentacionDTEP.Sitio.VolumenesCalidad.SiteInicioMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="c" runat="server">
+    <title>ANH - OCTANO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../UI/img/VolumenesCalidad/octano128.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="../../UI/css/Hydro.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/jquery.fancybox.2.1.5.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/VolumenesCalidad/VolumenesCalidad.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/VolumenesCalidad/MenuHydroOctano.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/msgBoxLight.css" />
+
+    <%--<script type="text/javascript" src="../../../UI/js/jquery-1.10.2.min.js"></script>--%>
+    <script type="text/javascript" src="../../../UI/js/jquery-1.10.2.js"></script>
+    <%--<script type="text/javascript" src="../../../UI/js/jquery-1.10.2-vsdoc.js"></script>--%>
+    <script type="text/javascript" src="../../../UI/js/jquery.fancybox.pack.2.1.5.js"></script>
+    <script type="text/javascript" src="../../../UI/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../../../UI/js/jquery.msgBox.js"></script>
+    <script type="text/javascript" src="../../../UI/js/VolumenesCalidad/calidad.presentacion.js"></script>
+    <script type="text/javascript" src="../../../UI/js/VolumenesCalidad/calidad.validacion.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .labelUsuario
+        {
+            margin-bottom: -2px;
+        }
+        .usuario_panel
+        {
+            margin-right: 20px;
+        }
+        body{background: url(../../../UI/img/VolumenesCalidad/fondoPagina.png) top center repeat-y;}
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server" class="Hydro_Form">
+    <div id="pagina">
+        <div id="menumodulo">
+            <asp:Menu runat="server" ID="menu1" Orientation="Horizontal">
+            </asp:Menu>
+        </div>
+        <div id="cantContenido">
+            <div id="pvcEncabezado">
+                <div class="pvc_encabezado_1">&nbsp;</div>
+                <div class="pvc_encabezado_2">
+	                <div class="pvc_encabezado_bloq_left" align="left"><img src="../UI/img/VolumenesCalidad/Hydro_logo.png" border="0" /></div>
+	                <div class="pvc_encabezado_bloq_right"><img src="../UI/img/VolumenesCalidad/Hydro_titulo_small_octano_calidad2.png" border="0"/></div>
+                </div>
+                <div class="pvc_encabezado_3">&nbsp;</div>
+            </div>
+
+            <div class="pvc_contenido_container">
+                <div class="pvc_contenido_1">&nbsp;</div>
+                <div class="pvc_contenido_2">
+                    <div align="right">
+	                <asp:Panel runat="server" CssClass="usuario_panel" ID="panelUsuario" Visible="false">
+                        <asp:LoginStatus ID="LoginStatus1" CssClass="Hydro_Logoff" LogoutText=" " LoginText=" "
+                         runat="server" LogoutAction="RedirectToLoginPage" OnLoggingOut="LoginStatus1_LoggingOut" Visible="false">
+                        </asp:LoginStatus>
+                        <asp:Image ID="Image3" runat="server" ImageUrl="~//UI/img/VolumenesCalidad/icono_entidad.png"
+                         Height="14px" CssClass="labelUsuario"></asp:Image>
+                        <asp:Label ID="lblEntidad" runat="server" Text="" CssClass="Hydro_Contenido_Verde_Normal"></asp:Label>
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~//UI/img/VolumenesCalidad/btn_usuario.png" Height="14px"
+                         CssClass="labelUsuario"></asp:Image>
+                        <asp:Label ID="lblUsuario" runat="server" Text="" CssClass="Hydro_Contenido_Verde_Normal"></asp:Label>
+                        <asp:ImageButton runat="server" ID="btnSalir" ImageUrl="~/UI/img/VolumenesCalidad/btn_cerrar_sesion.png"
+                         Height="14px" OnClick="btnSalir_Click" Visible="true" />
+                    </asp:Panel>
+                    <asp:Panel runat="server" ID="panelMenu" Visible="false">
+                        <div id="cssmenu" style="width: 100%">
+                            <asp:Menu ID="menu" runat="server" Orientation="Horizontal">
+                            </asp:Menu>
+                            <asp:Menu ID="menuRegulado" runat="server" Orientation="Horizontal" Visible="false">
+                                <Items>
+                                    <asp:MenuItem NavigateUrl="../../Sitio/Entidad/wfEmpresaListado.aspx" Text="Inicio"
+                                     Value="Inicio"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                        </div>
+                    </asp:Panel>
+                    </div>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                    <div id="cantCuerpo">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div class="pvc_contenido_3">&nbsp;</div>
+                </div>
+
+            </div>
+        <div id="pvcPie">
+            <div class="pvc_pie_1">&nbsp;</div>
+            <div class="pvc_pie_2">
+	            <div class="pvc_pie_bloq_center">
+    	            Agencia Nacional de Hidrocarburos | Av. 20 de Octubre Nro. 2685 | NIT: 120919027 | La Paz, Bolivia
+                    Linea Gratuita: 800-10-6006 | Tel: (591)-2-2434000 | Fax: (591)-2-2434007 | Email: contacto @ anh.gob.bo<br/>
+                    Desarrollo y mantenimiento: Dirección de Tecnologías de Información y Comunicación<br/>
+                    AGENCIA NACIONAL DE HIDROCARBUROS © 2015<br/>
+                </div>
+            </div>
+            <div class="pvc_pie_3">&nbsp;</div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+

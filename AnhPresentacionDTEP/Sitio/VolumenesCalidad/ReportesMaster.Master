@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ReportesMaster.master.cs" Inherits="AnhPresentacionDTEP.Sitio.VolumenesCalidad.ReportesMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="c" runat="server">
+    <title>ANH - OCTANO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../UI/img/VolumenesCalidad/octano128.ico"/>
+
+    <link rel="stylesheet" type="text/css" href="../../UI/css/Hydro.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/jquery.fancybox.2.1.5.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/VolumenesCalidad/VolumenesCalidad.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/VolumenesCalidad/MenuHydroOctano.css" />
+    <link rel="stylesheet" type="text/css" href="../../UI/css/msgBoxLight.css" />
+
+    <%--<script type="text/javascript" src="../../../UI/js/jquery-1.10.2.min.js"></script>--%>
+    <script type="text/javascript" src="../../../UI/js/jquery-1.10.2.js"></script>
+    <%--<script type="text/javascript" src="../../../UI/js/jquery-1.10.2-vsdoc.js"></script>--%>
+    <script type="text/javascript" src="../../../UI/js/jquery.fancybox.pack.2.1.5.js"></script>
+    <script type="text/javascript" src="../../../UI/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../../../UI/js/jquery.msgBox.js"></script>
+    <script type="text/javascript" src="../../../UI/js/VolumenesCalidad/calidad.presentacion.js"></script>
+    <script type="text/javascript" src="../../../UI/js/VolumenesCalidad/calidad.validacion.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .labelUsuario
+        {
+            margin-bottom: -2px;
+        }
+        .usuario_panel
+        {
+            margin-right: 20px;
+        }
+        body{background: url(../../../UI/img/VolumenesCalidad/fondoPagina.png) top center repeat-y;}
+    </style>
+</head>
+<body>
+
+    <%--<form id="form1" runat="server" class="Hydro_Form">
+        <div id="pagina">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            <div id="cantCuerpo" style="background-color: #ffffff">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>--%>
+    
+    <form id="form1" runat="server" class="Hydro_Form">
+    <div id="Div1" >
+        <div id="cantContenido" >
+            <div class="pvc_contenido_container">
+                <div class="pvc_contenido_2" style="background-color: #ffffff;height:500px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                    <div id="Div2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+    </div>
+    </form>
+    
+
+</body>
+</html>

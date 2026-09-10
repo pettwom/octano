@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfO_PERSONA_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_PERSONA_CTY" nillable="true" type="tns:O_PERSONA_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_PERSONA_CTY" nillable="true" type="tns:ArrayOfO_PERSONA_CTY" />
+  <xs:complexType name="O_PERSONA_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMPLEMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EXPEDICION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EXPEDICION_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FECHA_NACIMIENTO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="GENERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GENERO_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_IDENTIFICACION" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMBRE_COMPLETO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRIMER_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEGUNDO_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPO_IDENT_DESCRIPCION" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_PERSONA_CTY" nillable="true" type="tns:O_PERSONA_CTY" />
+  <xs:complexType name="ArrayOfO_ENTIDAD_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_ENTIDAD_CTY" nillable="true" type="tns:O_ENTIDAD_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_ENTIDAD_CTY" nillable="true" type="tns:ArrayOfO_ENTIDAD_CTY" />
+  <xs:complexType name="O_ENTIDAD_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ENTIDAD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SOCIEDAD" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_ENTIDAD_CTY" nillable="true" type="tns:O_ENTIDAD_CTY" />
+  <xs:complexType name="O_CORRELATIVO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CITE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_CITE" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_CORRELATIVO_CTY" nillable="true" type="tns:O_CORRELATIVO_CTY" />
+  <xs:complexType name="O_DETALLE_VEHICULO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CLASE_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="COLOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COLOR_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="COPIA_PLACA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MARCA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARCA_ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NRO_CHASIS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NRO_MOTOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACA" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_DETALLE_VEHICULO_CTY" nillable="true" type="tns:O_DETALLE_VEHICULO_CTY" />
+  <xs:complexType name="ArrayOfE_VEHICULO_DATO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="E_VEHICULO_DATO_CTY" nillable="true" type="tns:E_VEHICULO_DATO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfE_VEHICULO_DATO_CTY" nillable="true" type="tns:ArrayOfE_VEHICULO_DATO_CTY" />
+  <xs:complexType name="E_VEHICULO_DATO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CLASE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COLOR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COPIA_PLACA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ENTIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_REGISTRO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_VEHICULO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MARCA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PLACA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SERVICIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="E_VEHICULO_DATO_CTY" nillable="true" type="tns:E_VEHICULO_DATO_CTY" />
+  <xs:complexType name="ArrayOfO_PERSONA_BUSQUEDA_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_PERSONA_BUSQUEDA_CTY" nillable="true" type="tns:O_PERSONA_BUSQUEDA_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_PERSONA_BUSQUEDA_CTY" nillable="true" type="tns:ArrayOfO_PERSONA_BUSQUEDA_CTY" />
+  <xs:complexType name="O_PERSONA_BUSQUEDA_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EXPEDICION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_NACIMIENTO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="GENERO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_DEPARTAMENTO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_GENERO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_IDENTIFICACION" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO_COMPLEMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO_IDENTIFICACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRIMER_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEGUNDO_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEFONO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="TIPO_IDENT_DESCRIPCION" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_PERSONA_BUSQUEDA_CTY" nillable="true" type="tns:O_PERSONA_BUSQUEDA_CTY" />
+  <xs:complexType name="ArrayOfO_FOTO_PERSONA_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_FOTO_PERSONA_CTY" nillable="true" type="tns:O_FOTO_PERSONA_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_FOTO_PERSONA_CTY" nillable="true" type="tns:ArrayOfO_FOTO_PERSONA_CTY" />
+  <xs:complexType name="O_FOTO_PERSONA_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FOTOGRAFIA" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="ID_CATALOG_FOTO_PERSONA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_FOTO_PERSONA_CTY" nillable="true" type="tns:O_FOTO_PERSONA_CTY" />
+  <xs:complexType name="ArrayOfO_DATO_USUARIO_ANH_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_DATO_USUARIO_ANH_CTY" nillable="true" type="tns:O_DATO_USUARIO_ANH_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_DATO_USUARIO_ANH_CTY" nillable="true" type="tns:ArrayOfO_DATO_USUARIO_ANH_CTY" />
+  <xs:complexType name="O_DATO_USUARIO_ANH_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_ORGANIGRAMA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ORGANIGRAMA_DEP" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_PERSONA" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_USUARIO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="LOGIN" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO_COMPLEMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUMERO_IDENTIFICACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRIMER_APELLIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SEGUNDO_APELLIDO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_DATO_USUARIO_ANH_CTY" nillable="true" type="tns:O_DATO_USUARIO_ANH_CTY" />
+  <xs:complexType name="ArrayOfO_OBT_DOCUMENTO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_OBT_DOCUMENTO_CTY" nillable="true" type="tns:O_OBT_DOCUMENTO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_OBT_DOCUMENTO_CTY" nillable="true" type="tns:ArrayOfO_OBT_DOCUMENTO_CTY" />
+  <xs:complexType name="O_OBT_DOCUMENTO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID_DOCUMENTO_ENTIDAD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_ENTIDAD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_TIPO_DOC_INSCR" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NRO_CITE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_OBT_DOCUMENTO_CTY" nillable="true" type="tns:O_OBT_DOCUMENTO_CTY" />
+  <xs:complexType name="ArrayOfO_OBT_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_OBT_USUARIO_CTY" nillable="true" type="tns:O_OBT_USUARIO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_OBT_USUARIO_CTY" nillable="true" type="tns:ArrayOfO_OBT_USUARIO_CTY" />
+  <xs:complexType name="O_OBT_USUARIO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CORREO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_ENTIDAD" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ID_USUARIO" type="xs:decimal" />
+      <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_OBT_USUARIO_CTY" nillable="true" type="tns:O_OBT_USUARIO_CTY" />
+  <xs:complexType name="ArrayOfO_REPORTE_ACTIVIDAD_NAC_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_REPORTE_ACTIVIDAD_NAC_CTY" nillable="true" type="tns:O_REPORTE_ACTIVIDAD_NAC_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_REPORTE_ACTIVIDAD_NAC_CTY" nillable="true" type="tns:ArrayOfO_REPORTE_ACTIVIDAD_NAC_CTY" />
+  <xs:complexType name="O_REPORTE_ACTIVIDAD_NAC_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACTIVIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CANTIDAD" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_REPORTE_ACTIVIDAD_NAC_CTY" nillable="true" type="tns:O_REPORTE_ACTIVIDAD_NAC_CTY" />
+  <xs:complexType name="ArrayOfO_OBTIENE_ENTIDADES_ACT_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_OBTIENE_ENTIDADES_ACT_CTY" nillable="true" type="tns:O_OBTIENE_ENTIDADES_ACT_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_OBTIENE_ENTIDADES_ACT_CTY" nillable="true" type="tns:ArrayOfO_OBTIENE_ENTIDADES_ACT_CTY" />
+  <xs:complexType name="O_OBTIENE_ENTIDADES_ACT_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DENOMINACION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_DEPARTAMENTO" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_ENTIDAD" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_OBTIENE_ENTIDADES_ACT_CTY" nillable="true" type="tns:O_OBTIENE_ENTIDADES_ACT_CTY" />
+  <xs:complexType name="ArrayOfO_EMISION_PERIODO_CERT_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_EMISION_PERIODO_CERT_CTY" nillable="true" type="tns:O_EMISION_PERIODO_CERT_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_EMISION_PERIODO_CERT_CTY" nillable="true" type="tns:ArrayOfO_EMISION_PERIODO_CERT_CTY" />
+  <xs:complexType name="O_EMISION_PERIODO_CERT_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CANTIDAD_CERTIFICADO" type="xs:long" />
+      <xs:element minOccurs="0" name="DEPARTAMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MUNICIPIO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PERIODO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_EMISION_PERIODO_CERT_CTY" nillable="true" type="tns:O_EMISION_PERIODO_CERT_CTY" />
+  <xs:complexType name="ArrayOfO_PORCENTAJE_ACT_DEPTO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_PORCENTAJE_ACT_DEPTO_CTY" nillable="true" type="tns:O_PORCENTAJE_ACT_DEPTO_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_PORCENTAJE_ACT_DEPTO_CTY" nillable="true" type="tns:ArrayOfO_PORCENTAJE_ACT_DEPTO_CTY" />
+  <xs:complexType name="O_PORCENTAJE_ACT_DEPTO_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACTIVIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CANTIDAD" type="xs:long" />
+      <xs:element minOccurs="0" name="CATEGORIA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPARTAMENTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MUNICIPIO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_PORCENTAJE_ACT_DEPTO_CTY" nillable="true" type="tns:O_PORCENTAJE_ACT_DEPTO_CTY" />
+  <xs:complexType name="ArrayOfO_OBTIENE_MATRIZ_PROYECTOS_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_OBTIENE_MATRIZ_PROYECTOS_CTY" nillable="true" type="tns:O_OBTIENE_MATRIZ_PROYECTOS_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_OBTIENE_MATRIZ_PROYECTOS_CTY" nillable="true" type="tns:ArrayOfO_OBTIENE_MATRIZ_PROYECTOS_CTY" />
+  <xs:complexType name="O_OBTIENE_MATRIZ_PROYECTOS_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACTIVIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPTO_EMPRESA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPTO_PROYECTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DIRECCION_COMERCIAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMPRESA" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROYECTO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEFONO" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_OBTIENE_MATRIZ_PROYECTOS_CTY" nillable="true" type="tns:O_OBTIENE_MATRIZ_PROYECTOS_CTY" />
+  <xs:complexType name="ArrayOfO_OBTIENE_ACTIVIDAD_GIS_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="O_OBTIENE_ACTIVIDAD_GIS_CTY" nillable="true" type="tns:O_OBTIENE_ACTIVIDAD_GIS_CTY" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfO_OBTIENE_ACTIVIDAD_GIS_CTY" nillable="true" type="tns:ArrayOfO_OBTIENE_ACTIVIDAD_GIS_CTY" />
+  <xs:complexType name="O_OBTIENE_ACTIVIDAD_GIS_CTY">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ACTIVIDAD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID_ACTIVIDAD" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="O_OBTIENE_ACTIVIDAD_GIS_CTY" nillable="true" type="tns:O_OBTIENE_ACTIVIDAD_GIS_CTY" />
+</xs:schema>

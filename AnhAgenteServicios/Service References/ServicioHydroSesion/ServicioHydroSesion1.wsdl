@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://servicios.anh.gob.bo:8443" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://servicios.anh.gob.bo/WSCore/ServicioHydroSesion.svc" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioHydroSesion" targetNamespace="http://servicios.anh.gob.bo:8443" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://servicios.anh.gob.bo/WSCore/ServicioHydroSesion.svc" location="https://vsrvuid013.anh.gob.bo:7443/WSCore/ServicioHydroSesion.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://servicios.anh.gob.bo:8443/Imports">
+      <xsd:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSCore/ServicioHydroSesion.svc?xsd=xsd0" namespace="http://servicios.anh.gob.bo:8443" />
+      <xsd:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSCore/ServicioHydroSesion.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://vsrvuid013.anh.gob.bo:7443/WSCore/ServicioHydroSesion.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DominioEntidades.Hydro" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioHydroSesion_Autenticar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Autenticar" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_Autenticar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_AutenticarActDir_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarActDir" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_AutenticarActDir_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarActDirResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ExisteUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExisteUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ExisteUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExisteUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_RegistrarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_RegistrarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ActivarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActivarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ActivarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActivarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerModulosUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerModulosUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerModulosUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerModulosUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObternerPerfilesUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObternerPerfilesUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObternerPerfilesUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObternerPerfilesUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerMenusUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMenusUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerMenusUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMenusUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerMenusPerfil_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMenusPerfil" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_ObtenerMenusPerfil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerMenusPerfilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_CambiarClave_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarClave" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_CambiarClave_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambiarClaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_AutenticarV2_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarV2" />
+  </wsdl:message>
+  <wsdl:message name="IServicioHydroSesion_AutenticarV2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarV2Response" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioHydroSesion">
+    <wsdl:operation name="Autenticar">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/Autenticar" message="tns:IServicioHydroSesion_Autenticar_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/AutenticarResponse" message="tns:IServicioHydroSesion_Autenticar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarActDir">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/AutenticarActDir" message="tns:IServicioHydroSesion_AutenticarActDir_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/AutenticarActDirResponse" message="tns:IServicioHydroSesion_AutenticarActDir_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExisteUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ExisteUsuario" message="tns:IServicioHydroSesion_ExisteUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ExisteUsuarioResponse" message="tns:IServicioHydroSesion_ExisteUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/RegistrarUsuario" message="tns:IServicioHydroSesion_RegistrarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/RegistrarUsuarioResponse" message="tns:IServicioHydroSesion_RegistrarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivarUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ActivarUsuario" message="tns:IServicioHydroSesion_ActivarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ActivarUsuarioResponse" message="tns:IServicioHydroSesion_ActivarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerUsuario" message="tns:IServicioHydroSesion_ObtenerUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerUsuarioResponse" message="tns:IServicioHydroSesion_ObtenerUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerModulosUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerModulosUsuario" message="tns:IServicioHydroSesion_ObtenerModulosUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerModulosUsuarioResponse" message="tns:IServicioHydroSesion_ObtenerModulosUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObternerPerfilesUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObternerPerfilesUsuario" message="tns:IServicioHydroSesion_ObternerPerfilesUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObternerPerfilesUsuarioResponse" message="tns:IServicioHydroSesion_ObternerPerfilesUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMenusUsuario">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerMenusUsuario" message="tns:IServicioHydroSesion_ObtenerMenusUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerMenusUsuarioResponse" message="tns:IServicioHydroSesion_ObtenerMenusUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerMenusPerfil">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerMenusPerfil" message="tns:IServicioHydroSesion_ObtenerMenusPerfil_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/ObtenerMenusPerfilResponse" message="tns:IServicioHydroSesion_ObtenerMenusPerfil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambiarClave">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/CambiarClave" message="tns:IServicioHydroSesion_CambiarClave_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/CambiarClaveResponse" message="tns:IServicioHydroSesion_CambiarClave_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarV2">
+      <wsdl:input wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/AutenticarV2" message="tns:IServicioHydroSesion_AutenticarV2_InputMessage" />
+      <wsdl:output wsaw:Action="http://servicios.anh.gob.bo:8443/IServicioHydroSesion/AutenticarV2Response" message="tns:IServicioHydroSesion_AutenticarV2_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="ServicioHydroSesion">
+    <wsdl:port name="HydroCoreSesionEndPoint" binding="i0:HydroCoreSesionEndPoint">
+      <soap:address location="https://vsrvuid013.anh.gob.bo:7443/WSCore/ServicioHydroSesion.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
