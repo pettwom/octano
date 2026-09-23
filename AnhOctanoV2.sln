@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12128.139 oobstable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnhPresentacionDTEP", "AnhPresentacionDTEP\AnhPresentacionDTEP.csproj", "{BDADAFCC-95A5-48A8-8BE7-30FCCE2B463B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 Persistencia", "01 Persistencia", "{11B84E27-F3C4-4ADD-934C-CBE96327ACAA}"
@@ -26,6 +28,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 Servicios Integracion", "02 Servicios Integracion", "{BD3B981E-C084-42C4-8DA3-807B0AC47CBE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnhServicioWebOctanoIntegracion", "..\..\OctanoV2\Back\AnhOctanoV2\AnhServicioWebOctano\AnhServicioWebOctanoIntegracion.csproj", "{30011EE1-2713-4BD1-8282-365355F5D4C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{CA105778-C702-498C-B1D1-52ED9422A781}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +74,13 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BDADAFCC-95A5-48A8-8BE7-30FCCE2B463B} = {0445A973-5D06-45FE-9F52-4A832CC5C33F}
-		{30A308E0-00C4-47E2-87FE-8CA277220672} = {0445A973-5D06-45FE-9F52-4A832CC5C33F}
 		{67784A94-6AFB-4464-971E-BB31D6B31687} = {EA017852-631B-4D77-8DCC-939001B87E9C}
+		{30A308E0-00C4-47E2-87FE-8CA277220672} = {0445A973-5D06-45FE-9F52-4A832CC5C33F}
 		{9718A626-187B-4486-A7FE-9EF3F0A84581} = {EA017852-631B-4D77-8DCC-939001B87E9C}
 		{FBC6415E-2BC4-41B2-BE37-2CAE5402DC75} = {0BE974B2-A725-4B17-993E-49D26861C1CB}
 		{30011EE1-2713-4BD1-8282-365355F5D4C6} = {BD3B981E-C084-42C4-8DA3-807B0AC47CBE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {714B9901-8D24-419D-99EB-8D396D7709E1}
 	EndGlobalSection
 EndGlobal
